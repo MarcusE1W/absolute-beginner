@@ -1,0 +1,7 @@
+[{
+  "name": "How to add pages to the menu",
+  "description": "I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:menu = &amp;quot;main&amp;quot;  ",
+  "body": "I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:menu = &amp;quot;main&amp;quot;  ",
+  "url": "https://absolute-beginner.netlify.com/post/linked-post/"
+}
+]

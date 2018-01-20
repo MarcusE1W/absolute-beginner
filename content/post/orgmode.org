@@ -1,0 +1,43 @@
++++
+title= "Org-mode in Spacemacs"
+date= 2018-01-19
+hide_authorbox = false
+disable_comments = false
+categories = ["Editor"]
+tags = ["Spacemacs", "Org-Mode"]
+aliases = ["/post/all-grown-up/"]
+markup = "org"
+draft = true
++++
+
+A first look at org-mode in Spacemacs
+
+
+<!--more-->
+
+* Using org-mode like markdown
+
+** Structure documents
+
+ In org mode you structure your document like in markdown with headers.
+ Instead of #, ##, ### in markdown you use `*`, `**`, and `***`.
+
+|   |   |
+|---+---|
+|   |   |
+|   |   |
+|   |   |
+|   |   |
+
+** Org-mode and markdown compared side by side
+
+| Markdown-mode | Org-mode | Decsription   |
+|---------------+----------+---------------|
+| #             | *        | Heade level 1 |
+| ##            | **       | Heade level 2 |
+| ###           | ***      | Heade level 3 |
+|               |          |               |
+
+
+
+* Organise tasks

@@ -17,7 +17,9 @@ An introduction into the Spacemacs editor for a user with little editing experie
 
 Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the neccessary key strokes.
 
-## Areas you need to know about
+This text tries to give an introduction into spacemacs and its workings. After reading this you should be able to do some productive work with it. The assumption is that you have installed Spacemacs with Evil (Vim) support. Vim has some very powerful and sometimes very cryptic commands, many will not be covered in this text. Also the tables you see in the text only give you a selection of commands. The good news ins that with Spacemacs you don't have to remember all commands but you can also use the menu (SPC)system.
+
+## What will you learn from this text?
 - What are the different selection screens like
   - The Spacemacs SPC menu (Which-key)
   - The helm or ivy menu to select in listsP
@@ -38,11 +40,16 @@ Press s to toggle between hidind and showing hidden files.
 
 ### Basic Spacemacs Evil (Vim) commands
 There are (I am sure but have not made it that far yet) usefule vim commands to edit your text and work with the editor. I think as a beginner you don't need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
-The vim mode is a so called modal model. This means it has several different modes that are specialised in doing one thing especially good. The Spacemacs documentation describes this very well. Spacemacs also shows a different colour for the window number depending on your mode.
+The vim mode is a so called modal model. This means it has several different modes that are specialised in doing one thing especially good. The Spacemacs documentation describes this very well [LINK]. 
+
+Spacemacs also shows a different colour for the window number depending on your mode.
 
 - Normal mode (ESC). This is where you execute vim commands and edit text, not to write text. To write text you switch to insert mode.
 - Insert mode (i). Use insert mode to write text. some more basic text editing also works here.
 - Visual mode (v/V) This is where you select text. Change to visual mode and select text. Then execute commands. You can execute vim commands like copy but you can also execute the SPC sommands from spacemacs that are relevant for text selection.
+
+
+Vim (and Spacemacs uses a Vim emulation) is famous for beeing a modal editor. That means basically it has one mode to write text called `insert mode` and some other modes to work with and format the text. Hence the name modal. The most important of these functional modes is `normal mode`. When you start spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.
 
 | function                                           | normal mode | alternative |
 | ---                                                | ---         |             |
@@ -60,15 +67,12 @@ The vim mode is a so called modal model. This means it has several different mod
 | close buffer                                       | :q          | SPC b d     |
 | save and close buffer                              | :wq         |             |
 
-<!-- Spacemacs 2 -->
-<!-- example for mass processing of a text block: Ctrl-v, mark lines, i, write text, <ESC>  -->
-<!-- Example for mass processing at end of line: Ctrl-V, mark lines, $A, write text, <ESC> -->
+df. - delete until next . (sentence end)
 
-
-### Window handling
+## Window handling
 Windows are the text areas you see in Spacemacs. When you start it is usually one window. You can split the screen to see two or more windows at the same time.
 
-Additinally spacemacs uses the term buffer. buffer are effectively your text file. You can have a large number of buffers open but only show a few in windows.
+Additinally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the `*Messages` buffer. 
 
 To keep an overview there are several SPC commads to manage windows and buffer.
 
@@ -81,15 +85,9 @@ To keep an overview there are several SPC commads to manage windows and buffer.
 If you have several buffer (files) open and want to show a different buffer file in your current window then open the buffer selection screen (SPC b b) to jump to other open buffers (files)
 - SPC <buffer-number>
 
-### Search in buffer
-- SPC s s -
-- Alternatives: / SPC s project something
 
-Spacemacs offers quite a lot of functionality to search either in open buffers or also in project folders. Worth exploring.
+### Move cursor in the current buffer
 
-### Move in the current buffer
-
-Vim (and Spacemacs uses a Vim emulation) is famous for beeing a modal editor. That means basically it has one mode to write text called `insert mode` and some other modes to work with and format the text. Hence the name modal. The most important of these functional modes is `normal mode`. When you start spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.
 
 | function            | normal mode | alternative     |
 | ---                 | ---         | ---             |
@@ -104,40 +102,8 @@ The idea behind the hjkl keys for cursor movement is that the hands have not to 
 
 - In insert mode the arrow keys, page-up, page-down, Home and End keys can be used.
 
-__Bonus function__
-A very nifty function to jump quickly to text currently displayed in the window is `SPC j j`.
-- After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it's first letter.
-- All the corresponding letters in the visible text of the window will be marked with a two letter combination.
-- Key in the two colourful letters of the positionat the beginning of the word where you want to jump and there you are.
-- It is much more straight foreward than it sounds.
 
-Example text:
-### Text manipulation
-
-To be found in sub-menu SPC x...
-Lots of interresting stuff there like:
-- Move lines up and down. To move your current line up or down use `SPC x K` for up and `SPC x J` for down. This also works with selections.
-- Uppper/lower case text selections (`SPC x U` for upper and `SPC x u` for lower case)
-## Configuration
-As mentioned in many places, confiuration  in Spacemacs happens in the .spacemacs file. The file is largely split in 5 interestin sections:
-
-..... some comments at the top
-
-`(defun dotspacemacs/layers ()` ... some standard configuration
-
-`Dotspacemacs-configuration-layers` ... add layers after that some more standard configuration
-
-`(defun dotspacemacs/user-init ()` ... setup for the very start of emacs, not often needed
-`(defun dotspacemacs/user-config ()`... your personal user configuration
-`(defun dotspacemacs/emacs-custom-settings ()` ... don't make changes after this
-1. In the first section you find already predefined configuration functions with default settings
-2.
-
-NOTE: the whole large section of standard configuration is called `(defun dotspacemacs/layers ()` whereas the small paragraph where you add your own selection of layer is called `dotspacemacs-configuration-layers**.
-
-## Text editing in Vim normal mode 
-
-Here are some more useful commands for normal vim mode of Spacemacs
+### Here are some more useful commands for normal vim mode of Spacemacs ###
 
 **Text selection**
 | function                         | keys |
@@ -156,6 +122,54 @@ Often you want to add more text in your existing document and for that you need 
 | add a new line under the current line | ] SPC |
 |                                       |       |
 
+__Super bonus function to move in text__
+A very nifty function to jump quickly to text currently displayed in the window is `SPC j j`.
+1. After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it's first letter.
+2.  All the corresponding letters in the visible text of the window will be marked with a two letter combination.
+3. Key in the two colourful letters of the positionat the beginning of the word where you want to jump and there you are.
+4. It is much more straight foreward than it sounds.
+
+Example text:
+
+Nunc rutrum turpis sed pede.
+Nunc aliquet, augue nec adipiscing interdum, lacus tellus malesuada massa, quis varius mi purus non odio.
+Pellentesque tristique imperdiet tortor.
+Mauris ac felis vel velit tristique imperdiet.
+Sed bibendum.
+Praesent augue.
+Nullam rutrum.
+Curabitur vulputate vestibulum lorem.
+
+
+
+
+## Configuration
+As mentioned in many places, confiuration  in Spacemacs happens in the .spacemacs file. The file is largely split in 5 interestin sections:
+
+Hit spc f e d (file emacs dotfile) to open this file. This is where you can customize everything. Find the dotspacemacs-configuration-layers line. You can use / in normal mode to start searching for it and enter when you have it. Add latex in that list. It should look like this:
+
+dotspacemacs-configuration-layers '(
+latex
+other-layer
+o;ther-layer)
+
+Now spacemacs will load that layer on startup for you, which includes a major mode for editing latex and a bunch of commands. You can now either restart emacs, or hit spc f e R(file emacs reload) to reload your config. Now if you hit spc f f (file find) and open a latex file you should have some syntax highlighting and latex specific commands on your , key.
+
+..... some comments at the top
+
+`(defun dotspacemacs/layers ()` ... some standard configuration
+
+`Dotspacemacs-configuration-layers` ... add layers after that some more standard configuration
+
+`(defun dotspacemacs/user-init ()` ... setup for the very start of emacs, not often needed
+`(defun dotspacemacs/user-config ()`... your personal user configuration
+`(defun dotspacemacs/emacs-custom-settings ()` ... don't make changes after this
+1. In the first section you find already predefined configuration functions with default settings
+2.
+
+NOTE: the whole large section of standard configuration is called `(defun dotspacemacs/layers ()` whereas the small paragraph where you add your own selection of layer is called `dotspacemacs-configuration-layers**.
+
+
 ## Useful links:
 
 - An absolute beginners guide to Spacemacs for academic (writing)[https://ontologicalblog.com/2016/10/14/an-absolute-beginners-guide-to-spacemacs-for-academic-writing/]
@@ -168,6 +182,7 @@ Often you want to add more text in your existing document and for that you need 
 | Layer  |             |
 |        |             |
 
+All spacemacs part 2 from here
 
 ### Functions
 
@@ -200,13 +215,16 @@ Side Note: The information opens in a split buffer titled *help*. Many of these 
 
 Everything so far (except specific key bindings) applies to emacs in general. Layers, however, are a spacemacs specific term. Layers are meant to be a simple way for you to customize your configuration by adding only one line to your .spacemacs file. See the list to see what are available. Check out the latex layer for example.
 
-### The .spacemacs file
 
-Hit spc f e d (file emacs dotfile) to open this file. This is where you can customize everything. Find the dotspacemacs-configuration-layers line. You can use / in normal mode to start searching for it and enter when you have it. Add latex in that list. It should look like this:
+<!-- Spacemacs 2 -->
+<!-- example for mass processing of a text block: Ctrl-v, mark lines, i, write text, <ESC>  -->
+<!-- Example for mass processing at end of line: Ctrl-V, mark lines, $A, write text, <ESC> -->
 
-dotspacemacs-configuration-layers '(
-latex
-other-layer
-other-layer)
 
-Now spacemacs will load that layer on startup for you, which includes a major mode for editing latex and a bunch of commands. You can now either restart emacs, or hit spc f e R(file emacs reload) to reload your config. Now if you hit spc f f (file find) and open a latex file you should have some syntax highlighting and latex specific commands on your , key.
+<!-- Spacemacs 2 -->
+<!-- ### Text manipulation -->
+
+<!-- To be found in sub-menu SPC x... -->
+<!-- Lots of interresting stuff there like: -->
+<!-- - Move lines up and down. To move your current line up or down use `SPC x K` for up and `SPC x J` for down. This also works with selections. -->
+<!-- - Uppper/lower case text selections (`SPC x U` for upper and `SPC x u` for lower case) -->
