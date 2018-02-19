@@ -18,7 +18,7 @@ enableRobotsTXT = true
     authorbox = false
     author = ""
     post_navigation = false
-    thumbnail = "images/wale.jpg"
+#    thumbnail = "images/wale.jpg"
     thumbnail_radius = "10%"
 
 # Privacy policy support
@@ -52,19 +52,19 @@ enableRobotsTXT = true
     [Params.social]
     gitlab = "BluestNight/BluestNight"
 
-[menu]
-  [[menu.main]]
-    name = "Alert"
-    weight = 1
-    parent = "docs-pages"
-    identifier = "alert-for-pages"
-    url = "docs/site/alert/#page-specific-alerts"
-  [[menu.main]]
-    name = "Alert"
-    weight = 1
-    parent = "docs-shortcodes"
-    identifier = "alert-shortcode"
-    url = "docs/site/alert/#shortcode"
+# [menu]
+#   [[menu.main]]
+#     name = "Alert"
+#     weight = 1
+#     parent = "docs-pages"
+#     identifier = "alert-for-pages"
+#     url = "docs/site/alert/#page-specific-alerts"
+#   [[menu.main]]
+#     name = "Alert"
+#     weight = 1
+#     parent = "docs-shortcodes"
+#     identifier = "alert-shortcode"
+#     url = "docs/site/alert/#shortcode"
 
 [Params.color]
     page_background = "#e2e2e2"

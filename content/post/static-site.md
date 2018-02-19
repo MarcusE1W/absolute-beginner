@@ -100,3 +100,31 @@ Free and popular are:
 - [Netlify.com](https://www.netlify.com/)
 
 Here are some texts that have help me to choose the host:
+
+### Find open source picture
+
+https://www.pexels.com/
+
+
+
+### Handle submodules
+- get the submodule initially
+`git submodule add ssh://bla submodule_dir`
+`git submodule init`
+
+- time passes, submodule upstream is updated  and you now want to update
+
+- change to the submodule directory
+`cd submodule_dir`
+
+- checkout desired branch
+`git checkout master`
+
+- update
+`git pull`
+
+- get back to your project root
+`cd ..`
+
+- now the submodules are in the state you want, so
+`git commit -am "Pulled down update to submodule_dir"`

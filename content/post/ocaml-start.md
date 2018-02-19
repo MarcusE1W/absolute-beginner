@@ -64,7 +64,7 @@ The Ocaml world the tool to interactively execute commands is called top level. 
 - install: opam
 - install: rsync
 - a package called gringo is needed, it is part of community package clingo
-- follow this instructions: (link)[https://github.com/realworldocaml/book/wiki/Installation-Instructions]
+- follow this instructions: [link](https://github.com/realworldocaml/book/wiki/Installation-Instructions)
 - install: opam install core utop
 - run REPL utop the first time, remember to write ;; if something should be executed, exit utop with #quit;;
 
@@ -80,3 +80,16 @@ The Ocaml world the tool to interactively execute commands is called top level. 
 - RWO
 - tryme
 - Ocaml doc
+
+# Ocaml and FP learnings (part 2)
+
+- Imutability
+- Sum types
+- Composition
+- Pattern matching incl. my super step over
+- Option types (oder wie das heisst in Ocaml)
+- Type composition and DDD and ADT and avoid errors with types
+- Maybes | Nothing and so on
+- How to avoid for loops and have fun. (Da war was in Erlang for good oder so)
+- Basicaly it should be expalined not only how to use but why is that useful in a functinal way
+- Currying, aber nur wenn das wirklich useful ist

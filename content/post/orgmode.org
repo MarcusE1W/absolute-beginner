@@ -22,22 +22,51 @@ A first look at org-mode in Spacemacs
  In org mode you structure your document like in markdown with headers.
  Instead of #, ##, ### in markdown you use `*`, `**`, and `***`.
 
-|   |   |
-|---+---|
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+| Function | key |
+|----------+-----|
+|          |     |
+|          |     |
+|          |     |
+|          |     |
 
 ** Org-mode and markdown compared side by side
 
-| Markdown-mode | Org-mode | Decsription   |
-|---------------+----------+---------------|
-| #             | *        | Heade level 1 |
-| ##            | **       | Heade level 2 |
-| ###           | ***      | Heade level 3 |
-|               |          |               |
+| Markdown-mode | Org-mode  | Description       | Example                      |
+|---------------+-----------+-------------------+------------------------------|
+| #             | *         | Header level 1    |                              |
+| ##            | **        | Header level 2    |                              |
+| ###           | ***       | Header level 3    |                              |
+| =_text_=      | /text/    | Italics           | /Hurray/                     |
+| =*text*=      | *text*    | Bold              | *Hurray*                     |
+|               | _text_    | Underline         | _Hurray_                     |
+|               | ~text~    | Source-Code       |                              |
+|               | =text=    | Literal           |                              |
+| N/A           | see below | Other text blocks |                              |
+| -             | -         | Bullet List       |                              |
+| 1.            | 1.        | Numbered Lists    |                              |
+| N/A           | -  ::     | Definition list   | - Definition :: rest of line |
+| N/A           | +text+    | Strike through    | +this and that+              |
+
+
 
 
 
 * Organise tasks
+
+| Description  | key        | comments                                                               |
+|--------------+------------+------------------------------------------------------------------------|
+| Create task  | Ctrl-C RET | This always marks text behind the cursor as a task, not the whole line |
+|              | , RET      | This uses the SPC m .. shortcut ,                                      |
+| Promote task | Alt-left   | This only works for lines that are already tasks                       |
+| Demote task  | Alt-right  | This only works for lines that are already tasks                       |
+|              |            |                                                                        |
+|              |            |                                                                        |
+|              |            |                                                                        |
+|              |            |                                                                        |
+
+
+create list
+
+
+* Useful links 
+http://pragmaticemacs.com/org-mode-tutorials/

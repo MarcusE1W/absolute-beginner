@@ -228,3 +228,5 @@ Everything so far (except specific key bindings) applies to emacs in general. La
 <!-- Lots of interresting stuff there like: -->
 <!-- - Move lines up and down. To move your current line up or down use `SPC x K` for up and `SPC x J` for down. This also works with selections. -->
 <!-- - Uppper/lower case text selections (`SPC x U` for upper and `SPC x u` for lower case) -->
+
+- Describe how to set variables.

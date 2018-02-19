@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating a man page from markdown with pandoc</title>
+
+    
+    
+    
+    <link rel="preload" href="https://absolute-beginner.netlify.com/styles.css" as="style" />
+
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style">
+
+    
+
+    <meta name="description" itemprop="description" content="&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.36.1" /><meta name="keywords" itemprop="keywords" content="man pages,markdown" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/man-markdown/">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    
+  <link rel="stylesheet" type="text/css" href="https://absolute-beginner.netlify.com/css/dark.css"><link rel="stylesheet" type="text/css" href="https://absolute-beginner.netlify.com/styles.css">
+
+    <script>var _paq = undefined;</script></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div id="site-container">
+      <div id="site-header">
+        <a href="https://absolute-beginner.netlify.com">
+          <header class="small-text-center medium-text-left row">
+            <div class="row-item">
+              <span id="site-title" itemprop="name">The Absolute Beginner</span>
+              <br/><span id="site-tagline">Experiences from a permanent beginner</span>
+            </div>
+          </header>
+        </a>
+        <label for="menu-toggle-box"><div id="menu-toggle" class="main-nav no-select"><span><span class="fa fa-bars"></span> MENU</span></div></label>
+        <input type="checkbox" id="menu-toggle-box" class="hide"/>
+        <nav id="main-nav">
+          <ul class="menu"><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-about" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="https://absolute-beginner.netlify.com/about/" >
+      <span>ABOUT</span></a></li></ul>
+        </nav>
+        </div>
+      <div id="main-container" class="row" role="main" itemprop="mainContentOfPage">
+        
+        
+        
+<main class="row-item small-full medium-two-thirds" >
+  <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="keywords desc">
+    <header id="page-header">
+      <h1 itemprop="headline">Creating a man page from markdown with pandoc</h1><p id="post-metadata" class="row"><span class="row-item">
+          <span class="fa fa-clock-o"></span>
+          <strong>Published:</strong>
+          <time datetime="2018-02-19" content="2018-02-19" itemprop="datePublished">February 19, 2018</time>
+        </span><span class="row-item">
+          <span class="fa fa-folder"></span>
+          <a href="https://absolute-beginner.netlify.com/categories/development" rel="category">Development</a>
+        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">4 minutes</span></span></p>
+      
+    </header>
+    
+    <div id="post-content">
+      <span itemprop="articleBody"><p>How to create a man page from a README.md file</p>
+
+<p></p>
+
+<h1 id="create-a-unix-man-page-with-markdown-using-pandoc">Create a (unix) man page with Markdown using pandoc</h1>
+
+<p>Man pages are application documentation that you find for almost every Unix/BSD/.. system. The format is text based on a markup language called <code>Nroff</code>. The principle concept is similar to Markdown, however the markup language <code>nroff</code> is a quite a bit less readable than markdown.
+Often variations of the <code>nroff</code> format are used like <code>groff</code>.</p>
+
+<p>Man pages are usually used in a terminal. So if you want to see the documentation for the command <code>ls</code> (list files) then you can key in:</p>
+
+<pre><code>man ls
+</code></pre>
+
+<p>and you will see the available options for <code>ls</code>. This works for almost every programme, provided the programme author has written a page.</p>
+
+<p>This tutorial describes how to create man documentation pages from a markdown file using <code>pandoc</code></p>
+
+<h1 id="using-pandoc">Using pandoc</h1>
+
+<p><code>Pandoc</code> is a text conversion tool that can convert text from markdown (or GitHub flavoured markdown ) to <code>groff</code>, a format that is used by the <code>man</code> command to show documentation.</p>
+
+<h2 id="installation-of-pandoc">Installation of pandoc</h2>
+
+<p>As pandoc is often not installed as a standard tool you first have to install it on your system.</p>
+
+<h3 id="installation-for-archlinux">Installation for Archlinux</h3>
+
+<pre><code>pacman -S pandoc
+</code></pre>
+
+<p>Note: The above command installs quite a lot of dependencies. This is because it uses many shared files from Haskell (the programming language pandoc is build with). If you don&rsquo;t have use for haskell otherwise there is a pandoc version on the AUR called XXXXXXX that does not have these dependencies.</p>
+
+<h2 id="create-a-man-page-with-pandoc">Create a man page with pandoc</h2>
+
+<p>To create a man page from markdown we need a markdown file first.
+Here is an example to start with:</p>
+
+<pre><code># Header 1
+
+Text for this `man** page
+
+## Header 2
+
+**bold text**
+
+The last line
+</code></pre>
+
+<p>Save this file as <code>test.md</code></p>
+
+<p>To convert this file into a man page format use this command in the folder where <code>test.md</code> is saved:</p>
+
+<pre><code>pandoc --standalone --from gfm --to man test.md --output test.1
+</code></pre>
+
+<p>The result is in the file <code>test.1</code> and you can look at the new formal with <code>less test.1</code>.
+This format is not how the man page will be shown. To see how your new file looks like as a man page, use:</p>
+
+<pre><code>man -l test.1
+</code></pre>
+
+<p>Let&rsquo;s have a quick look at the options of the <code>pandoc</code> command and what they do:</p>
+
+<p>&mdash; standalone: creates a complete man page, with complete structure</p>
+
+<p>&mdash; from: the format to convert from. In this example <code>gfm</code> (GitHub flavoured markdown) has been specified, but you can also write <code>markdown</code>. for the small differences see the <a href="https://pandoc.org/">Pandoc documentation</a></p>
+
+<p>&mdash; to: this is the format we want to concert the text to. In this case a man page</p>
+
+<p>&mdash; output: the name of the output file. You could also leave this out, then the output goes to <code>stdout</code>.</p>
+
+<h1 id="structure-of-a-man-page">Structure of a man page</h1>
+
+<p>Now that we can convert markdown to man pages it is worth mentioning that man pages often follow a certain structure. This makes it easier to find information.
+Of course before you don&rsquo;t publish a man page you can also follow your own structure.</p>
+
+<p>There are many header sections, that can be used. Only NAME is seen as mandatory.</p>
+
+<p>NAME - The name and a short description of the programme
+SYNOPSIS - A short summary how to use the programme. e.g.: <code>pandoc [options] [input-file]...</code>
+DESCRIPTION - Description of the programme
+OPTIONS - description of options
+RETURN VALUE - return values of programme once it terminates
+EXAMPLES - always good to give some examples
+NOTES - Additional info
+SEE ALSO - reference to other related programmes
+AUTHOR - as in author of the programme
+HISTORY - of the programme if that is helpful</p>
+
+<p>It is absolutely fine to use only some of these headers like for example: NAME, SYNOPSIS, OPTIONS or any other combination. Remember that NAME is expected.</p>
+
+<h1 id="creating-a-man-page-from-a-github-readme-md">Creating a man page from a GitHub README.md</h1>
+
+<p>If you have a README.md in for example GitHub that explains your programme reasonably well you could use that file to create your man page. All you have to do is to add the above headers in the decisive places and the convert the updated file into a man page.</p>
+
+<pre><code>pandoc --standalone --from gfm --to man README.md --output prog.1
+</code></pre>
+
+<p>You might have already noticed the unusual naming convention to end the man page with <code>.1</code>. The number classifies your man page and <code>.1</code> stands for general.</p></span>
+    </div><div id="post-tags">
+    	<ul class="menu">
+        <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/man-pages" rel="tag" itemprop="url">man pages</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/markdown" rel="tag" itemprop="url">markdown</a>
+    		</li></ul>
+    </div></article>
+
+  </main>
+
+        <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
+  
+  
+	<div class="widget">
+	
+		
+	
+	
+	<header>
+		<span class="widget-header"><span class="fa fa-pencil"></span> <a href="https://absolute-beginner.netlify.com/post/">Recent Posts</a></span>
+	</header>
+	
+			<a class="widget-header-small button" href="https://absolute-beginner.netlify.com/index.xml"><span class="fa fa-rss"></span> Subscribe to the Site</a>
+		<a class="widget-header-small button" href="https://absolute-beginner.netlify.com/post/index.xml"><span class="fa fa-rss"></span> Subscribe to Posts</a><ul><li><a href="https://absolute-beginner.netlify.com/post/man-markdown/">Creating a man page from markdown with pandoc</a></li></ul>
+</div>
+  
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
+	</header>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
+		
+	</ul>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
+	</header>
+	<div><a class="button" href="https://absolute-beginner.netlify.com/tags/man-pages" title="man pages">
+				man pages (1)
+			</a><a class="button" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
+				markdown (1)
+			</a></div>
+</div>
+</aside>
+
+      </div>
+      <footer class="row">
+        <div class="small-full medium-half small-text-center medium-text-left medium-left row">
+          <div class="small-full">
+            <small>
+              &copy; 2018
+              <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">The Absolute Beginner</span>
+              </span>
+            </small>
+          </div>
+          <div class="small-full row">
+            
+            
+            
+          </div>
+        </div>
+        
+        <div id="social-icons" class="row small-full medium-half small-text-center medium-text-right" style="align-self: center;">
+
+
+
+
+
+
+<a href="https://gitlab.com/BluestNight/BluestNight" class="row-item" rel="me nofollow">
+  <span class="fa fa-gitlab"></span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+      </footer>
+    </div>
+    
+  </body>
+</html>

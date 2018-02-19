@@ -5,18 +5,32 @@
     <link>https://absolute-beginner.netlify.com/</link>
     <description>Recent content on The Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 02 Oct 2015 21:49:20 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://absolute-beginner.netlify.com/" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>How to add pages to the menu</title>
-      <link>https://absolute-beginner.netlify.com/post/linked-post/</link>
-      <pubDate>Fri, 02 Oct 2015 21:49:20 +0200</pubDate>
+      <title>Creating a man page from markdown with pandoc</title>
+      <link>https://absolute-beginner.netlify.com/post/man-markdown/</link>
+      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/linked-post/</guid>
-      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
-menu = &amp;quot;main&amp;quot;  </description>
+      <guid>https://absolute-beginner.netlify.com/post/man-markdown/</guid>
+      <description>&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://absolute-beginner.netlify.com/about/</link>
+      <pubDate>Mon, 22 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/about/</guid>
+      <description>This site is written by a beginner.
+I have noted my experiences while I tied to discover this and that in the IT world. Basically I have taken notes while learning and then put it into a bit of form.
+It is a all a bit here and there. Still, I hope that it might be helpful for other beginners to see my experiences and to have a kick-start to see how some things work.</description>
     </item>
     
     
