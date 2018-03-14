@@ -90,62 +90,68 @@ I have chosen Qupzilla. Serves me well and is relativlely light.
 > `pacman -S qupzilla`
 
 ###AUR repository
-To use packages from the AUR repository it is very helpful to use a package managemr for AUR. Pacman does not cover AUR packages. There are many options but I like pacaur the best. It works like pacman with some additional functions for AUR packages.
+To use packages from the AUR repository it is very helpful to use a package managemr for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.
 
-execute this:
+```
+git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+```
 
-`curl -s https://gist.githubusercontent.com/Tadly/0e65d30f279a34c33e9b/raw/pacaur_install.sh | bash`
-
-(It seems sometimes you have to execte it twice to get pacaur)
-
+You can basically replace your use of pacman with trizen. Only for some special cases you can still use pacman.
 
 ### Graphical Editor: notepadqq
 Install notepadqq ( gui editor) from AUR repository
-> `pacaur -S howl`
+> `trizen -S howl`
 
-You don't need to use sudo for pacaur, you will be asked for the sudo passwd later
+You don't need to use sudo for trizen, you will be asked for the sudo passwd later
 
 ### Image viewer: LX-Image
 Install lximage package from AUR repository
-> `yaourt -S lximage-qt`
+> `trizen -S lximage-qt`
 
 ### PDF viewer: qPDFview
-> `yaourt -S qpdfview`
+> `trizen -S qpdfview`
 
 
 ### Disk space checker: QDirStat
-> `yaourt -S qdirstat`
+> `trizen -S qdirstat`
 
 ### Termina: LX Terminal
 Many LXQt editions use Qterminal. I like it but some keys are not accessible from programms in the console. So I use LX Termianl which has hardly any dependencies and is a bit smoother in my view.
 
 > `sudo pacman -S lxterminal`
 
-### Console Editor: Tilde
+### Console Editor Micro
+Install Micro from the AUR repository:
+
+> `trizen -S micro-bin`
+
+### Alternative: Console Editor: Tilde
 Install Tilde (console editor)  from AUR repository
 Tilde is a very user friendly console text editor that uses mostly the same keybindings as graphical apps like Ctrl-C for copy, Ctrl-V for paste and so on and comes with the menu (Alt-f for the file-menu for example)
 
 
 This package requires the packages `fakeroot` and  `pkg_config`.  Install these packages before you install tilde
 
-> `pacaur -S tilde`
+> `trizen -S tilde`
 
 
 When you install Tilde several libraries will be installed during the process as dependencies. Most called ligt3*, etc.
 
 ### Download the arch-anywhere tool fetchmirrors
 
-> `pacaur -S fetchmirrors`
+> `trizen -S fetchmirrors`
 
 Use this tool to set up the right mirror servers for the Arch repository
 
 'fetchmirrors --help` for help
 
-## pacaur PGP Tip
+## trizen PGP Tip
 
-If you face a PGP authentication issue using yaourt check this:
+If you face a PGP authentication issue using trizen check this:
 
-Error message during yaourt build is:
+Error message during trizen build is:
 `ERROR: One or more PGP signatures could not be verified!`
 :
 
