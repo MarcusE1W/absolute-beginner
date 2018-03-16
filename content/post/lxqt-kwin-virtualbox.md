@@ -6,7 +6,7 @@ disable_comments = false
 categories = ["Desktop Environments"]
 tags = ["Linux"]
 aliases = ["/post/all-grown-up/"]
-draft = true
+draft = false
 +++
 
 

@@ -6,7 +6,8 @@
     <description>Recent content on The Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 19 Feb 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://absolute-beginner.netlify.com/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://absolute-beginner.netlify.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,8 +21,6 @@
 &lt;p&gt;&lt;/p&gt;</description>
     </item>
     
-    
-    
     <item>
       <title>About</title>
       <link>https://absolute-beginner.netlify.com/about/</link>
@@ -33,6 +32,16 @@ I have noted my experiences while I tied to discover this and that in the IT wor
 It is a all a bit here and there. Still, I hope that it might be helpful for other beginners to see my experiences and to have a kick-start to see how some things work.</description>
     </item>
     
+    <item>
+      <title>An Archlinux Desktop with LXQt and KWin for beginner</title>
+      <link>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</link>
+      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</guid>
+      <description>&lt;p&gt;LXQt-KWin Description after front mattter&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
   </channel>
 </rss>

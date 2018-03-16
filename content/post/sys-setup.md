@@ -23,6 +23,14 @@ To change the `TERM` variable in the shell add
 export TERM=xterm-256color
 ```
 
+### Atom editor
+- Comand palette remembers last word
+- set totally fabulous East End syntax/ui theme 
+- remove RET from autocomplete-plus (set in settings menu)
+- set ctrl-space for command pallete
+- set alt-pageup/down to swith between left an right pane
+- TODO: check keymap settings to
+
 ### Termite
 To create an initial config in Archlinux copy the standard one into `~/.config/termite`
 ```
@@ -69,11 +77,39 @@ bindsym $mod+Next workspace next
 bindsym $mod+Prior workspace prev
 ```
 
+## nodejs and npm
+Install npm and nodejs with
+```
+trizen -S nodejs
+```
+
+In most of my attempts npm did not work well. Installing locally gave no result and installing globally failed with an error:
+> npm ERR! Error: EACCES: permission denied, access '/usr/lib/node_modules
+
+So this is the [suggestion](https://docs.npmjs.com/getting-started/fixing-npm-permissions) you can find in the npm manual.
+
+1. Make a directory for global installations:
+```
+ mkdir ~/.npm-global
+```
+2. Configure npm to use the new directory path:
+```
+ npm config set prefix '~/.npm-global'
+```
+3. Open or create a ~/.profile (or .bash_profile, or whatever it is on your system) file and add this line:
+```
+ export PATH=~/.npm-global/bin:$PATH
+```
+5. Back on the command line, update your system variables:
+```
+6.  source ~/.profile
+```
+
 # System setup
 
 Install AUR helper `trizen`
 
-Chose a directory to install trizen [this can be removed after the installatioin? ]
+Chose a directory to install trizen [this can be removed after the installation? ]
 ```
 git clone https://aur.archlinux.org/trizen.git
 cd trizen
