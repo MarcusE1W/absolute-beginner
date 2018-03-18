@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Archlinux Desktop with LXQt and KWin for beginner</title>
+
+    
+    
+    
+    <link rel="preload" href="https://absolute-beginner.netlify.com/styles.css" as="style" />
+
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
+
+    <meta name="description" itemprop="description" content="&lt;p&gt;LXQt-KWin Description after front mattter&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.37.1" /><meta name="keywords" itemprop="keywords" content="Linux" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/">
+
+    <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
+
+    <link rel="stylesheet" type="text/css" href="https://absolute-beginner.netlify.com/styles.css">
+    <script>
+ 
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <script>var _paq = undefined;</script></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div id="site-container">
+      <div id="site-header">
+        <a href="https://absolute-beginner.netlify.com">
+          <header class="small-text-left medium-text-left row">
+            <div class="row-item">
+              <span id="site-title" itemprop="name">The Absolute Beginner</span>
+              <br/><span id="site-tagline">Experiences from a permanent beginner</span>
+            </div>
+          </header>
+        </a>
+        <label for="menu-toggle-box"><div id="menu-toggle" class="main-nav no-select"><span><span class="fa fa-bars"></span> MENU</span></div></label>
+        <input type="checkbox" id="menu-toggle-box" class="hide"/>
+        <nav id="main-nav">
+          <ul class="menu"><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-about" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="/about/" >
+      <span>ABOUT</span></a></li></ul>
+        </nav>
+        </div>
+      <div id="main-container" class="row" role="main" itemprop="mainContentOfPage">
+        
+        
+        
+<main class="row-item small-full medium-two-thirds" >
+  <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="keywords desc">
+    <header id="page-header">
+      <h1 itemprop="headline">An Archlinux Desktop with LXQt and KWin for beginner</h1><p id="post-metadata" class="row"><span class="row-item">
+          <span class="fa fa-clock-o"></span>
+          <strong>Published:</strong>
+          <time datetime="2017-12-03" content="2017-12-03" itemprop="datePublished">December 03, 2017</time>
+        </span><span class="row-item">
+          <span class="fa fa-folder"></span>
+          <a href="https://absolute-beginner.netlify.com/categories/desktop-environments" rel="category">Desktop Environments</a>
+        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">4 minutes</span></span></p>
+      
+    </header>
+    
+    <div id="post-content">
+      <span itemprop="articleBody"><p>LXQt-KWin Description after front mattter</p>
+
+<p></p>
+
+<p>#KWin and LXQt and VirtualBox</p>
+
+<p>This guide describes how to set up KWin and LXQt in Virtualbox using Arch Anywhere.</p>
+
+<p>The basic setup should work with any Computer, Virtualbox is just what I use.</p>
+
+<p>I have tried to install a relative light version with only a small memory footprint. There might be a more elegant solution though. If someone has an idea, please let me know.</p>
+
+<h2 id="setup-virtualbox">Setup VirtualBox</h2>
+
+<ul>
+<li>2 cores</li>
+<li>2 GB ram (If you can spare that, 1GB also works, I hav not tested with less)</li>
+<li>Chipset: ICH9</li>
+<li>3D acceleration on ?</li>
+<li>bi-directional copy and paste</li>
+<li>Display mem 64MB</li>
+<li>Shared folder (this is nice to have, later I will show how to set up the share)</li>
+</ul>
+
+<h2 id="run-arch-anywhere">Run Arch Anywhere</h2>
+
+<p>Start Arch Anywhere. I have chosen the following setup. Feel free to change.</p>
+
+<ul>
+<li>no Wifi: network comes from the host-pc of VirtualBox.</li>
+<li>no swap partition (a swap file can be set up later if required, I don&rsquo;t have one)</li>
+<li>Accept virtualbox-guest-additions</li>
+</ul>
+
+<h3 id="additional-apps">Additional apps</h3>
+
+<ul>
+<li>VLC: I have chosen that for video</li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<ol>
+<li>choose LXQT as desktop environment</li>
+<li>Reboot</li>
+</ol>
+
+<h2 id="after-the-first-boot">After the first boot</h2>
+
+<ol>
+<li>login as root</li>
+
+<li><p>Create a user  in the terminal
+&gt; <code>useradd -m -G users,wheel,audio  archuser</code>
+&gt;
+&gt;<code>passwd archuser</code></p></li>
+
+<li><p>Update the system
+&gt; <code>sudo pacman -Syu</code></p></li>
+
+<li><p>Install Kwin
+&gt; <code>sudo pacman -S kwin</code></p></li>
+
+<li><p>Instal Kwin system setting dialog
+This enanbles the Kwin setting dialog. You can access the setting by clicking in the upper left menu of a window. There you see <em>more actions</em> and in that menu you see
+&gt; <code>sudo pacman -S kde-cli-tools</code></p></li>
+
+<li><p>Kwin-Gtk compability
+To change the theme of GTK apps in LXQt you need the LXDE appearance app. It has almost no dependencies, so it does not add much.
+&gt; <code>sudo pacman -S lxappearance</code>
+In the lxappearance app you can chose the theme the gtk apps use.
+To see gtk apps with the Kwin Breeze themes add
+&gt; <code>sudo pacman -S breeze-gtk</code></p></li>
+
+<li><p>Fine tuning
+In my installation I had trouble with changing apps using Alt-Tab. Looking into the logs it turned out an app called <code>kglobalaccel5</code> was not running. I have no idea where this app should be started but adding it to the LXQt autostart did it for me.
+&gt; add to LXQt autostart:
+<code>Menu -&gt; Preferences -&gt; LXQT settings -&gt; Session Settings</code>
+&gt; In tab Autostart add kglobalaccel5 to LXQT Autostart</p></li>
+</ol>
+
+<p>( If you still have trouble check the  Kwin settings in tab <code>Task switcher</code>.  The flag <code>current activity</code> has to be set to on )</p>
+
+<h2 id="install-additional-software">Install additional software</h2>
+
+<p>This is a selection of mostly Qt software that I found usefull.</p>
+
+<h3 id="browser">Browser</h3>
+
+<p>I have chosen Qupzilla. Serves me well and is relativlely light.
+&gt; <code>pacman -S qupzilla</code></p>
+
+<p>###AUR repository
+To use packages from the AUR repository it is very helpful to use a package managemr for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.</p>
+
+<pre><code>git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+</code></pre>
+
+<p>You can basically replace your use of pacman with trizen. Only for some special cases you can still use pacman.</p>
+
+<h3 id="graphical-editor-notepadqq">Graphical Editor: notepadqq</h3>
+
+<p>Install notepadqq ( gui editor) from AUR repository
+&gt; <code>trizen -S howl</code></p>
+
+<p>You don&rsquo;t need to use sudo for trizen, you will be asked for the sudo passwd later</p>
+
+<h3 id="image-viewer-lx-image">Image viewer: LX-Image</h3>
+
+<p>Install lximage package from AUR repository
+&gt; <code>trizen -S lximage-qt</code></p>
+
+<h3 id="pdf-viewer-qpdfview">PDF viewer: qPDFview</h3>
+
+<blockquote>
+<p><code>trizen -S qpdfview</code></p>
+</blockquote>
+
+<h3 id="disk-space-checker-qdirstat">Disk space checker: QDirStat</h3>
+
+<blockquote>
+<p><code>trizen -S qdirstat</code></p>
+</blockquote>
+
+<h3 id="termina-lx-terminal">Termina: LX Terminal</h3>
+
+<p>Many LXQt editions use Qterminal. I like it but some keys are not accessible from programms in the console. So I use LX Termianl which has hardly any dependencies and is a bit smoother in my view.</p>
+
+<blockquote>
+<p><code>sudo pacman -S lxterminal</code></p>
+</blockquote>
+
+<h3 id="console-editor-micro">Console Editor Micro</h3>
+
+<p>Install Micro from the AUR repository:</p>
+
+<blockquote>
+<p><code>trizen -S micro-bin</code></p>
+</blockquote>
+
+<h3 id="alternative-console-editor-tilde">Alternative: Console Editor: Tilde</h3>
+
+<p>Install Tilde (console editor)  from AUR repository
+Tilde is a very user friendly console text editor that uses mostly the same keybindings as graphical apps like Ctrl-C for copy, Ctrl-V for paste and so on and comes with the menu (Alt-f for the file-menu for example)</p>
+
+<p>This package requires the packages <code>fakeroot</code> and  <code>pkg_config</code>.  Install these packages before you install tilde</p>
+
+<blockquote>
+<p><code>trizen -S tilde</code></p>
+</blockquote>
+
+<p>When you install Tilde several libraries will be installed during the process as dependencies. Most called ligt3*, etc.</p>
+
+<h3 id="download-the-arch-anywhere-tool-fetchmirrors">Download the arch-anywhere tool fetchmirrors</h3>
+
+<blockquote>
+<p><code>trizen -S fetchmirrors</code></p>
+</blockquote>
+
+<p>Use this tool to set up the right mirror servers for the Arch repository</p>
+
+<p>&lsquo;fetchmirrors &ndash;help` for help</p>
+
+<h2 id="trizen-pgp-tip">trizen PGP Tip</h2>
+
+<p>If you face a PGP authentication issue using trizen check this:</p>
+
+<p>Error message during trizen build is:
+<code>ERROR: One or more PGP signatures could not be verified!</code>
+:</p>
+
+<p>If you trust the package copy the public <code>KEYID</code> from the error message
+Then use these commands in the console to add the new key:</p>
+
+<blockquote>
+<p>gpg &ndash;recv-key <code>KEYID</code>
+gpg &ndash;lsign <code>KEYID</code></p>
+</blockquote>
+
+<p>For details how that works <a href="http://allanmcrae.com/2015/01/two-pgp-keyrings-for-package-management-in-arch-linux/">read:</a></p>
+
+<p>Helpful hints, comments and questions are welcome</p></span>
+    </div><div id="post-tags">
+    	<ul class="menu">
+        <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/linux" rel="tag" itemprop="url">linux</a>
+    		</li></ul>
+    </div></article>
+
+  </main>
+
+        <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
+  
+  
+	<div class="widget">
+	
+		
+	
+	
+	<header>
+		<span class="widget-header"><span class="fa fa-pencil"></span> <a href="https://absolute-beginner.netlify.com/post/">Recent Posts</a></span>
+	</header>
+	
+			<a class="widget-header-small button" href="https://absolute-beginner.netlify.com/index.xml"><span class="fa fa-rss"></span> Subscribe to the Site</a>
+		<a class="widget-header-small button" href="https://absolute-beginner.netlify.com/post/index.xml"><span class="fa fa-rss"></span> Subscribe to Posts</a><ul><li><a href="https://absolute-beginner.netlify.com/post/man-markdown/">Creating a man page from markdown with pandoc</a></li><li><a href="https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/">An Archlinux Desktop with LXQt and KWin for beginner</a></li></ul>
+</div>
+  
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
+	</header>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
+		
+	</ul>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
+	</header>
+	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
+				linux (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/man-pages" title="man pages">
+				man pages (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
+				markdown (1)
+			</a></div>
+</div>
+</aside>
+
+      </div>
+      <footer class="row">
+        <div class="small-full medium-half small-text-center medium-text-left medium-left row">
+          <div class="small-full">
+            <small>
+              &copy; 2018
+              <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">The Absolute Beginner</span>
+              </span>
+            </small>
+          </div>
+          <div class="small-full row">
+            
+            
+            
+          </div>
+        </div>
+        
+        <div id="social-icons" class="row small-full medium-half small-text-center medium-text-right">
+
+
+
+
+
+
+<a href="https://gitlab.com/BluestNight/BluestNight" class="row-item" rel="me nofollow">
+  <span class="fa fa-gitlab"></span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+      </footer>
+    </div>
+    
+  </body>
+</html>
