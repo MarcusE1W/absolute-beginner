@@ -21,6 +21,7 @@ enableRobotsTXT = true
 #    thumbnail = "images/wale.jpg"
     thumbnail_radius = "10%"
 
+
 # Privacy policy support
 # [Params.iubenda]
 #     id = "8219381"
@@ -42,7 +43,7 @@ enableRobotsTXT = true
 
 [Params.widgets]
     search = false
-    recent_articles = true
+    recent_articles = false
     categories = true
     tags = true
     tags_counter = true
