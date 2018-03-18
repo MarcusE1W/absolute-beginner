@@ -69,7 +69,7 @@ enableRobotsTXT = true
 [Params.color]
     page_background = "#e2e2e2"
     main_background = "#3eb545"
-    alt_background = "#353535"
+    alt_background = "#fab607"
     main_text = "#e2e2e2"
     alt_text = "#e2e2e2"
     accent = "#106316"

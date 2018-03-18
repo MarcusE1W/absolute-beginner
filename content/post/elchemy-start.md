@@ -1,5 +1,5 @@
 +++
-title = "Ocaml for beginner"
+title = "Elchemy for beginner"
 date = "2017-12-07"
 hide_authorbox = false
 disable_comments = false
@@ -9,87 +9,69 @@ aliases = ["/post/all-grown-up/"]
 draft = true
 +++
 
-Description after front mattter
+ELchemy compiles code compatible with ELm to ELixir.
 
 <!--more-->
 
 
 # Intro
 
-Ocaml is an interesting language and technic. However for the beginner it is not that easy to get your head around which tools to use.
+Elm on server compiled to Elixir.
 
-There seems to be consensus that the package manager to use is `opam`. That makes at least the installation of the other tools easy once the preferred tool has been chosen.
-
-Other things that need to be considered are (and this list is from the beginners view and probably not complete):
-
-1. Standard Library
-2. Build system
-3. The editor
-4. The interactive REPL (called toplevel in the Ocaml world)
-5. Tutorials
-
-##  The Standard Library
-The standard library provides the most basic functions every developer needs from time to time like print, file handling and so on. You would be foriven to think that it beeing called the standard library it would be a clear thing and that's what to use.
-Apparently the original Ocaml std. library seems to have a few design inconsistencies and gaps. This lead to the development to new "standard libraries".
-A nice but not conclusise discussion about the best standard library can be found [here](https://www.reddit.com/r/ocaml/comments/665w26/which_standard_library_is_the_best/).
-
-I have found  mostly these libraries discussed:
-- the original one: with inconsistencies and gaps
-- Batteries: A community driven effort to replace the original Std. Library.
-- Core: A very comprehensive library but it comes as a big block and if you use one function you end up with the full library linked to your programm wich makes it unneccessary big.
-- Containers: Community driven library to replace the Standard Library. It is an a bit newer effort compared to Batteries.
-- [Base](https://github.com/janestreet/base) and Stdio: This has been developed based on the learning of the development of Core. The Base library is small and covers about the same as the original std. library with the exception that standard input - output is in a seperate library called 'Stdio'. The documentation for Base and Stdio is still improving. How Core and Base are related is a bit unclear to me.
-
-I am sure all of these libraries are useful, and it is now for the beginner to decide what to use. Not ideal.
-
-Based on gut feeling and a look on the documentation and which library has been downloaded how often from OPAM I will go with Base and Stdio.
-
-##  The build system
-
-The build system manages all dependencies that your programme might have and
-There are tools available for Ocaml like: ocamlbuild and oasis, jenga, probably many others and jbuilder. To make it short I think the general advise is to use jbuilder for new projects. As a beginner that's a given, so jbuilder it is.
-
-##  The editor
-This text is not to give you advice which editor to use. Emacs, Vim, NeoVim, Spacemacs, Sublime text,  Atom  and VScode (plus more) seem all to be popular choices for   Ocaml.
-If you don't have a choise already I fined the open source options Atom and VScode quite approchable.
-The important bit as I see it is that the editor supports the Merlin Ocaml editor tool. Merlin provides essential functions for Ocaml editing that can be implemented by all editors.
-The above mentioned editors all support Merlin more or less.
-Merlin requires a description (.merlin file) of your programme in your project folder. It comes handy then that the build system jbuilder creates the .merlin file automatically.
-
-##  Repl / toplevel
-The Ocaml world the tool to interactively execute commands is called top level. In many other languages this tool is called REPL (R.. Execute P.. Loop). It tool is especiall tractiacal for learnig and is referred to in most tutorials. The standard REPL can be started with `ocaml`. Hoever most people reccomed an alternative REPL called `utop` and is is the most reccomended REPL.
-
-# Ocaml installation on Archlinux
-
-- install: opam
-- install: rsync
-- a package called gringo is needed, it is part of community package clingo
-- follow this instructions: [link](https://github.com/realworldocaml/book/wiki/Installation-Instructions)
-- install: opam install core utop
-- run REPL utop the first time, remember to write ;; if something should be executed, exit utop with #quit;;
+This is a  [good](https://hackernoon.com/elmchemy-write-type-safe-elixir-code-with-elms-syntax-part-1-introduction-8968b76d721d) docu.
 
 
-### Switch to another Ocaml version
+# Install Elchemy
 
-`opam switch list` to see the availabe Ocaml versions
-`opam switch set XXX` to switch to versioin XXX. if the version is not yet installed it will be installed.
+Muehsam
+
+Check if the install was correct:
+```
+elchemy version
+```
 
 
-## Ocaml tutorials for beginner
+# Getting started
 
-- RWO
-- tryme
-- Ocaml doc
+Maybe create a folder for elchemy where you want to save all your elchemy code. Then create your first elchemy test
+```
+mix new test1
 
-# Ocaml and FP learnings (part 2)
+cd test1
+```
+This basically sets up an Elixir
 
-- Imutability
-- Sum types
-- Composition
-- Pattern matching incl. my super step over
-- Option types (oder wie das heisst in Ocaml)
-- Type composition and DDD and ADT and avoid errors with types
-- Maybes | Nothing and so on
-- How to avoid for loops and have fun. (Da war was in Erlang for good oder so)
-- Basicaly it should be expalined not only how to use but why is that useful in a functinal way
-- Currying, aber nur wenn das wirklich useful ist
+TO add Elchemy in this folder use:
+```
+elchemy init
+```
+
+You will see something similar to this, depending on your elchemy version
+> Found existing entry: /home/mmw/.mix/archives/elchemy-0.6.6
+> Are you sure you want to replace it with "https://github.com/wende/elchemy/releases/download/0.6.6/elchemy-0.6.6.ez"? [Yn]
+Type `y`
+
+elchemy init will download some files and then complete with this info:
+
+> Elchemy 0.6.6 initialised. Make sure to add:
+
+>	**|> Code.eval_file("elchemy.exs").init**
+
+> to your mix.exs file as the last line of the project() function.
+> This pipes the project keyword list to the elchemy init function to configure some additional values.
+
+As mentioned in the info, you have to open the file mix.exs in your current folder and edit it to add the marked line. If your editor of choice then the command is
+
+`atom mix.exs`
+
+Here find the last line of the project function `def project do`. That is the line after `]` and before `end`.
+
+Here add `|> Code.eval_file("elchemy.exs").init` as mentioned above. The result should look like this:
+
+```
+]
+|> Code.eval_file("elchemy.exs").init
+end
+```
+
+Then run `mix test` to check if everything went fine. You probably will see some warnings, but there should be not errors.

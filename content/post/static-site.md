@@ -48,7 +48,7 @@ to check the installation was successful type `hugo version`
 
 ### Add a theme
 
-As an example the Dream template from the [Hugo template page](https://themes.gohugo.io/) will be installed in the new site
+As an example the Dream template from the [Hugo template page](https://themes.gohugo.io/) will be installed in the new site (e.g quickstart)
 
 ```bash
 cd quickstart
@@ -58,7 +58,7 @@ git submodule add https://github.com/g1eny0ung/hugo-theme-dream themes/dream
 
 **Configure the Dream theme**
 
-Do a lot
+Edit `config.toml`
 
 ### Add articles
 

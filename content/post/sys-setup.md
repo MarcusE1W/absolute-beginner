@@ -25,7 +25,7 @@ export TERM=xterm-256color
 
 ### Atom editor
 - Comand palette remembers last word
-- set totally fabulous East End syntax/ui theme 
+- set totally fabulous East End syntax/ui theme
 - remove RET from autocomplete-plus (set in settings menu)
 - set ctrl-space for command pallete
 - set alt-pageup/down to swith between left an right pane
@@ -131,3 +131,21 @@ usermod -a -G group username
 ```
 sudo usermod -a -G vboxsf mmw
 ```
+
+### Change (bash) shell to fish.
+This describes how to make fish your default shell.
+Fist install the fish shell.
+```
+trizen -S fish
+```
+
+Find the documentation [here](https://fishshell.com/docs/current/tutorial.html#tut_learning_Fish)
+
+To make fish your default shell you need to find out it's path with `whereis fish`. Most likely it's `/usr/bin/fish`.
+
+Once you have the path to fish use the command `chsh` (change shell) to make fish the default shell.
+```
+chsh -s /usr/bin/fish
+```
+Instead of using setting varialbles (and this includes the $PATH) in .bashrc or .profile or so in fish you use the `set` command.
+So with `set TERM xterm-256color` you add a variable.
