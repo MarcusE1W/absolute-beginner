@@ -1,5 +1,5 @@
 +++
-title = "An Archlinux Desktop with LXQt and KWin for beginner"
+title = "An Archlinux Desktop with LXQt and KWin"
 date = "2017-12-03"
 hide_authorbox = false
 disable_comments = false
@@ -10,7 +10,7 @@ draft = false
 +++
 
 
-LXQt-KWin Description after front mattter
+Setting up LXQt with KWin in Virtualbox using Anarchy Linux
 
 <!--more-->
 
