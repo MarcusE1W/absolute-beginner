@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My system setup</title>
+
+    
+    
+    
+    <link rel="preload" href="https://absolute-beginner.netlify.com/styles.css" as="style" />
+
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
+
+    <meta name="description" itemprop="description" content="&lt;p&gt;This is my notepad to remember how to set up my system.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.37.1" /><meta name="keywords" itemprop="keywords" content="Archlinux" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/sys-setup/">
+
+    <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
+
+    <link rel="stylesheet" type="text/css" href="https://absolute-beginner.netlify.com/styles.css">
+    <script>
+ 
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <script>var _paq = undefined;</script></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div id="site-container">
+      <div id="site-header">
+        <a href="https://absolute-beginner.netlify.com">
+          <header class="small-text-left medium-text-left row">
+            <div class="row-item">
+              <span id="site-title" itemprop="name">The Absolute Beginner</span>
+              <br/><span id="site-tagline">Experiences from a permanent beginner</span>
+            </div>
+          </header>
+        </a>
+        <label for="menu-toggle-box"><div id="menu-toggle" class="main-nav no-select"><span><span class="fa fa-bars"></span> MENU</span></div></label>
+        <input type="checkbox" id="menu-toggle-box" class="hide"/>
+        <nav id="main-nav">
+          <ul class="menu"><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-about" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="/about/" >
+      <span>ABOUT</span></a></li></ul>
+        </nav>
+        </div>
+      <div id="main-container" class="row" role="main" itemprop="mainContentOfPage">
+        
+        
+        
+<main class="row-item small-full medium-two-thirds" >
+  <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="keywords desc">
+    <header id="page-header">
+      <h1 itemprop="headline">My system setup</h1><p id="post-metadata" class="row"><span class="row-item">
+          <span class="fa fa-clock-o"></span>
+          <strong>Published:</strong>
+          <time datetime="2018-03-06" content="2018-03-06" itemprop="datePublished">March 06, 2018</time>
+        </span><span class="row-item">
+          <span class="fa fa-folder"></span>
+          <a href="https://absolute-beginner.netlify.com/categories/system" rel="category">System</a>
+        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">5 minutes</span></span></p>
+      
+    </header>
+    
+    <div id="post-content">
+      <span itemprop="articleBody"><p>This is my notepad to remember how to set up my system.</p>
+
+<p></p>
+
+<h1 id="set-up-programms">Set up programms</h1>
+
+<p>This whole article is probably only useful to myself, unless you use similar programms as me, in which case you are welcome to have a look how I try to set mine up.</p>
+
+<h3 id="micro-editor">Micro Editor</h3>
+
+<p>Micro does not (yet) work with the termite terminal out of the box
+To change the <code>TERM</code> variable in the shell add</p>
+
+<pre><code>export TERM=xterm-256color
+</code></pre>
+
+<h3 id="atom-editor">Atom editor</h3>
+
+<ul>
+<li>Comand palette remembers last word</li>
+<li>set totally fabulous East End syntax/ui theme</li>
+<li>remove RET from autocomplete-plus (set in settings menu)</li>
+<li>set ctrl-space for command pallete</li>
+<li>set alt-pageup/down to swith between left an right pane</li>
+<li>TODO: check keymap settings to</li>
+</ul>
+
+<h3 id="termite">Termite</h3>
+
+<p>To create an initial config in Archlinux copy the standard one into <code>~/.config/termite</code></p>
+
+<pre><code>mkdir ~/.config/termite
+cp /etc/xdg/termite/config ~/.config/termite/config
+</code></pre>
+
+<h3 id="fonts">Fonts</h3>
+
+<p>Install Iosevka for terminal</p>
+
+<pre><code>trizen -S ttf-iosevka-term-ss04
+</code></pre>
+
+<p>The font name can then be found by listing all fonts <code>fc-list</code> and searching for elements of the name with <code>grep</code>. e.g.</p>
+
+<pre><code>fc-list | grep iosevka
+</code></pre>
+
+<h3 id="pacman">Pacman</h3>
+
+<p>Update archlinux mirror list
+first fetchmirrors needs to be installed</p>
+
+<pre><code> trizen -S fetchmirrors
+</code></pre>
+
+<p>Then run as root for in this case UK</p>
+
+<pre><code>sudo fetchmirrors -c GB
+</code></pre>
+
+<h3 id="i3">i3</h3>
+
+<p>To get rid of the title bar on top of every window add this (at the end) of the <code>.~/.config/i3/config</code> file</p>
+
+<pre><code>new_window pixel 1
+</code></pre>
+
+<p>This leafes you with a small (blue) frame arounf the active window. If you want is to be more visible change the number to 2 or 3.
+TO make the frame go away entirely use 0 or <code>new window none</code></p>
+
+<p>To switch from one workspace to the next with the <code>Win</code> plus <code>PageUp</code> / <code>PageDown</code> keys add this in the config file.</p>
+
+<pre><code>bindsym $mod+Next workspace next
+bindsym $mod+Prior workspace prev
+</code></pre>
+
+<h3 id="nodejs-and-npm">nodejs and npm</h3>
+
+<p>Install npm and nodejs with</p>
+
+<pre><code>trizen -S nodejs
+</code></pre>
+
+<p>In most of my attempts npm did not work well. Installing locally gave no result and installing globally failed with an error:
+&gt; npm ERR! Error: EACCES: permission denied, access &lsquo;/usr/lib/node_modules</p>
+
+<p>So this is the <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">suggestion</a> you can find in the npm manual.</p>
+
+<ol>
+<li>Make a directory for global installations:
+<code>
+mkdir ~/.npm-global
+</code></li>
+<li>Configure npm to use the new directory path:
+<code>
+npm config set prefix '~/.npm-global'
+</code></li>
+<li>Open or create a ~/.profile (or .bash_profile, or whatever it is on your system) file and add this line:
+<code>
+export PATH=~/.npm-global/bin:$PATH
+</code></li>
+<li>Back on the command line, update your system variables:
+```</li>
+<li>source ~/.profile
+```</li>
+</ol>
+
+<h1 id="system-setup">System setup</h1>
+
+<p>Install AUR helper <code>trizen</code></p>
+
+<p>Chose a directory to install trizen [this can be removed after the installation? ]</p>
+
+<pre><code>git clone https://aur.archlinux.org/trizen.git
+cd trizen
+makepkg -si
+</code></pre>
+
+<h2 id="add-user-to-group">Add user to group</h2>
+
+<p>Check the assigned groups for a user with <code>groups</code></p>
+
+<p>To add a user to a group use this pattern</p>
+
+<pre><code>usermod -a -G group username
+</code></pre>
+
+<p><em>Note:</em> The change is only effective after the next login.</p>
+
+<p><em>Give user access to Virtualbox shared folder</em></p>
+
+<pre><code>sudo usermod -a -G vboxsf mmw
+</code></pre>
+
+<p>?? seems not to work &hellip;</p>
+
+<h2 id="change-bash-shell-to-fish">Change (bash) shell to fish.</h2>
+
+<p>This describes how to make fish your default shell.
+Fist install the fish shell.</p>
+
+<pre><code>trizen -S fish
+</code></pre>
+
+<p>Find the documentation <a href="https://fishshell.com/docs/current/tutorial.html#tut_learning_Fish">here</a></p>
+
+<p>To make fish your default shell you need to find out it&rsquo;s path with <code>whereis fish</code>. Most likely it&rsquo;s <code>/usr/bin/fish</code>.</p>
+
+<p>Once you have the path to fish use the command <code>chsh</code> (change shell) to make fish the default shell.</p>
+
+<pre><code>chsh -s /usr/bin/fish
+</code></pre>
+
+<p>Instead of using setting varialbles (and this includes the $PATH) in .bashrc or .profile or so in fish you use the <code>set</code> command.
+So with <code>set TERM xterm-256color</code> you add a variable.</p>
+
+<h2 id="spectrwm-tiling-window-manager">spectrwm tiling window manager</h2>
+
+<p>Install with</p>
+
+<pre><code>trizen -S spectrwm
+</code></pre>
+
+<p>For a first overview the man pages are usefull: <code>man spectrwm</code></p>
+
+<h3 id="first-configuration">First Configuration</h3>
+
+<p>spectrwm looks in ~/.spectrwm first and then for /etc/spectrwm.conf
+So if you do not have config file in your home folder yet, copy it from /etc</p>
+
+<pre><code>cp /etc/spectrwm.conf ~/.spectrwm.conf
+</code></pre>
+
+<p>For Archlinux the standard <code>bar_font</code> paramenter needs to be updated as described in the <a href="...">Wiki</a></p>
+
+<p>To change keybindings you can copy one of the predefined keyboard mappings in folder <code>/etc/spectrwm</code></p>
+
+<p>To copy e.g. the us keyboard layout into your .config forlder type:</p>
+
+<pre><code>mkdir ~/.config/spectrwm
+cp cp /etc/spectrwm/spectrwm_us.conf ~/.config/spectrwm/spectrwm_us.conf
+</code></pre>
+
+<p>To point spectrwm to your new keymapping file you need to update the .spectrwm.conf file.</p>
+
+<p>Update keyboard_mapping like this:</p>
+
+<pre><code># This allows you to include pre-defined key bindings for your keyboard layout.
+keyboard_mapping = ~/.config/spectrwm/.spectrwm_us.conf
+</code></pre>
+
+<p>Last but not least, change your .xinitrc</p>
+
+<pre><code>exec spectrwm
+</code></pre>
+
+<h3 id="spectrwm-keymap-configuration">Spectrwm keymap configuration</h3>
+
+<p>I have found the following keybindings helpful:</p>
+
+<pre><code>bind[focus_next]	= MOD+Right      # Move to next programme on the same workspace
+bind[focus_prev]	= MOD+Left
+bind[term]		    = MOD+Return     # Start a terminal
+bind[ws_next]	    = MOD+Next
+bind[ws_prev]	    = MOD+Prior
+</code></pre>
+
+<p>If you use Linux in a Virtual machine on Windows like me then you will find that Win+l is permanently used by Windows to lock the screen. Even if you use VirtualBox. That means MOD+l to grow the master window will also trigger the screen lock. I just use the  key next to <code>l</code> to grow the master window. In my case ;</p>
+
+<p>For Spectrwm you have to use xkb xharacter names. You can find the name of a character with the tool <code>xev</code>. The output is a bit messy and for ; looks like this:</p>
+
+<blockquote>
+<p>KeyPress event, serial 37, synthetic NO, window 0x1600001,</p>
+
+<p>root 0x2bd, subw 0x0, time 64418407, (590,691), root:(1265,692),</p>
+
+<p>state 0x0, keycode 47 (keysym 0x3b, <strong>semicolon</strong>), same_screen YES,</p>
+
+<p>XLookupString gives 1 bytes: (3b) &ldquo;;&rdquo;</p>
+
+<p>XmbLookupString gives 1 bytes: (3b) &ldquo;;&rdquo;</p>
+
+<p>XFilterEvent returns: False</p>
+</blockquote>
+
+<p>So the xkb keycode for ; is - tada <strong>semicolon</strong></p>
+
+<p>So to bind the master_grow command to MOD+; you have to add this line to the keymap file.</p>
+
+<pre><code>bind[master_grow]	= MOD+semicolon  # Make current window smaller.
+</code></pre></span>
+    </div><div id="post-tags">
+    	<ul class="menu">
+        <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/archlinux" rel="tag" itemprop="url">archlinux</a>
+    		</li></ul>
+    </div></article>
+
+  </main>
+
+        <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
+  
+  
+	
+  
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
+	</header>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		
+	</ul>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
+	</header>
+	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
+				archlinux (2)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
+				kwin (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
+				linux (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/lxqt" title="lxqt">
+				lxqt (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/man-pages" title="man pages">
+				man pages (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
+				markdown (1)
+			</a></div>
+</div>
+</aside>
+
+      </div>
+      <footer class="row">
+        <div class="small-full medium-half small-text-center medium-text-left medium-left row">
+          <div class="small-full">
+            <small>
+              &copy; 2018
+              <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">The Absolute Beginner</span>
+              </span>
+            </small>
+          </div>
+          <div class="small-full row">
+            
+            
+            
+          </div>
+        </div>
+        
+        <div id="social-icons" class="row small-full medium-half small-text-center medium-text-right">
+
+
+
+
+
+
+<a href="https://gitlab.com/BluestNight/BluestNight" class="row-item" rel="me nofollow">
+  <span class="fa fa-gitlab"></span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+      </footer>
+    </div>
+    
+  </body>
+</html>

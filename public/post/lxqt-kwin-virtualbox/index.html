@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>An Archlinux Desktop with LXQt and KWin for beginner</title>
+    <title>An Archlinux Desktop with LXQt and KWin</title>
 
     
     
@@ -15,7 +15,7 @@
     <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
 
-    <meta name="description" itemprop="description" content="&lt;p&gt;LXQt-KWin Description after front mattter&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.37.1" /><meta name="keywords" itemprop="keywords" content="Linux" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/">
+    <meta name="description" itemprop="description" content="&lt;p&gt;Setting up LXQt with KWin in Virtualbox using Anarchy Linux&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.37.1" /><meta name="keywords" itemprop="keywords" content="Linux,Archlinux,LXQt,KWin" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/">
 
     <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
@@ -54,7 +54,7 @@
 <main class="row-item small-full medium-two-thirds" >
   <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="keywords desc">
     <header id="page-header">
-      <h1 itemprop="headline">An Archlinux Desktop with LXQt and KWin for beginner</h1><p id="post-metadata" class="row"><span class="row-item">
+      <h1 itemprop="headline">An Archlinux Desktop with LXQt and KWin</h1><p id="post-metadata" class="row"><span class="row-item">
           <span class="fa fa-clock-o"></span>
           <strong>Published:</strong>
           <time datetime="2017-12-03" content="2017-12-03" itemprop="datePublished">December 03, 2017</time>
@@ -66,7 +66,7 @@
     </header>
     
     <div id="post-content">
-      <span itemprop="articleBody"><p>LXQt-KWin Description after front mattter</p>
+      <span itemprop="articleBody"><p>Setting up LXQt with KWin in Virtualbox using Anarchy Linux</p>
 
 <p></p>
 
@@ -156,7 +156,10 @@ In my installation I had trouble with changing apps using Alt-Tab. Looking into 
 <h3 id="browser">Browser</h3>
 
 <p>I have chosen Qupzilla. Serves me well and is relativlely light.
-&gt; <code>pacman -S qupzilla</code></p>
+&gt; <code>sudo pacman -S qupzilla</code></p>
+
+<p>ALternative:
+&gt; <code>sudo pacman -S firefox</code></p>
 
 <p>###AUR repository
 To use packages from the AUR repository it is very helpful to use a package managemr for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.</p>
@@ -168,9 +171,9 @@ makepkg -si
 
 <p>You can basically replace your use of pacman with trizen. Only for some special cases you can still use pacman.</p>
 
-<h3 id="graphical-editor-notepadqq">Graphical Editor: notepadqq</h3>
+<h3 id="graphical-editor-howl">Graphical Editor: howl</h3>
 
-<p>Install notepadqq ( gui editor) from AUR repository
+<p>Install howl ( gui editor) from AUR repository
 &gt; <code>trizen -S howl</code></p>
 
 <p>You don&rsquo;t need to use sudo for trizen, you will be asked for the sudo passwd later</p>
@@ -192,7 +195,7 @@ makepkg -si
 <p><code>trizen -S qdirstat</code></p>
 </blockquote>
 
-<h3 id="termina-lx-terminal">Termina: LX Terminal</h3>
+<h3 id="terminal-lx-terminal">Terminal: LX Terminal</h3>
 
 <p>Many LXQt editions use Qterminal. I like it but some keys are not accessible from programms in the console. So I use LX Termianl which has hardly any dependencies and is a bit smoother in my view.</p>
 
@@ -229,7 +232,7 @@ Tilde is a very user friendly console text editor that uses mostly the same keyb
 
 <p>Use this tool to set up the right mirror servers for the Arch repository</p>
 
-<p>&lsquo;fetchmirrors &ndash;help` for help</p>
+<p><code>fetchmirrors --help</code> for help</p>
 
 <h2 id="trizen-pgp-tip">trizen PGP Tip</h2>
 
@@ -253,6 +256,9 @@ gpg &ndash;lsign <code>KEYID</code></p>
     </div><div id="post-tags">
     	<ul class="menu">
         <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/linux" rel="tag" itemprop="url">linux</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/archlinux" rel="tag" itemprop="url">archlinux</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/lxqt" rel="tag" itemprop="url">l x qt</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/kwin" rel="tag" itemprop="url">k win</a>
     		</li></ul>
     </div></article>
 
@@ -261,18 +267,7 @@ gpg &ndash;lsign <code>KEYID</code></p>
         <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
   
   
-	<div class="widget">
 	
-		
-	
-	
-	<header>
-		<span class="widget-header"><span class="fa fa-pencil"></span> <a href="https://absolute-beginner.netlify.com/post/">Recent Posts</a></span>
-	</header>
-	
-			<a class="widget-header-small button" href="https://absolute-beginner.netlify.com/index.xml"><span class="fa fa-rss"></span> Subscribe to the Site</a>
-		<a class="widget-header-small button" href="https://absolute-beginner.netlify.com/post/index.xml"><span class="fa fa-rss"></span> Subscribe to Posts</a><ul><li><a href="https://absolute-beginner.netlify.com/post/man-markdown/">Creating a man page from markdown with pandoc</a></li><li><a href="https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/">An Archlinux Desktop with LXQt and KWin for beginner</a></li></ul>
-</div>
   
 	<div class="widget">
 	<header>
@@ -280,6 +275,7 @@ gpg &ndash;lsign <code>KEYID</code></p>
 	</header>
 	<ul><li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
 		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
 		
 	</ul>
 </div>
@@ -287,8 +283,14 @@ gpg &ndash;lsign <code>KEYID</code></p>
 	<header>
 		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
 	</header>
-	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
+	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
+				archlinux (2)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
+				kwin (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
 				linux (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/lxqt" title="lxqt">
+				lxqt (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/man-pages" title="man pages">
 				man pages (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">

@@ -7,14 +7,16 @@ disable_comments = false
 categories = ["System"]
 tags = ["Archlinux"]
 aliases = ["/post/all-grown-up/"]
-draft = true
+draft = false
 +++
 
-How to set up my system
+This is my notepad to remember how to set up my system.
 
 <!--more-->
 
 # Set up programms
+
+This whole article is probably only useful to myself, unless you use similar programms as me, in which case you are welcome to have a look how I try to set mine up.
 
 ### Micro Editor
 Micro does not (yet) work with the termite terminal out of the box
