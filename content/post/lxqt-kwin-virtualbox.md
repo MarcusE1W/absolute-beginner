@@ -4,7 +4,7 @@ date = "2017-12-03"
 hide_authorbox = false
 disable_comments = false
 categories = ["Desktop Environments"]
-tags = ["Linux"]
+tags = ["Linux","Archlinux","LXQt","KWin"]
 aliases = ["/post/all-grown-up/"]
 draft = false
 +++
@@ -84,10 +84,12 @@ In my installation I had trouble with changing apps using Alt-Tab. Looking into 
 
 This is a selection of mostly Qt software that I found usefull.
 
-
 ### Browser
 I have chosen Qupzilla. Serves me well and is relativlely light.
-> `pacman -S qupzilla`
+> `sudo pacman -S qupzilla`
+
+ALternative:
+> `sudo pacman -S firefox`
 
 ###AUR repository
 To use packages from the AUR repository it is very helpful to use a package managemr for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.
@@ -100,8 +102,8 @@ makepkg -si
 
 You can basically replace your use of pacman with trizen. Only for some special cases you can still use pacman.
 
-### Graphical Editor: notepadqq
-Install notepadqq ( gui editor) from AUR repository
+### Graphical Editor: howl
+Install howl ( gui editor) from AUR repository
 > `trizen -S howl`
 
 You don't need to use sudo for trizen, you will be asked for the sudo passwd later
@@ -117,7 +119,7 @@ Install lximage package from AUR repository
 ### Disk space checker: QDirStat
 > `trizen -S qdirstat`
 
-### Termina: LX Terminal
+### Terminal: LX Terminal
 Many LXQt editions use Qterminal. I like it but some keys are not accessible from programms in the console. So I use LX Termianl which has hardly any dependencies and is a bit smoother in my view.
 
 > `sudo pacman -S lxterminal`
@@ -131,11 +133,9 @@ Install Micro from the AUR repository:
 Install Tilde (console editor)  from AUR repository
 Tilde is a very user friendly console text editor that uses mostly the same keybindings as graphical apps like Ctrl-C for copy, Ctrl-V for paste and so on and comes with the menu (Alt-f for the file-menu for example)
 
-
 This package requires the packages `fakeroot` and  `pkg_config`.  Install these packages before you install tilde
 
 > `trizen -S tilde`
-
 
 When you install Tilde several libraries will be installed during the process as dependencies. Most called ligt3*, etc.
 
@@ -145,7 +145,7 @@ When you install Tilde several libraries will be installed during the process as
 
 Use this tool to set up the right mirror servers for the Arch repository
 
-'fetchmirrors --help` for help
+`fetchmirrors --help` for help
 
 ## trizen PGP Tip
 

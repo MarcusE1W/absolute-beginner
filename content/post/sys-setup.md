@@ -14,7 +14,7 @@ How to set up my system
 
 <!--more-->
 
-
+# Set up programms
 
 ### Micro Editor
 Micro does not (yet) work with the termite terminal out of the box
@@ -77,7 +77,7 @@ bindsym $mod+Next workspace next
 bindsym $mod+Prior workspace prev
 ```
 
-## nodejs and npm
+### nodejs and npm
 Install npm and nodejs with
 ```
 trizen -S nodejs
@@ -116,7 +116,7 @@ cd trizen
 makepkg -si
 ```
 
-### Add user to group
+## Add user to group
 
 Check the assigned groups for a user with `groups`
 
@@ -132,7 +132,9 @@ usermod -a -G group username
 sudo usermod -a -G vboxsf mmw
 ```
 
-### Change (bash) shell to fish.
+?? seems not to work ...
+
+## Change (bash) shell to fish.
 This describes how to make fish your default shell.
 Fist install the fish shell.
 ```
@@ -149,3 +151,71 @@ chsh -s /usr/bin/fish
 ```
 Instead of using setting varialbles (and this includes the $PATH) in .bashrc or .profile or so in fish you use the `set` command.
 So with `set TERM xterm-256color` you add a variable.
+
+## spectrwm tiling window manager
+Install with
+```
+trizen -S spectrwm
+```
+For a first overview the man pages are usefull: `man spectrwm`
+
+### First Configuration
+spectrwm looks in ~/.spectrwm first and then for /etc/spectrwm.conf
+So if you do not have config file in your home folder yet, copy it from /etc
+```
+cp /etc/spectrwm.conf ~/.spectrwm.conf
+```
+For Archlinux the standard `bar_font` paramenter needs to be updated as described in the [Wiki](...)
+
+To change keybindings you can copy one of the predefined keyboard mappings in folder `/etc/spectrwm`
+
+To copy e.g. the us keyboard layout into your .config forlder type:
+```
+mkdir ~/.config/spectrwm
+cp cp /etc/spectrwm/spectrwm_us.conf ~/.config/spectrwm/spectrwm_us.conf
+```
+To point spectrwm to your new keymapping file you need to update the .spectrwm.conf file.
+
+Update keyboard_mapping like this:
+```
+# This allows you to include pre-defined key bindings for your keyboard layout.
+keyboard_mapping = ~/.config/spectrwm/.spectrwm_us.conf
+```
+
+Last but not least, change your .xinitrc
+```
+exec spectrwm
+```
+### Spectrwm keymap configuration
+
+I have found the following keybindings helpful:
+```
+bind[focus_next]	= MOD+Right      # Move to next programme on the same workspace
+bind[focus_prev]	= MOD+Left
+bind[term]		    = MOD+Return     # Start a terminal
+bind[ws_next]	    = MOD+Next
+bind[ws_prev]	    = MOD+Prior
+```
+
+If you use Linux in a Virtual machine on Windows like me then you will find that Win+l is permanently used by Windows to lock the screen. Even if you use VirtualBox. That means MOD+l to grow the master window will also trigger the screen lock. I just use the  key next to `l` to grow the master window. In my case ;
+
+For Spectrwm you have to use xkb xharacter names. You can find the name of a character with the tool `xev`. The output is a bit messy and for ; looks like this:
+
+> KeyPress event, serial 37, synthetic NO, window 0x1600001,
+>
+>    root 0x2bd, subw 0x0, time 64418407, (590,691), root:(1265,692),
+>
+>    state 0x0, keycode 47 (keysym 0x3b, **semicolon**), same_screen YES,
+>
+>    XLookupString gives 1 bytes: (3b) ";"
+>
+>    XmbLookupString gives 1 bytes: (3b) ";"
+>
+>    XFilterEvent returns: False
+
+So the xkb keycode for ; is - tada **semicolon**
+
+So to bind the master_grow command to MOD+; you have to add this line to the keymap file.
+```
+bind[master_grow]	= MOD+semicolon  # Make current window smaller.
+```
