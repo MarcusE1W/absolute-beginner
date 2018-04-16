@@ -12,7 +12,7 @@ draft = false
 How to create a man page from a README.md file
 
 <!--more-->
-# Create a (unix) man page with Markdown using pandoc
+## Create a (unix) man page with Markdown using pandoc
 
 Man pages are application documentation that you find for almost every Unix/BSD/.. system. The format is text based on a markup language called `Nroff`. The principle concept is similar to Markdown, however the markup language `nroff` is a quite a bit less readable than markdown.
 Often variations of the `nroff` format are used like `groff`.
@@ -23,7 +23,6 @@ man ls
 ```
 and you will see the available options for `ls`. This works for almost every programme, provided the programme author has written a page.
 
-
 This tutorial describes how to create man documentation pages from a markdown file using `pandoc`
 
 # Using pandoc
@@ -33,12 +32,13 @@ This tutorial describes how to create man documentation pages from a markdown fi
 ## Installation of pandoc
 
 As pandoc is often not installed as a standard tool you first have to install it on your system.
+Pandoc should be available from the package manager of your system.
 
-### Installation for Archlinux
+For Archlinux type:
 ```
-pacman -S pandoc
+sudo pacman -S pandoc
 ```
-Note: The above command installs quite a lot of dependencies. This is because it uses many shared files from Haskell (the programming language pandoc is build with). If you don't have use for haskell otherwise there is a pandoc version on the AUR called XXXXXXX that does not have these dependencies.
+Note: The above command installs quite a lot of dependencies on Archlinux. This is because it uses many shared files from Haskell (the programming language pandoc is build with). If you don't have use for Haskell otherwise there is a pandoc version in the AUR called `pandoc-bin` that does not have these dependencies. You can install that package instead.
 
 ## Create a man page with pandoc
 
@@ -85,18 +85,22 @@ Of course before you don't publish a man page you can also follow your own struc
 
 There are many header sections, that can be used. Only NAME is seen as mandatory.
 
-NAME - The name and a short description of the programme 
+NAME - The name and a short description of the programme
 SYNOPSIS - A short summary how to use the programme. e.g.: `pandoc [options] [input-file]...`
-DESCRIPTION - Description of the programme 
+DESCRIPTION - Description of the programme
 OPTIONS - description of options
-RETURN VALUE - return values of programme once it terminates 
-EXAMPLES - always good to give some examples 
-NOTES - Additional info 
+RETURN VALUE - return values of programme once it terminates
+EXAMPLES - always good to give some examples
+NOTES - Additional info
 SEE ALSO - reference to other related programmes
 AUTHOR - as in author of the programme
 HISTORY - of the programme if that is helpful
 
 It is absolutely fine to use only some of these headers like for example: NAME, SYNOPSIS, OPTIONS or any other combination. Remember that NAME is expected.
+
+## Useful links:
+
+- A good introduction into [man pages](https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/)
 
 # Creating a man page from a GitHub README.md
 
@@ -106,4 +110,3 @@ pandoc --standalone --from gfm --to man README.md --output prog.1
 ```
 
 You might have already noticed the unusual naming convention to end the man page with `.1`. The number classifies your man page and `.1` stands for general.
-

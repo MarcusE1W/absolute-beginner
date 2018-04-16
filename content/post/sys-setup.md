@@ -1,46 +1,55 @@
 
 +++
 title = "My system setup"
-date = "2018-03-06"
+date = "2018-03-28"
 hide_authorbox = false
 disable_comments = false
 categories = ["System"]
-tags = ["Archlinux"]
+tags = ["Archlinux", "Spectrwm", "Micro editor", "trizen"]
 aliases = ["/post/all-grown-up/"]
 draft = false
 +++
 
-This is my notepad to remember how to set up my system.
+These are my notes to remember how to set up my system.
 
 <!--more-->
 
 # Set up programms
 
-This whole article is probably only useful to myself, unless you use similar programms as me, in which case you are welcome to have a look how I try to set mine up.
+This whole article is probably only useful to myself, unless you use Archlinux and similar programms as me, in which case you are welcome to have a look how I try to set mine up.
 
-### Micro Editor
+## Micro Editor
 Micro does not (yet) work with the termite terminal out of the box
-To change the `TERM` variable in the shell add
+To change the `TERM` variable in the shell add to .bash_profile or whatever the equivalent in your shell
 ```
 export TERM=xterm-256color
 ```
 
-### Atom editor
+To have copy and paste working with all other X11 apps install `xclip`
+```
+trizen -S xclip
+```
+This is an optional dependency of micro but is really very useful.
+
+To enable the use of arrow keys in the Linux console (no GUI) follow these [instructions](https://github.com/zyedidia/micro/wiki/Linux-Console-Keybindings)
+
+
+## Atom editor
 - Comand palette remembers last word
-- set totally fabulous East End syntax/ui theme
+- set absolutely fabulous East End syntax/ui theme
 - remove RET from autocomplete-plus (set in settings menu)
 - set ctrl-space for command pallete
 - set alt-pageup/down to swith between left an right pane
 - TODO: check keymap settings to
 
-### Termite
+## Termite
 To create an initial config in Archlinux copy the standard one into `~/.config/termite`
 ```
 mkdir ~/.config/termite
 cp /etc/xdg/termite/config ~/.config/termite/config
 ```
 
-### Fonts
+## Fonts
 
 Install Iosevka for terminal
 ```
@@ -53,18 +62,55 @@ fc-list | grep iosevka
 ```
 
 
-### Pacman
-Update archlinux mirror list
-first fetchmirrors needs to be installed
+## Pacman
+
+
+To use the most responsive archlinux mirror in your area update the archlinux mirror list
+- first fetchmirrors needs to be installed
 ```
  trizen -S fetchmirrors
 ```
-Then run as root for in this case UK
+- Then run as root, in this case for UK
 ```
 sudo fetchmirrors -c GB
 ```
+Allow to update your mirror list
 
-### i3
+### Useful commands for pacman
+
+These commands usually also work with a pacman helper like trizen.
+
+- List explicitly installed packages
+```
+sudo pacman -Qqe
+```
+that are not also a dependency for other packages.
+```
+sudo pacman -Qent
+```
+
+- List all foreign packages. That means from AUR or manually installed.
+```
+pacman -Qn
+```
+
+- List all installed files for a package
+```
+sudo pacman -Ql package_name
+```
+
+- List all packages that have been installed as dependency to anouther package
+```
+sudo pacman -Qd
+```
+
+- List all packages no longer required as dependencies (orphans):
+```
+sudo pacman -Qdt
+```
+
+
+## i3
 
 To get rid of the title bar on top of every window add this (at the end) of the `.~/.config/i3/config` file
 ```
@@ -79,7 +125,7 @@ bindsym $mod+Next workspace next
 bindsym $mod+Prior workspace prev
 ```
 
-### nodejs and npm
+## nodejs and npm
 Install npm and nodejs with
 ```
 trizen -S nodejs
@@ -161,6 +207,8 @@ trizen -S spectrwm
 ```
 For a first overview the man pages are usefull: `man spectrwm`
 
+For more [XDG](https://www.freedesktop.org/wiki/Software/xdg-utils/) integration you could install `xdg-utils`.
+
 ### First Configuration
 spectrwm looks in ~/.spectrwm first and then for /etc/spectrwm.conf
 So if you do not have config file in your home folder yet, copy it from /etc
@@ -221,3 +269,9 @@ So to bind the master_grow command to MOD+; you have to add this line to the key
 ```
 bind[master_grow]	= MOD+semicolon  # Make current window smaller.
 ```
+### Setup for screenshots
+
+To make the screenshot function work you have to
+- copy screenshot.sh from /usr/share/spectrwm to ~/local/bin (or any other place that is in your local PATH)
+- make sure the screenshot tool `scrot` is installed
+- change the config and if you want keymapping

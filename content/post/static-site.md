@@ -34,6 +34,8 @@ After a bit of trying this and that I decided for Hugo.
 
 # Creating a static site with Hugo
 
+[Good description](https://medium.com/@jaysoifer/deploying-a-landing-page-using-go-hugo-to-amazon-s3-using-codeship-and-webpack-535dde11847a)
+
 ## Installing Hugo
 
 - **Archlinux** : `sudo pacman -S hugo`

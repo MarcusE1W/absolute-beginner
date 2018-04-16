@@ -46,6 +46,7 @@ A first look at org-mode in Spacemacs
 | 1.            | 1.        | Numbered Lists    |                              |
 | N/A           | -  ::     | Definition list   | - Definition :: rest of line |
 | N/A           | +text+    | Strike through    | +this and that+              |
+| [text](link)  | [[link][description]] |       | [[heise.de][Heise]]                             |
 
 Test:
 /italics/
@@ -58,10 +59,11 @@ _underline_
 - dies :: das
 +strike through+
 
-~
-source block, of some sort
+
+~source block, of some sort
 seems not to work ?
-~
+Ah, dies functioniert etwas anders~
+
 
 - [] hallo
 - [x] hallo
@@ -84,4 +86,4 @@ seems not to work ?
 
 
 * Useful links
-http://pragmaticemacs.com/org-mode-tutorials/
+- [[http://pragmaticemacs.com/org-mode-tutorials/][beginner tutorial]]
