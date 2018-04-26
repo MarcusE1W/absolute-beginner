@@ -68,12 +68,12 @@ enableRobotsTXT = true
 #     url = "docs/site/alert/#shortcode"
 
 [Params.color]
-    page_background = "#e2e2e2"
-    main_background = "#3eb545"
-    alt_background = "#f7a70a"
-    main_text = "#e2e2e2"
+    page_background = "#ecf5f5"
+    main_background = "#fafbfb"
+    alt_background = "#f5f4ec"
+    main_text = "#373839"
     alt_text = "#676464"
-    accent = "#106316"
+    accent = "#29c72f"
     accent_text = "#e2e2e2"
 
 [Params.fonts]
