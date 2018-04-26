@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Micro on The Absolute Beginner</title>
+    <link>https://absolute-beginner.netlify.com/tags/micro/</link>
+    <description>Recent content in Micro on The Absolute Beginner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://absolute-beginner.netlify.com/tags/micro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simple syntax highlighting for the Micro editor</title>
+      <link>https://absolute-beginner.netlify.com/post/micro-syntax1/</link>
+      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/post/micro-syntax1/</guid>
+      <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

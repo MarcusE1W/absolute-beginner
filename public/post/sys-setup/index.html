@@ -15,7 +15,7 @@
     <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
 
-    <meta name="description" itemprop="description" content="&lt;p&gt;This is my notepad to remember how to set up my system.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.37.1" /><meta name="keywords" itemprop="keywords" content="Archlinux" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/sys-setup/">
+    <meta name="description" itemprop="description" content="&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.39" /><meta name="keywords" itemprop="keywords" content="Archlinux,Spectrwm,Micro editor,trizen" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/sys-setup/">
 
     <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
@@ -57,43 +57,52 @@
       <h1 itemprop="headline">My system setup</h1><p id="post-metadata" class="row"><span class="row-item">
           <span class="fa fa-clock-o"></span>
           <strong>Published:</strong>
-          <time datetime="2018-03-06" content="2018-03-06" itemprop="datePublished">March 06, 2018</time>
+          <time datetime="2018-03-28" content="2018-03-28" itemprop="datePublished">March 28, 2018</time>
         </span><span class="row-item">
           <span class="fa fa-folder"></span>
           <a href="https://absolute-beginner.netlify.com/categories/system" rel="category">System</a>
-        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">5 minutes</span></span></p>
+        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">6 minutes</span></span></p>
       
     </header>
     
     <div id="post-content">
-      <span itemprop="articleBody"><p>This is my notepad to remember how to set up my system.</p>
+      <span itemprop="articleBody"><p>These are my notes to remember how to set up my system.</p>
 
 <p></p>
 
 <h1 id="set-up-programms">Set up programms</h1>
 
-<p>This whole article is probably only useful to myself, unless you use similar programms as me, in which case you are welcome to have a look how I try to set mine up.</p>
+<p>This whole article is probably only useful to myself, unless you use Archlinux and similar programms as me, in which case you are welcome to have a look how I try to set mine up.</p>
 
-<h3 id="micro-editor">Micro Editor</h3>
+<h2 id="micro-editor">Micro Editor</h2>
 
 <p>Micro does not (yet) work with the termite terminal out of the box
-To change the <code>TERM</code> variable in the shell add</p>
+To change the <code>TERM</code> variable in the shell add to .bash_profile or whatever the equivalent in your shell</p>
 
 <pre><code>export TERM=xterm-256color
 </code></pre>
 
-<h3 id="atom-editor">Atom editor</h3>
+<p>To have copy and paste working with all other X11 apps install <code>xclip</code></p>
+
+<pre><code>trizen -S xclip
+</code></pre>
+
+<p>This is an optional dependency of micro but is really very useful.</p>
+
+<p>To enable the use of arrow keys in the Linux console (no GUI) follow these <a href="https://github.com/zyedidia/micro/wiki/Linux-Console-Keybindings">instructions</a></p>
+
+<h2 id="atom-editor">Atom editor</h2>
 
 <ul>
 <li>Comand palette remembers last word</li>
-<li>set totally fabulous East End syntax/ui theme</li>
+<li>set absolutely fabulous East End syntax/ui theme</li>
 <li>remove RET from autocomplete-plus (set in settings menu)</li>
 <li>set ctrl-space for command pallete</li>
 <li>set alt-pageup/down to swith between left an right pane</li>
 <li>TODO: check keymap settings to</li>
 </ul>
 
-<h3 id="termite">Termite</h3>
+<h2 id="termite">Termite</h2>
 
 <p>To create an initial config in Archlinux copy the standard one into <code>~/.config/termite</code></p>
 
@@ -101,7 +110,7 @@ To change the <code>TERM</code> variable in the shell add</p>
 cp /etc/xdg/termite/config ~/.config/termite/config
 </code></pre>
 
-<h3 id="fonts">Fonts</h3>
+<h2 id="fonts">Fonts</h2>
 
 <p>Install Iosevka for terminal</p>
 
@@ -113,20 +122,59 @@ cp /etc/xdg/termite/config ~/.config/termite/config
 <pre><code>fc-list | grep iosevka
 </code></pre>
 
-<h3 id="pacman">Pacman</h3>
+<h2 id="pacman">Pacman</h2>
 
-<p>Update archlinux mirror list
-first fetchmirrors needs to be installed</p>
+<p>To use the most responsive archlinux mirror in your area update the archlinux mirror list
+- first fetchmirrors needs to be installed</p>
 
 <pre><code> trizen -S fetchmirrors
 </code></pre>
 
-<p>Then run as root for in this case UK</p>
+<ul>
+<li>Then run as root, in this case for UK
+<code>
+sudo fetchmirrors -c GB
+</code>
+Allow to update your mirror list</li>
+</ul>
 
-<pre><code>sudo fetchmirrors -c GB
+<h3 id="useful-commands-for-pacman">Useful commands for pacman</h3>
+
+<p>These commands usually also work with a pacman helper like trizen.</p>
+
+<ul>
+<li><p>List explicitly installed packages</p>
+
+<pre><code>sudo pacman -Qqe
 </code></pre>
 
-<h3 id="i3">i3</h3>
+<p>that are not also a dependency for other packages.</p>
+
+<pre><code>sudo pacman -Qent
+</code></pre></li>
+
+<li><p>List all foreign packages. That means from AUR or manually installed.</p>
+
+<pre><code>pacman -Qn
+</code></pre></li>
+
+<li><p>List all installed files for a package</p>
+
+<pre><code>sudo pacman -Ql package_name
+</code></pre></li>
+
+<li><p>List all packages that have been installed as dependency to anouther package</p>
+
+<pre><code>sudo pacman -Qd
+</code></pre></li>
+
+<li><p>List all packages no longer required as dependencies (orphans):</p>
+
+<pre><code>sudo pacman -Qdt
+</code></pre></li>
+</ul>
+
+<h2 id="i3">i3</h2>
 
 <p>To get rid of the title bar on top of every window add this (at the end) of the <code>.~/.config/i3/config</code> file</p>
 
@@ -142,7 +190,7 @@ TO make the frame go away entirely use 0 or <code>new window none</code></p>
 bindsym $mod+Prior workspace prev
 </code></pre>
 
-<h3 id="nodejs-and-npm">nodejs and npm</h3>
+<h2 id="nodejs-and-npm">nodejs and npm</h2>
 
 <p>Install npm and nodejs with</p>
 
@@ -231,6 +279,8 @@ So with <code>set TERM xterm-256color</code> you add a variable.</p>
 
 <p>For a first overview the man pages are usefull: <code>man spectrwm</code></p>
 
+<p>For more <a href="https://www.freedesktop.org/wiki/Software/xdg-utils/">XDG</a> integration you could install <code>xdg-utils</code>.</p>
+
 <h3 id="first-configuration">First Configuration</h3>
 
 <p>spectrwm looks in ~/.spectrwm first and then for /etc/spectrwm.conf
@@ -296,10 +346,20 @@ bind[ws_prev]	    = MOD+Prior
 <p>So to bind the master_grow command to MOD+; you have to add this line to the keymap file.</p>
 
 <pre><code>bind[master_grow]	= MOD+semicolon  # Make current window smaller.
-</code></pre></span>
+</code></pre>
+
+<h3 id="setup-for-screenshots">Setup for screenshots</h3>
+
+<p>To make the screenshot function work you have to
+- copy screenshot.sh from /usr/share/spectrwm to ~/local/bin (or any other place that is in your local PATH)
+- make sure the screenshot tool <code>scrot</code> is installed
+- change the config and if you want keymapping</p></span>
     </div><div id="post-tags">
     	<ul class="menu">
         <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/archlinux" rel="tag" itemprop="url">archlinux</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/spectrwm" rel="tag" itemprop="url">spectrwm</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/micro-editor" rel="tag" itemprop="url">micro editor</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/trizen" rel="tag" itemprop="url">trizen</a>
     		</li></ul>
     </div></article>
 
@@ -314,9 +374,10 @@ bind[ws_prev]	    = MOD+Prior
 	<header>
 		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
 	</header>
-	<ul><li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
 		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
-		<li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/editor">Editor</a></li>
 		
 	</ul>
 </div>
@@ -325,7 +386,7 @@ bind[ws_prev]	    = MOD+Prior
 		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
 	</header>
 	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
-				archlinux (2)
+				archlinux (3)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
 				kwin (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
@@ -336,6 +397,16 @@ bind[ws_prev]	    = MOD+Prior
 				man pages (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
 				markdown (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro" title="micro">
+				micro (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro-editor" title="micro editor">
+				micro editor (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/qemu" title="qemu">
+				qemu (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/spectrwm" title="spectrwm">
+				spectrwm (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/trizen" title="trizen">
+				trizen (1)
 			</a></div>
 </div>
 </aside>

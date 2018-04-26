@@ -1,6 +1,6 @@
 +++
-title = "Syntax highlighting for Micro"
-date = "2018-05-11"
+title = "Simple syntax highlighting for the Micro editor"
+date = "2018-04-11"
 hide_authorbox = false
 disable_comments = false
 categories = ["Editor"]
@@ -23,11 +23,15 @@ The examples of this text cut together gives a template for your own definitions
 
 Before you start you might need a list of keywords for the language you want to define. One option is to find and copy a syntax file from an other editor.However it can also be helpful to just add a few keywords, edit the symbols, get the comments right and be ready.
 
-You can  do many more clever things for your language syntax than is described in this text, but after reading this text you will be able to create a syntax file already.
+You can probably do many more clever things for your language syntax than is described in this text, but after reading this text you will be able to create a syntax file already.
+
+## The syntax YAML file
 
 Micro syntax files are defined following the [YAML](https://en.wikipedia.org/wiki/YAML) configuration syntax. To create a new syntax file create a new file with the ending `.yaml`.
 
 To make your own syntax definition available to Micro you have to add the new syntax file in your home folder into  `~/.config/micro/syntax`.
+
+If you want to comment your syntax definition then you can use `#` to mark your comments.
 
 ## File header
 To start some general information are needed. Most importantly the language you want to describe gets defined with `filetype:`

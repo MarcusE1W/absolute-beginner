@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple syntax highlighting for the Micro editor</title>
+
+    
+    
+    
+    <link rel="preload" href="https://absolute-beginner.netlify.com/styles.css" as="style" />
+
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
+
+    <meta name="description" itemprop="description" content="&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.39" /><meta name="keywords" itemprop="keywords" content="Micro" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/micro-syntax1/">
+
+    <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
+
+    <link rel="stylesheet" type="text/css" href="https://absolute-beginner.netlify.com/styles.css">
+    <script>
+ 
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <script>var _paq = undefined;</script></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div id="site-container">
+      <div id="site-header">
+        <a href="https://absolute-beginner.netlify.com">
+          <header class="small-text-left medium-text-left row">
+            <div class="row-item">
+              <span id="site-title" itemprop="name">The Absolute Beginner</span>
+              <br/><span id="site-tagline">Experiences from a permanent beginner</span>
+            </div>
+          </header>
+        </a>
+        <label for="menu-toggle-box"><div id="menu-toggle" class="main-nav no-select"><span><span class="fa fa-bars"></span> MENU</span></div></label>
+        <input type="checkbox" id="menu-toggle-box" class="hide"/>
+        <nav id="main-nav">
+          <ul class="menu"><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-about" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="/about/" >
+      <span>ABOUT</span></a></li></ul>
+        </nav>
+        </div>
+      <div id="main-container" class="row" role="main" itemprop="mainContentOfPage">
+        
+        
+        
+<main class="row-item small-full medium-two-thirds" >
+  <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="keywords desc">
+    <header id="page-header">
+      <h1 itemprop="headline">Simple syntax highlighting for the Micro editor</h1><p id="post-metadata" class="row"><span class="row-item">
+          <span class="fa fa-clock-o"></span>
+          <strong>Published:</strong>
+          <time datetime="2018-04-11" content="2018-04-11" itemprop="datePublished">April 11, 2018</time>
+        </span><span class="row-item">
+          <span class="fa fa-folder"></span>
+          <a href="https://absolute-beginner.netlify.com/categories/editor" rel="category">Editor</a>
+        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">4 minutes</span></span></p>
+      
+    </header>
+    
+    <div id="post-content">
+      <span itemprop="articleBody"><p>How to write a simple file for syntax highlighting for any language for the Micro editor</p>
+
+<p></p>
+
+<h1 id="language-highlighting-for-beginner">Language highlighting for beginner</h1>
+
+<p>For a quick overview about syntax highlighting read this documentation for micro  <a href="https://github.com/zyedidia/micro/blob/master/runtime/help/colors.md">colors</a></p>
+
+<p>This text gives a simple introduction how to build a syntax highlighting file for micro.</p>
+
+<p>The examples of this text cut together gives a template for your own definitions.</p>
+
+<p>Before you start you might need a list of keywords for the language you want to define. One option is to find and copy a syntax file from an other editor.However it can also be helpful to just add a few keywords, edit the symbols, get the comments right and be ready.</p>
+
+<p>You can probably do many more clever things for your language syntax than is described in this text, but after reading this text you will be able to create a syntax file already.</p>
+
+<h2 id="the-syntax-yaml-file">The syntax YAML file</h2>
+
+<p>Micro syntax files are defined following the <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> configuration syntax. To create a new syntax file create a new file with the ending <code>.yaml</code>.</p>
+
+<p>To make your own syntax definition available to Micro you have to add the new syntax file in your home folder into  <code>~/.config/micro/syntax</code>.</p>
+
+<p>If you want to comment your syntax definition then you can use <code>#</code> to mark your comments.</p>
+
+<h2 id="file-header">File header</h2>
+
+<p>To start some general information are needed. Most importantly the language you want to describe gets defined with <code>filetype:</code></p>
+
+<p>The filetype gets detected by the file ending described with <code>detect:</code>. For advanced users it is also possible to check the first line of the file to determine the filetype. Replace the  values in the example with the relevant name and file ending for your new language.</p>
+
+<p>With the <code>rules:</code> keyword the actual language description gets started. Please mind that indentation is important. Everything after <code>rules:</code> has to be indented.</p>
+
+<p>e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">filetype: Test-lang
+
+detect:
+    filename: <span style="color:#e6db74">&#34;\\.tst$&#34;</span>
+
+rules:</code></pre></div>
+<h2 id="language-keywords">Language keywords</h2>
+
+<p>In this section you can describe the language keywords. The syntax looks a bit complex at first but you can mostly copy and paste it. There are three section:
+- <code>-type :</code> defines the types of the language
+- <code>statement:</code> defines the keywords of the language. YOu can cram all keywords in one statement or split them up on several statements.
+- <code>special:</code> can be used to highlight certain keywords of a language in a different color to the othe rkeywords. In Ocaml the function definition is worht a special highlight. In Elixir the <code>do</code> and <code>end</code> could be useful to highlight. It is down to you if you want to use it at all and for which keywords.</p>
+
+<p>For each of the above sections a string is defined with the relevant keywords:
+e.g. <code>&quot;\\b(?i:(int|float|bool|char|string|unit))\\b&quot;</code>. To define your own profile replace the part in the inner brackets () with your own keywords.</p>
+
+<p>e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    - type: <span style="color:#e6db74">&#34;\\b(?i:(int|float|bool|char|string|unit))\\b&#34;</span>
+
+    - statement: <span style="color:#e6db74">&#34;\\b(if|then|else)\\b&#34;</span>
+    - statement: <span style="color:#e6db74">&#34;\\b(for|and|or)\\b&#34;</span>
+
+    - special: <span style="color:#e6db74">&#34;\\b(let|rec|function|in)\\b&#34;</span></code></pre></div>
+<h2 id="operators-symbols-strings-comments">Operators, symbols, strings, comments</h2>
+
+<h3 id="symbols-and-operators">Symbols and operators</h3>
+
+<p>Symbols are used in many languages for different thing. That said most languages use similar symbols, so from the highlighting perspactive there is not so much difference. Below list of symbols gives you some common symbols and operators. These can be extended for you r language. There is no need to remove unused symbols. They just do not get used.</p>
+
+<p>e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    - symbol: <span style="color:#e6db74">&#34;(\\||@|!|:|::|_|~|=|\\\\|;|\\(\\)|||\\[|\\]|\\{|\\})&#34;</span>
+
+    - symbol.operator: <span style="color:#e6db74">&#34;(==|/=|&amp;&amp;|\\|\\||&lt;|&gt;|&lt;=|&gt;=)&#34;</span></code></pre></div>
+<h3 id="language-constants">Language constants</h3>
+
+<p>Language constants means words like <code>true</code> that are no statements and cannot be changed. Depending on the language there can be other constants.</p>
+
+<p>e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    - constant: <span style="color:#e6db74">&#34;(Nothing|Just|LT|EQ|GT)&#34;</span>
+
+    - constant.bool: <span style="color:#e6db74">&#34;\\b(true|false)\\b&#34;</span></code></pre></div>
+<h3 id="strings">Strings</h3>
+
+<p>Strings in most languages are within within quotation marks &ldquo; &rdquo; and characters are within singel quote &lsquo; &lsquo;. In this case you can just use the example below. The additional rule is to show additional controls in the string. e.g &ldquo;Hallo /n&rdquo; If your languages does not have that you can also write <code>rules: []</code></p>
+
+<p>e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    - constant.string:
+        start: <span style="color:#e6db74">&#34;\&#34;&#34;</span>
+        end: <span style="color:#e6db74">&#34;\&#34;&#34;</span>
+        skip: <span style="color:#e6db74">&#34;\\\\.&#34;</span>
+        rules:
+            - constant.specialChar: <span style="color:#e6db74">&#34;\\\\.&#34;</span>
+
+    - constant.string:
+        start: <span style="color:#e6db74">&#34;&#39;&#34;</span>
+        end: <span style="color:#e6db74">&#34;&#39;&#34;</span>
+        skip: <span style="color:#e6db74">&#34;\\\\.&#34;</span>
+        rules:
+            - constant.specialChar: <span style="color:#e6db74">&#34;\\\\.&#34;</span></code></pre></div>
+<h3 id="comments">Comments</h3>
+
+<p>Most languages have different symbols for single line and multi liine comments.</p>
+
+<p>e.g. for a multi line comment (<em>&hellip;</em>)</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    - comment:
+        start: <span style="color:#e6db74">&#34;\\(\\*&#34;</span>
+        end: <span style="color:#e6db74">&#34;\\*\\)&#34;</span>
+        rules:
+            - todo: <span style="color:#e6db74">&#34;(TODO|XXX|FIXME):?&#34;</span></code></pre></div>
+<p>e.g. for a single line comment after # &hellip;</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    - comment:
+        start: <span style="color:#e6db74">&#34;#&#34;</span>
+        end: <span style="color:#e6db74">&#34;$&#34;</span>
+        rules: []</code></pre></div>
+<p>To keep the overview in your syntax file you can and should add some comments. Single line comments in a <code>.yaml</code> file start with <code>#</code>. There are no multi line comments.</p>
+
+<p>e.g. for a single line comment with a comment</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Yaml" data-lang="Yaml">    <span style="color:#75715e"># single line comment # ...</span>
+    - comment:
+        start: <span style="color:#e6db74">&#34;#&#34;</span>
+        end: <span style="color:#e6db74">&#34;$&#34;</span>
+        rules: []</code></pre></div>
+<p>The full example with comments can be found <a href="https://github.com/MarcusE1W/hello-world/blob/master/test-syntax.yaml">here</a></p></span>
+    </div><div id="post-tags">
+    	<ul class="menu">
+        <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/micro" rel="tag" itemprop="url">micro</a>
+    		</li></ul>
+    </div></article>
+
+  </main>
+
+        <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
+  
+  
+	
+  
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
+	</header>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/editor">Editor</a></li>
+		
+	</ul>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
+	</header>
+	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
+				archlinux (3)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
+				kwin (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
+				linux (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/lxqt" title="lxqt">
+				lxqt (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/man-pages" title="man pages">
+				man pages (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
+				markdown (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro" title="micro">
+				micro (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro-editor" title="micro editor">
+				micro editor (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/qemu" title="qemu">
+				qemu (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/spectrwm" title="spectrwm">
+				spectrwm (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/trizen" title="trizen">
+				trizen (1)
+			</a></div>
+</div>
+</aside>
+
+      </div>
+      <footer class="row">
+        <div class="small-full medium-half small-text-center medium-text-left medium-left row">
+          <div class="small-full">
+            <small>
+              &copy; 2018
+              <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">The Absolute Beginner</span>
+              </span>
+            </small>
+          </div>
+          <div class="small-full row">
+            
+            
+            
+          </div>
+        </div>
+        
+        <div id="social-icons" class="row small-full medium-half small-text-center medium-text-right">
+
+
+
+
+
+
+<a href="https://gitlab.com/BluestNight/BluestNight" class="row-item" rel="me nofollow">
+  <span class="fa fa-gitlab"></span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+      </footer>
+    </div>
+    
+  </body>
+</html>

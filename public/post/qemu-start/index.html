@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A QEMU Virtual machine with a Windows host and a Linux guest</title>
+
+    
+    
+    
+    <link rel="preload" href="https://absolute-beginner.netlify.com/styles.css" as="style" />
+
+    <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/" />
+    <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
+
+    <meta name="description" itemprop="description" content="&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.39" /><meta name="keywords" itemprop="keywords" content="Archlinux,QEMU" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/qemu-start/">
+
+    <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
+
+    <link rel="stylesheet" type="text/css" href="https://absolute-beginner.netlify.com/styles.css">
+    <script>
+ 
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <script>var _paq = undefined;</script></head>
+  <body itemscope itemtype="http://schema.org/WebPage">
+    <div id="site-container">
+      <div id="site-header">
+        <a href="https://absolute-beginner.netlify.com">
+          <header class="small-text-left medium-text-left row">
+            <div class="row-item">
+              <span id="site-title" itemprop="name">The Absolute Beginner</span>
+              <br/><span id="site-tagline">Experiences from a permanent beginner</span>
+            </div>
+          </header>
+        </a>
+        <label for="menu-toggle-box"><div id="menu-toggle" class="main-nav no-select"><span><span class="fa fa-bars"></span> MENU</span></div></label>
+        <input type="checkbox" id="menu-toggle-box" class="hide"/>
+        <nav id="main-nav">
+          <ul class="menu"><li class="no-select" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <input type="checkbox" id="nav-about" class="hide"/>
+    <a class="main-nav button" tabindex="0" href="/about/" >
+      <span>ABOUT</span></a></li></ul>
+        </nav>
+        </div>
+      <div id="main-container" class="row" role="main" itemprop="mainContentOfPage">
+        
+        
+        
+<main class="row-item small-full medium-two-thirds" >
+  <article id="post-article" itemscope itemtype="http://schema.org/Article" itemref="keywords desc">
+    <header id="page-header">
+      <h1 itemprop="headline">A QEMU Virtual machine with a Windows host and a Linux guest</h1><p id="post-metadata" class="row"><span class="row-item">
+          <span class="fa fa-clock-o"></span>
+          <strong>Published:</strong>
+          <time datetime="2018-03-29" content="2018-03-29" itemprop="datePublished">March 29, 2018</time>
+        </span><span class="row-item">
+          <span class="fa fa-folder"></span>
+          <a href="https://absolute-beginner.netlify.com/categories/system" rel="category">System</a>
+        </span><span class="row-item"><span class="fa fa-book"></span> <strong>Estimated reading time:</strong> ~<span itemprop="timeRequired">5 minutes</span></span></p>
+      
+    </header>
+    
+    <div id="post-content">
+      <span itemprop="articleBody"><p>Run a (Arch)Linux system in a QEMU virtual machine on your Windows.</p>
+
+<p></p>
+
+<h1 id="intro">Intro</h1>
+
+<p>This is my first try to use QEMU to run Archlinux in a virtual machine.</p>
+
+<p>To use a virtual machine like QEMU can be quite useful for various reasons.
+- You cannot reinstall something else on you system. You need it as it is. So to install something new is not an option.
+- You sometimes just want to try a new operationg system without much risk that if anything goes wrong your current system takes dammage.</p>
+
+<p>If you have the choice between a system with 32 and 64 bit then choose the 64bit one. The newer 64bis processors have additional processor commands to support virtual machines. Sometimes these virtualization functions still have to be turned on in the BIOS.</p>
+
+<p>When talking about virtual machines you find the experessions hosd and guest a lot.
+- The <strong>host</strong> is the system that provides the virtual machine. In our case that is the Windows system.
+- The <strong>guest</strong> is the operating system that runs in the virtual machine. In our case Archlinux.</p>
+
+<p>Also to use QEMU you need to use the Windows command prompt. I haven&rsquo;t used it for 15 years, but what you need is really basic so you should be all right.</p>
+
+<p>In this article I wan to set up a QEMU virtual machine with a Windows host and a Archlinux guest.</p>
+
+<p>When the virtual machine is used I am looking for this kind of configuration:
+- 2G of RAM memory
+- 8 GB hard drive (enough for a test, for a system you use you might want more )
+- 2 Proccessors
+- 64MB Video Memory
+- support for my native display resolution of 1366x768
+- Network access
+- shared drive between guest and host to exchange files
+- shared clipboard between guest and host</p>
+
+<p>Wifi setup is not for the guest Linux required even if you are actually using Wifi for you host computer. The virtual machine will make the network available to the guest as if it is a cable.</p>
+
+<h1 id="install-qemu-on-windows">Install QEMU on Windows</h1>
+
+<p>You can install QUEMU from their <a href="https://www.qemu.org">website</a>.
+The installation is quite straight foreward.</p>
+
+<p>After the installation all QEMU commands are in the QEMU folder. However, at least in my case the folder has not been added to the Windows search path. That means the commads will not be found if you just type them into the command prompt.</p>
+
+<p>So instead of typing a <code>command</code> you have to be in the QEMU folder and then type <code>./command</code></p>
+
+<h1 id="starting-the-virtual-machine">Starting the virtual machine</h1>
+
+<p>Before you can start to install a new system you need a filesystem that the virtual machine can use and also a linux distribution ISO file.</p>
+
+<h2 id="create-a-virtual-hard-drive">Create a virtual hard drive</h2>
+
+<p>To be able to install linux it has to has access to a hard drive. For a virtual machine the hadr drive will be emualted by a file on Windows. There are two options for that file:
+- <strong>qcow2</strong> : This format creadet a drive for linux that has exactly the size you specify on the linux guest side. However the Windows file that represents the hard drive will only grow to the size that is needed. So this option saves space but can also be bit slower.
+- <strong>raw</strong> : The file uses exactly the sixe on your host Windows drive as you have specified. This option can be a bit quicker.</p>
+
+<p>For this article we will use <strong>qcow2</strong>. You can create the drive whereever you want. I will put is in a sub-folder in QEMU named <em>harddrive</em>. The actually file is called <em>archlinux.hd</em></p>
+
+<p>Type this to create the harddrive:</p>
+
+<pre><code>./qemu-img create -f qcow2 harddrive\archlinux.hd 8G
+</code></pre>
+
+<h2 id="download-a-linux-distribution-to-install">Download a linux distribution to install</h2>
+
+<p>First you need to download a linux ISO file somewhere. If you are not sure which one you want the <a href="distrowatch.com">distrowatch</a> lists a lot of choices and ranks them by usage. Alsoo some description is given and for some linux distros you can also find some reviews.</p>
+
+<p>As the title said, for this article I will use Anarchy Linux. That is basically an installer helper to set up an Archlinux system without the hassel to do it all by hand. It&rsquo;s all driven by menus. Previously Anarchy Linux was also called ArchAnywhere. It is probably helpful if you have set up Archlinux by hand once, but not mandatory. Also some knowledge about using the shell is helpful for Archlinux. It is not difficult though and comes quite natural.</p>
+
+<p>If in doubt maybe start with <a href="https://manjaro.org/">Manjaro</a>. That is a Archlinux based distro that is tailored for ease of use. It is quite popular, has decent documentation and you find a lot of help and forums in in the web.</p>
+
+<p>Anarchy Linux can be found <a href="https://anarchy-linux.org/">here</a></p>
+
+<h2 id="run-the-virtual-machine">Run the virtual machine</h2>
+
+<p>So now that all prepparations are done we can start the QEMU virtual machine. And istall the Linux in the virtual hard drive.</p>
+
+<pre><code>qemu-system-x86_64 -m 2G -cdrom anarchy-cli-1.0.0-x86_64.iso -boot order=d -drive file=harddrive\archlinux.hd
+</code></pre>
+
+<ul>
+<li><code>m</code>: sets the memory available for the VM. Here 2GB, other options could be 512MB or whatever you want to give your Linux system.</li>
+<li><code>-boot order=d</code> boot from cdrom rather than from hard drive.</li>
+</ul>
+
+<p>To start and try your shiny new VM you can start it with</p>
+
+<pre><code>qemu-system-x86_64 -m 2G -boot order=c -drive file=harddrive\archlinux.hd
+</code></pre>
+
+<p>Aaand it turns out it is quite slow.</p>
+
+<p>Luckily some things can be done.
+1. Currently we use only one processor, So that can be increased to two.
+2. QEMU needs some Intel libraries to support the hardware acceleration for modern AMD64 (aka X86_64) processors.</p>
+
+<ul>
+<li>To use 2 processors add the parameter <code>-smp 2</code> for 2 processors. That helps but not much.</li>
+</ul>
+
+<p>The second option is to use the parameter <code>-accel hax</code>. There is a Intel package that needs to be present for this parameter to work.
+Instructions <a href="https://www.qemu.org/2017/11/22/haxm-usage-windows/">here</a></p>
+
+<p>The <em>-accel hax</em> switch does seem to speed up things. Only problem so far is that my Linux insatllation crashes.</p>
+
+<p><em>to be continued, hopefully</em></p></span>
+    </div><div id="post-tags">
+    	<ul class="menu">
+        <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/archlinux" rel="tag" itemprop="url">archlinux</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/qemu" rel="tag" itemprop="url">q e m u</a>
+    		</li></ul>
+    </div></article>
+
+  </main>
+
+        <aside class="row-item small-full medium-third right" itemscope itemtype="http://schema.org/WPSideBar">
+  
+  
+	
+  
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
+	</header>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/editor">Editor</a></li>
+		
+	</ul>
+</div>
+	<div class="widget">
+	<header>
+		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
+	</header>
+	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
+				archlinux (3)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
+				kwin (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
+				linux (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/lxqt" title="lxqt">
+				lxqt (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/man-pages" title="man pages">
+				man pages (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
+				markdown (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro" title="micro">
+				micro (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro-editor" title="micro editor">
+				micro editor (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/qemu" title="qemu">
+				qemu (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/spectrwm" title="spectrwm">
+				spectrwm (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/trizen" title="trizen">
+				trizen (1)
+			</a></div>
+</div>
+</aside>
+
+      </div>
+      <footer class="row">
+        <div class="small-full medium-half small-text-center medium-text-left medium-left row">
+          <div class="small-full">
+            <small>
+              &copy; 2018
+              <span itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name">The Absolute Beginner</span>
+              </span>
+            </small>
+          </div>
+          <div class="small-full row">
+            
+            
+            
+          </div>
+        </div>
+        
+        <div id="social-icons" class="row small-full medium-half small-text-center medium-text-right">
+
+
+
+
+
+
+<a href="https://gitlab.com/BluestNight/BluestNight" class="row-item" rel="me nofollow">
+  <span class="fa fa-gitlab"></span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+      </footer>
+    </div>
+    
+  </body>
+</html>

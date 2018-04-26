@@ -15,7 +15,7 @@
     <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
 
-    <meta name="description" itemprop="description" content="&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.37.1" /><meta name="keywords" itemprop="keywords" content="man pages,markdown" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/man-markdown/">
+    <meta name="description" itemprop="description" content="&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.39" /><meta name="keywords" itemprop="keywords" content="man pages,markdown" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/man-markdown/">
 
     <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
@@ -70,7 +70,7 @@
 
 <p></p>
 
-<h1 id="create-a-unix-man-page-with-markdown-using-pandoc">Create a (unix) man page with Markdown using pandoc</h1>
+<h2 id="create-a-unix-man-page-with-markdown-using-pandoc">Create a (unix) man page with Markdown using pandoc</h2>
 
 <p>Man pages are application documentation that you find for almost every Unix/BSD/.. system. The format is text based on a markup language called <code>Nroff</code>. The principle concept is similar to Markdown, however the markup language <code>nroff</code> is a quite a bit less readable than markdown.
 Often variations of the <code>nroff</code> format are used like <code>groff</code>.</p>
@@ -90,14 +90,15 @@ Often variations of the <code>nroff</code> format are used like <code>groff</cod
 
 <h2 id="installation-of-pandoc">Installation of pandoc</h2>
 
-<p>As pandoc is often not installed as a standard tool you first have to install it on your system.</p>
+<p>As pandoc is often not installed as a standard tool you first have to install it on your system.
+Pandoc should be available from the package manager of your system.</p>
 
-<h3 id="installation-for-archlinux">Installation for Archlinux</h3>
+<p>For Archlinux type:</p>
 
-<pre><code>pacman -S pandoc
+<pre><code>sudo pacman -S pandoc
 </code></pre>
 
-<p>Note: The above command installs quite a lot of dependencies. This is because it uses many shared files from Haskell (the programming language pandoc is build with). If you don&rsquo;t have use for haskell otherwise there is a pandoc version on the AUR called XXXXXXX that does not have these dependencies.</p>
+<p>Note: The above command installs quite a lot of dependencies on Archlinux. This is because it uses many shared files from Haskell (the programming language pandoc is build with). If you don&rsquo;t have use for Haskell otherwise there is a pandoc version in the AUR called <code>pandoc-bin</code> that does not have these dependencies. You can install that package instead.</p>
 
 <h2 id="create-a-man-page-with-pandoc">Create a man page with pandoc</h2>
 
@@ -158,6 +159,12 @@ HISTORY - of the programme if that is helpful</p>
 
 <p>It is absolutely fine to use only some of these headers like for example: NAME, SYNOPSIS, OPTIONS or any other combination. Remember that NAME is expected.</p>
 
+<h2 id="useful-links">Useful links:</h2>
+
+<ul>
+<li>A good introduction into <a href="https://www.cyberciti.biz/faq/linux-unix-creating-a-manpage/">man pages</a></li>
+</ul>
+
 <h1 id="creating-a-man-page-from-a-github-readme-md">Creating a man page from a GitHub README.md</h1>
 
 <p>If you have a README.md in for example GitHub that explains your programme reasonably well you could use that file to create your man page. All you have to do is to add the above headers in the decisive places and the convert the updated file into a man page.</p>
@@ -184,9 +191,10 @@ HISTORY - of the programme if that is helpful</p>
 	<header>
 		<span class="widget-header"><span class="fa fa-folder"></span> <a href="https://absolute-beginner.netlify.com/categories/">Categories</a></span>
 	</header>
-	<ul><li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
+	<ul><li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments">Desktop Environments</a></li>
 		<li><a href="https://absolute-beginner.netlify.com/categories/development">Development</a></li>
-		<li><a href="https://absolute-beginner.netlify.com/categories/system">System</a></li>
+		<li><a href="https://absolute-beginner.netlify.com/categories/editor">Editor</a></li>
 		
 	</ul>
 </div>
@@ -195,7 +203,7 @@ HISTORY - of the programme if that is helpful</p>
 		<span class="widget-header"><span class="fa fa-tags"></span> <a href="https://absolute-beginner.netlify.com/tags/">Tags</a></span>
 	</header>
 	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
-				archlinux (2)
+				archlinux (3)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
 				kwin (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
@@ -206,6 +214,16 @@ HISTORY - of the programme if that is helpful</p>
 				man pages (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/markdown" title="markdown">
 				markdown (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro" title="micro">
+				micro (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/micro-editor" title="micro editor">
+				micro editor (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/qemu" title="qemu">
+				qemu (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/spectrwm" title="spectrwm">
+				spectrwm (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/trizen" title="trizen">
+				trizen (1)
 			</a></div>
 </div>
 </aside>
