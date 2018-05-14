@@ -108,6 +108,8 @@ Luckily some things can be done.
 The second option is to use the parameter `-accel hax`. There is a Intel package that needs to be present for this parameter to work.
 Instructions [here](https://www.qemu.org/2017/11/22/haxm-usage-windows/)
 
-The _-accel hax_ switch does seem to speed up things. Only problem so far is that my Linux insatllation crashes.
+The _-accel hax_ switch does seem to speed up things. Only problem so far is that my Linux installation crashes.
+Well.
 
 _to be continued, hopefully_
+dies das 

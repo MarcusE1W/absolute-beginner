@@ -1,0 +1,52 @@
++++
+title= "mg and qemacs editor"
+date= 2018-05-09
+hide_authorbox = false
+disable_comments = false
+categories = ["Editor"]
+tags = ["", "Org-Mode"]
+markup = "org"
+draft = true
++++
+
+A first look at micro emacs like editors: mg and qemacs uemacs
+
+ 
+<!--more-->
+
+Emacs is a very capable editor, it is also quite large, needs a lot of memory and is sometimes a bit slow.
+There some smaller editors though that support most of the keybindings of the 'big' Emacs and are much smaller. The most famous is prpobably Micro Emacs. Over the years variations of Micro Emacs appeared.
+
+Here are some of them which are still up to date:
+- UEmacs - famously beeing used by Linus Torwalds
+- mg - a Micro Emacs clone and now part of the OpenBSD distro
+- QEmacs - which even supports some more advanced graphic text display
+
+Before you start there are some common keybindings in Emacs that are worth knowing:
+
+| Function | Key |
+| --- | --- |
+| Safe file | Ctrl-x Ctrl-s |
+| Close editor | Ctrl-x Ctrl-c |
+| Cancel (almost everything) | Ctrl-g |
+
+
+
+
+
+* UEmacs
+- appears a bit unrefined and you need to knwo the editor well
+- [Micro Emacs Documentation, a bit older but..](http://www.mtxia.com/fancyIndex/Tools/Editors/MicroEMACS/meonline.html)
+
+* mg
+To learn this it worls quite lnicely to have the main window with the editor 
+and then show the man page in either a vertical split of the termianl or a seperate terminal.
+That way you can show the key-bindings list next to the editor. 
+Works well for me.
+
+
+
+* QEmacs
+- supports syntax highlighting
+- starts in graphic mode as standard.
+- =qemacs -nw= starts in the terminal

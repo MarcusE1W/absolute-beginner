@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://absolute-beginner.netlify.com/post/spacemacs/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://absolute-beginner.netlify.com/post/micro-syntax1/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url>
@@ -57,7 +62,7 @@
   
   <url>
     <loc>https://absolute-beginner.netlify.com/categories/editor/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -105,13 +110,19 @@
   
   <url>
     <loc>https://absolute-beginner.netlify.com/post/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://absolute-beginner.netlify.com/tags/qemu/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://absolute-beginner.netlify.com/tags/spacemacs/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -135,13 +146,19 @@
   
   <url>
     <loc>https://absolute-beginner.netlify.com/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://absolute-beginner.netlify.com/tags/trizen/</loc>
     <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://absolute-beginner.netlify.com/tags/vim/</loc>
+    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

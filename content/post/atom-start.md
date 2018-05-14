@@ -27,7 +27,7 @@ trizen -S atom
 | function              | key                |
 | --------------------- | ------------------ |
 | Multi-cursor up       | Shift-Alt-Up       |
-| Multi-cursor pagedown | Shift-Alt-pagedown |
+| Multi-cursor pagedown | Shift-Alt-PageDown |
 | Copy line             | Ctrl-L             |
 | Select Word           | Ctrl-D             |
 | Douplicate line       | Shift-Ctrl-D       |
