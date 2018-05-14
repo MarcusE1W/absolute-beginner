@@ -50,9 +50,9 @@ enableRobotsTXT = true
 #    patreon = "shadow53"
     upcoming_events = false
 
-    [Params.social]
-    gitlab = "BluestNight/BluestNight"
-
+[Params.social]
+    github = "MarcusE1W/absolute-beginner"
+    
 # [menu]
 #   [[menu.main]]
 #     name = "Alert"
