@@ -60,11 +60,11 @@ Start Arch Anywhere. I have chosen the following setup. Feel free to change.
 4. Install Kwin
 > `sudo pacman -S kwin`
 
-5. Instal Kwin system setting dialog
+5. Install Kwin system setting dialog
 This enanbles the Kwin setting dialog. You can access the setting by clicking in the upper left menu of a window. There you see *more actions* and in that menu you see
 > `sudo pacman -S kde-cli-tools`
 
-6. Kwin-Gtk compability
+6. Kwin-Gtk compatibility
 To change the theme of GTK apps in LXQt you need the LXDE appearance app. It has almost no dependencies, so it does not add much.
 > `sudo pacman -S lxappearance`
 In the lxappearance app you can chose the theme the gtk apps use.
@@ -82,17 +82,17 @@ In my installation I had trouble with changing apps using Alt-Tab. Looking into 
 
 ## Install additional software
 
-This is a selection of mostly Qt software that I found usefull.
+This is a selection of mostly Qt software that I found useful.
 
 ### Browser
-I have chosen Qupzilla. Serves me well and is relativlely light.
+I have chosen Qupzilla. Serves me well and is relatively light.
 > `sudo pacman -S qupzilla`
 
-ALternative:
+Alternative:
 > `sudo pacman -S firefox`
 
 ###AUR repository
-To use packages from the AUR repository it is very helpful to use a package managemr for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.
+To use packages from the AUR repository it is very helpful to use a package manager for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.
 
 ```
 git clone https://aur.archlinux.org/trizen.git
@@ -120,7 +120,7 @@ Install lximage package from AUR repository
 > `trizen -S qdirstat`
 
 ### Terminal: LX Terminal
-Many LXQt editions use Qterminal. I like it but some keys are not accessible from programms in the console. So I use LX Termianl which has hardly any dependencies and is a bit smoother in my view.
+Many LXQt editions use Qterminal. I like it but some keys are not accessible from programs in the console. So I use LX Terminal which has hardly any dependencies and is a bit smoother in my view.
 
 > `sudo pacman -S lxterminal`
 

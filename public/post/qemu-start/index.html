@@ -76,11 +76,11 @@
 
 <p>To use a virtual machine like QEMU can be quite useful for various reasons.
 - You cannot reinstall something else on you system. You need it as it is. So to install something new is not an option.
-- You sometimes just want to try a new operationg system without much risk that if anything goes wrong your current system takes dammage.</p>
+- You sometimes just want to try a new operating system without much risk that if anything goes wrong your current system takes damage.</p>
 
-<p>If you have the choice between a system with 32 and 64 bit then choose the 64bit one. The newer 64bis processors have additional processor commands to support virtual machines. Sometimes these virtualization functions still have to be turned on in the BIOS.</p>
+<p>If you have the choice between a system with 32 and 64 bit then choose the 64bit one. The newer 64bit processors have additional processor commands to support virtual machines. Sometimes these virtualization functions still have to be turned on in the BIOS.</p>
 
-<p>When talking about virtual machines you find the experessions hosd and guest a lot.
+<p>When talking about virtual machines you find the expressions host and guest a lot.
 - The <strong>host</strong> is the system that provides the virtual machine. In our case that is the Windows system.
 - The <strong>guest</strong> is the operating system that runs in the virtual machine. In our case Archlinux.</p>
 
@@ -91,7 +91,7 @@
 <p>When the virtual machine is used I am looking for this kind of configuration:
 - 2G of RAM memory
 - 8 GB hard drive (enough for a test, for a system you use you might want more )
-- 2 Proccessors
+- 2 Processors
 - 64MB Video Memory
 - support for my native display resolution of 1366x768
 - Network access
@@ -103,9 +103,9 @@
 <h1 id="install-qemu-on-windows">Install QEMU on Windows</h1>
 
 <p>You can install QUEMU from their <a href="https://www.qemu.org">website</a>.
-The installation is quite straight foreward.</p>
+The installation is quite straight forward.</p>
 
-<p>After the installation all QEMU commands are in the QEMU folder. However, at least in my case the folder has not been added to the Windows search path. That means the commads will not be found if you just type them into the command prompt.</p>
+<p>After the installation all QEMU commands are in the QEMU folder. However, at least in my case the folder has not been added to the Windows search path. That means the commands will not be found if you just type them into the command prompt.</p>
 
 <p>So instead of typing a <code>command</code> you have to be in the QEMU folder and then type <code>./command</code></p>
 
@@ -115,11 +115,11 @@ The installation is quite straight foreward.</p>
 
 <h2 id="create-a-virtual-hard-drive">Create a virtual hard drive</h2>
 
-<p>To be able to install linux it has to has access to a hard drive. For a virtual machine the hadr drive will be emualted by a file on Windows. There are two options for that file:
-- <strong>qcow2</strong> : This format creadet a drive for linux that has exactly the size you specify on the linux guest side. However the Windows file that represents the hard drive will only grow to the size that is needed. So this option saves space but can also be bit slower.
-- <strong>raw</strong> : The file uses exactly the sixe on your host Windows drive as you have specified. This option can be a bit quicker.</p>
+<p>To be able to install linux it has to has access to a hard drive. For a virtual machine the hard drive will be emulated by a file on Windows. There are two options for that file:
+- <strong>qcow2</strong> : This format created a drive for linux that has exactly the size you specify on the linux guest side. However the Windows file that represents the hard drive will only grow to the size that is needed. So this option saves space but can also be bit slower.
+- <strong>raw</strong> : The file uses exactly the size on your host Windows drive as you have specified. This option can be a bit quicker.</p>
 
-<p>For this article we will use <strong>qcow2</strong>. You can create the drive whereever you want. I will put is in a sub-folder in QEMU named <em>harddrive</em>. The actually file is called <em>archlinux.hd</em></p>
+<p>For this article we will use <strong>qcow2</strong>. You can create the drive wherever you want. I will put is in a sub-folder in QEMU named <em>harddrive</em>. The actually file is called <em>archlinux.hd</em></p>
 
 <p>Type this to create the harddrive:</p>
 
@@ -128,9 +128,9 @@ The installation is quite straight foreward.</p>
 
 <h2 id="download-a-linux-distribution-to-install">Download a linux distribution to install</h2>
 
-<p>First you need to download a linux ISO file somewhere. If you are not sure which one you want the <a href="distrowatch.com">distrowatch</a> lists a lot of choices and ranks them by usage. Alsoo some description is given and for some linux distros you can also find some reviews.</p>
+<p>First you need to download a linux ISO file somewhere. If you are not sure which one you want the <a href="distrowatch.com">distrowatch</a> lists a lot of choices and ranks them by usage. Also some description is given and for some linux distros you can also find some reviews.</p>
 
-<p>As the title said, for this article I will use Anarchy Linux. That is basically an installer helper to set up an Archlinux system without the hassel to do it all by hand. It&rsquo;s all driven by menus. Previously Anarchy Linux was also called ArchAnywhere. It is probably helpful if you have set up Archlinux by hand once, but not mandatory. Also some knowledge about using the shell is helpful for Archlinux. It is not difficult though and comes quite natural.</p>
+<p>As the title said, for this article I will use Anarchy Linux. That is basically an installer helper to set up an Archlinux system without the hassle to do it all by hand. It&rsquo;s all driven by menus. Previously Anarchy Linux was also called ArchAnywhere. It is probably helpful if you have set up Archlinux by hand once, but not mandatory. Also some knowledge about using the shell is helpful for Archlinux. It is not difficult though and comes quite natural.</p>
 
 <p>If in doubt maybe start with <a href="https://manjaro.org/">Manjaro</a>. That is a Archlinux based distro that is tailored for ease of use. It is quite popular, has decent documentation and you find a lot of help and forums in in the web.</p>
 
@@ -138,7 +138,7 @@ The installation is quite straight foreward.</p>
 
 <h2 id="run-the-virtual-machine">Run the virtual machine</h2>
 
-<p>So now that all prepparations are done we can start the QEMU virtual machine. And istall the Linux in the virtual hard drive.</p>
+<p>So now that all preparations are done we can start the QEMU virtual machine. And install the Linux in the virtual hard drive.</p>
 
 <pre><code>qemu-system-x86_64 -m 2G -cdrom anarchy-cli-1.0.0-x86_64.iso -boot order=d -drive file=harddrive\archlinux.hd
 </code></pre>
@@ -169,8 +169,7 @@ Instructions <a href="https://www.qemu.org/2017/11/22/haxm-usage-windows/">here<
 <p>The <em>-accel hax</em> switch does seem to speed up things. Only problem so far is that my Linux installation crashes.
 Well.</p>
 
-<p><em>to be continued, hopefully</em>
-dies das</p></span>
+<p><em>to be continued, hopefully</em></p></span>
     </div><div id="post-tags">
     	<ul class="menu">
         <li class="row-item"><i class="fa fa-tags"></i>&nbsp;&nbsp;</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/archlinux" rel="tag" itemprop="url">archlinux</a>

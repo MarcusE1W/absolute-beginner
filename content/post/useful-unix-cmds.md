@@ -15,7 +15,7 @@ Some helpful or interesting unix commands
 
 
 
-### cal			create a calender**
+### cal			create a calendar**
 
 `cal -3` shows three month
 `cal -n 5` shows 5 month
@@ -25,7 +25,7 @@ For a nice ls -l replacement use
 ```
 exa -l --header --binary  --git
 ```
-`-l` or `--long` lists the file in a long version like comand ls
+`-l` or `--long` lists the file in a long version like command ls
 `--header` or `-h` writes a header column as the first line
 `--binary` or `-b` gives the size of the file
 `--git` shows the git status

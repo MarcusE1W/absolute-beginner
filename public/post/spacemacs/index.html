@@ -83,11 +83,11 @@ The good news is that with Spacemacs you don&rsquo;t have to remember all comman
 
 <h2 id="executing-commands-in-spacemacs">Executing commands in Spacemacs</h2>
 
-<p>The main way to execute commands is to press SPC (the space key) and then a kombination of keys for the specific command. Once <code>SPC</code> has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.</p>
+<p>The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once <code>SPC</code> has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.</p>
 
 <h2 id="opening-files">Opening files</h2>
 
-<p>There are several ways to open a file, but a good start is the file selector Neotree, activated with <code>SPC f t</code>.
+<p>There are several ways to open a file, but a good start is the file selector neotree, activated with <code>SPC f t</code>.
 Move to the neotree window with SPC 0 and back to the other previous buffer with it&rsquo;s number <code>SPC &lt;window number&gt;</code>.</p>
 
 <p>While using neotree</p>
@@ -108,7 +108,7 @@ Move to the neotree window with SPC 0 and back to the other previous buffer with
 
 <tr>
 <td>Rename a file.</td>
-<td>r (remane)</td>
+<td>r (rename)</td>
 </tr>
 
 <tr>
@@ -125,22 +125,22 @@ Move to the neotree window with SPC 0 and back to the other previous buffer with
 
 <h2 id="basic-spacemacs-evil-vim-commands">Basic Spacemacs Evil (Vim) commands</h2>
 
-<p>There are (I am sure but have not made it that far yet) many usefule vim commands to edit your text and work with the editor. I think as a beginner you don&rsquo;t need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
-The vim mode is a so called modal model. This means it has several different modes that are specialised in doing one thing especially good. The Spacemacs documentation describes this very well [LINK].</p>
+<p>There are (I am sure but have not made it that far yet) many useful vim commands to edit your text and work with the editor. I think as a beginner you don&rsquo;t need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
+The vim mode is a so called modal model. This means it has several different modes that are specialized in doing one thing especially good. The Spacemacs documentation describes this very <a href="http://spacemacs.org/doc/DOCUMENTATION.html#states">well</a>.</p>
 
 <p>Spacemacs also shows a different colour for the window number depending on your mode.</p>
 
 <ul>
 <li>Normal mode (ESC). This is where you execute vim commands and edit text, not to write text. To write text you switch to insert mode.</li>
 <li>Insert mode (i). Use insert mode to write text. some more basic text editing also works here.</li>
-<li>Visual mode (v/V) This is where you select text. Change to visual mode and select text. Then execute commands. You can execute vim commands like copy but you can also execute the SPC sommands from spacemacs that are relevant for text selection.</li>
+<li>Visual mode (v/V) This is where you select text. Change to visual mode and select text. Then execute commands. You can execute vim commands like copy but you can also execute the SPC commands from spacemacs that are relevant for text selection.</li>
 </ul>
 
-<p>Vim (and Spacemacs uses a Vim emulation) is famous for beeing a modal editor. That means basically it has one mode to write text called <code>insert mode</code> and some other modes to work with and format the text. Hence the name modal editor, there are several modes where different things happen like writing, editing, working with selections.
+<p>Vim (and Spacemacs uses a Vim emulation) is famous for being a modal editor. That means basically it has one mode to write text called <code>insert mode</code> and some other modes to work with and format the text. Hence the name modal editor, there are several modes where different things happen like writing, editing, working with selections.
 The most important of these functional modes is <code>normal mode</code>. When you start spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.</p>
 
 <p>In normal mode you can use normal keys to execute commands, no need for Ctrl-this or that.
-E.g. if you want tom copy the char under the cursor, you press <code>y</code> in normal mode. To inset what has been copied press <code>p</code>. If you want to select more than one character as you normally do, you enter visual mode with <code>v</code>, then mark the test to select and press <code>y</code> to copy your selection and afain <code>p</code> to paste.</p>
+E.g. if you want tom copy the char under the cursor, you press <code>y</code> in normal mode. To inset what has been copied press <code>p</code>. If you want to select more than one character as you normally do, you enter visual mode with <code>v</code>, then mark the test to select and press <code>y</code> to copy your selection and again <code>p</code> to paste.</p>
 
 <table>
 <thead>
@@ -258,7 +258,7 @@ E.g. if you want tom copy the char under the cursor, you press <code>y</code> in
 </tbody>
 </table>
 
-<p>The idea behind the hjkl keys for cursor movement is that the hands have not to move from the base key line of your keyboard to move the cursor. The base row is the middel row of characters on your keyboard. This way your hads do not have to move around so much to reach the arrow-keys or the mouse. However,  you can also use the arrow keys.</p>
+<p>The idea behind the hjkl keys for cursor movement is that the hands have not to move from the base key line of your keyboard to move the cursor. The base row is the middle row of characters on your keyboard. This way your hands do not have to move around so much to reach the arrow-keys or the mouse. However,  you can also use the arrow keys.</p>
 
 <ul>
 <li>In insert mode the arrow keys, page-up, page-down, Home and End keys can be used.</li>
@@ -325,7 +325,7 @@ Here now some more clever bits, and they benefit very much form the fact that yo
 </tbody>
 </table>
 
-<p><code>diw</code> works simular to yiw. It deletes the word under the cursor.
+<p><code>diw</code> works similar to yiw. It deletes the word under the cursor.
 <code>df.</code> is a clever bit. It deletes everything until it finds the next <code>.</code> You can search for other letters as well.</p>
 
 <p>Mind you that all operations with <code>d</code> cut the text and don&rsquo;t just delete it. The current content of your standard clipboard will be overwritten.</p>
@@ -387,7 +387,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <li>After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it&rsquo;s first letter.</li>
 <li>All the corresponding letters in the visible text of the window will be marked with a two letter combination.</li>
 <li>Key in the two colourful letters of the position at the beginning of the word where you want to jump and there you are.</li>
-<li>It is much more straight foreward than it sounds. Try it.</li>
+<li>It is much more straight forward than it sounds. Try it.</li>
 </ol>
 
 <h2 id="file-handling">File handling</h2>
@@ -428,7 +428,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 
 <p>Additinally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the <code>*Messages</code> buffer.</p>
 
-<p>To keep an overview there are several SPC commads to manage windows and buffer.</p>
+<p>To keep an overview there are several SPC commands to manage windows and buffer.</p>
 
 <ul>
 <li>To activate a specific window on your screen you can type <code>SPC &lt;buffer-number&gt;</code></li>
@@ -438,7 +438,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 
 <ul>
 <li><code>SPC w d</code> (window delete). This will close the currently active window. The buffer is still open but not visible and you can continue writing at a later time.</li>
-<li><code>SPC b d</code> (buffer delete). This will close the buffer (file). That means either you have saved the text or you will be asked to save it and then it is closed. the window however will stay open and a differnt buffer will be shown in this window. Confusingly it can happen that the same buffer (file) is shown in two windows. In that case you probaly don&rsquo;t need all the windows and you can close one with <code>SPC w d</code> or open another file in the second window.</li>
+<li><code>SPC b d</code> (buffer delete). This will close the buffer (file). That means either you have saved the text or you will be asked to save it and then it is closed. the window however will stay open and a different buffer will be shown in this window. Confusingly it can happen that the same buffer (file) is shown in two windows. In that case you probably don&rsquo;t need all the windows and you can close one with <code>SPC w d</code> or open another file in the second window.</li>
 <li>To close window and buffer at the same time you can use <code>SPC w x</code> or <code>SPC b x</code></li>
 </ul>
 
@@ -451,7 +451,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 
 <h2 id="configuration">Configuration</h2>
 
-<p>As mentioned in many places, confiuration  in Spacemacs happens in the .spacemacs file. The .spacemacs file is largely split in 6 sections:</p>
+<p>As mentioned in many places, configuration  in Spacemacs happens in the .spacemacs file. The .spacemacs file is largely split in 6 sections:</p>
 
 <p>&hellip;.. some comments at the top</p>
 
@@ -475,7 +475,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <li>In the first section you find already predefined configuration functions with default settings. Not so important fo the beginner</li>
 <li>This is the important bit. Here you can add and remove layers. A core function of Spacemacs</li>
 <li>Here are all sorts of parameter and switches for Spacemacs. You find a small description of what they do in the comments above.</li>
-<li>Here you can put settings for the start of Sapcemacs. If in doubt use section 5 though.</li>
+<li>Here you can put settings for the start of Spacemacs. If in doubt use section 5 though.</li>
 <li>User settings. Small pieces of code similar to the standards settings in sections 3 to set parameter for Spacemacs.</li>
 <li>Don&rsquo;t use</li>
 </ol>
@@ -486,7 +486,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 
 <p>Find the <code>dotspacemacs-configuration-layers</code> line.</p>
 
-<p>To add latex into the layer list it shcould look like this:</p>
+<p>To add latex into the layer list it should look like this:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">dotspacemacs-configuration-layers <span style="color:#f92672">&#39;</span>(
 latex
 other-layer
