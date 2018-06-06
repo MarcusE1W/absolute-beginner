@@ -15,7 +15,7 @@
     <link rel="preload" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" ></noscript>
 
-    <meta name="description" itemprop="description" content="&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.40.3" /><meta name="keywords" itemprop="keywords" content="Archlinux,Spectrwm,Micro editor,trizen" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/sys-setup/">
+    <meta name="description" itemprop="description" content="&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;  &lt;p&gt;&lt;/p&gt;" id="desc"><meta name="generator" content="Hugo 0.40.3" /><meta name="keywords" itemprop="keywords" content="Archlinux,Spectrwm,Micro editor,trizen,Fish shell,Atom" id="keywords"><link rel="canonical" href="https://absolute-beginner.netlify.com/post/sys-setup/">
 
     <link rel="preload" href="https://absolute-beginner.netlify.com/css/light.min.css" as="style"  onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://absolute-beginner.netlify.com/css/light.min.css" ></noscript>
@@ -57,7 +57,7 @@
       <h1 itemprop="headline">My system setup</h1><p id="post-metadata" class="row"><span class="row-item">
           <span class="fa fa-clock-o"></span>
           <strong>Published:</strong>
-          <time datetime="2018-03-28" content="2018-03-28" itemprop="datePublished">March 28, 2018</time>
+          <time datetime="2018-04-28" content="2018-04-28" itemprop="datePublished">April 28, 2018</time>
         </span><span class="row-item">
           <span class="fa fa-folder"></span>
           <a href="https://absolute-beginner.netlify.com/categories/system" rel="category">System</a>
@@ -94,8 +94,8 @@ To change the <code>TERM</code> variable in the shell add to .bash_profile or wh
 <h2 id="atom-editor">Atom editor</h2>
 
 <ul>
-<li>Comand palette remembers last word</li>
-<li>set absolutely fabulous East End syntax/ui theme</li>
+<li>Comand palette remembers last word -&gt; settings edior</li>
+<li>set absolutely fabulous East End notebook syntax/ui theme</li>
 <li>remove RET from autocomplete-plus (set in settings menu)</li>
 <li>set ctrl-space for command pallete</li>
 <li>set alt-pageup/down to swith between left an right pane</li>
@@ -146,14 +146,14 @@ Allow to update your mirror list</li>
 <li><p>List explicitly installed packages</p>
 
 <pre><code>sudo pacman -Qqe
-</code></pre>
+</code></pre></li>
 
-<p>that are not also a dependency for other packages.</p>
+<li><p>that are not also a dependency for other packages.</p>
 
 <pre><code>sudo pacman -Qent
 </code></pre></li>
 
-<li><p>List all foreign packages. That means from AUR or manually installed.</p>
+<li><p>List all <em>foreign</em> packages. That means from AUR or manually installed.</p>
 
 <pre><code>pacman -Qn
 </code></pre></li>
@@ -163,7 +163,7 @@ Allow to update your mirror list</li>
 <pre><code>sudo pacman -Ql package_name
 </code></pre></li>
 
-<li><p>List all packages that have been installed as dependency to anouther package</p>
+<li><p>List all packages that have been installed as dependency to another package</p>
 
 <pre><code>sudo pacman -Qd
 </code></pre></li>
@@ -181,7 +181,7 @@ Allow to update your mirror list</li>
 <pre><code>new_window pixel 1
 </code></pre>
 
-<p>This leafes you with a small (blue) frame arounf the active window. If you want is to be more visible change the number to 2 or 3.
+<p>This leafes you with a small (blue) frame around the active window. If you want it to be more visible change the number to 2 or 3.
 TO make the frame go away entirely use 0 or <code>new window none</code></p>
 
 <p>To switch from one workspace to the next with the <code>Win</code> plus <code>PageUp</code> / <code>PageDown</code> keys add this in the config file.</p>
@@ -269,6 +269,22 @@ Fist install the fish shell.</p>
 
 <p>Instead of using setting varialbles (and this includes the $PATH) in .bashrc or .profile or so in fish you use the <code>set</code> command.
 So with <code>set TERM xterm-256color</code> you add a variable.</p>
+
+<p>I tink to export the variable you add  <code>-x</code></p>
+
+<h3 id="aliases-and-functions-in-fish">Aliases and functions in fish</h3>
+
+<p>To see all defined functions you can use the <code>functions</code> comand. NOte the plural.</p>
+
+<p>To see the definition of a specific function add the name after the command e.g. <code>functions ll</code></p>
+
+<p>Aliases are nothing else but functions in fish. Functions are described in the tutuorial. however, there is a convenient shortcut to define a functionin the form of the alias command. Not unsimilar to bash.</p>
+
+<p>With <code>alias la &quot;ls -a&quot;</code> you can define a alias/function for la.</p>
+
+<p>With <code>functions la</code> you can see how the functions definition you just created looks like.</p>
+
+<p>If you want to save the functions to make it permanent use &ldquo;funcsave la&rdquo;</p>
 
 <h2 id="spectrwm-tiling-window-manager">spectrwm tiling window manager</h2>
 
@@ -360,6 +376,8 @@ bind[ws_prev]	    = MOD+Prior
     		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/spectrwm" rel="tag" itemprop="url">spectrwm</a>
     		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/micro-editor" rel="tag" itemprop="url">micro editor</a>
     		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/trizen" rel="tag" itemprop="url">trizen</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/fish-shell" rel="tag" itemprop="url">fish shell</a>
+    		</li><li itemprop="relatedUrl" itemscope itemtype="http://schema.org/URL"><a class="row-item button" href="https://absolute-beginner.netlify.com/tags/atom" rel="tag" itemprop="url">atom</a>
     		</li></ul>
     </div></article>
 
@@ -387,6 +405,10 @@ bind[ws_prev]	    = MOD+Prior
 	</header>
 	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
 				archlinux (3)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/atom" title="atom">
+				atom (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/fish-shell" title="fish shell">
+				fish shell (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
 				kwin (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">

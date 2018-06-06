@@ -5,7 +5,7 @@
     <link>https://absolute-beginner.netlify.com/tags/</link>
     <description>Recent content in Tags on The Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://absolute-beginner.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,9 +13,27 @@
     <item>
       <title>Archlinux</title>
       <link>https://absolute-beginner.netlify.com/tags/archlinux/</link>
-      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/archlinux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atom</title>
+      <link>https://absolute-beginner.netlify.com/tags/atom/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/tags/atom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fish Shell</title>
+      <link>https://absolute-beginner.netlify.com/tags/fish-shell/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/tags/fish-shell/</guid>
       <description></description>
     </item>
     
@@ -76,7 +94,7 @@
     <item>
       <title>Micro Editor</title>
       <link>https://absolute-beginner.netlify.com/tags/micro-editor/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/micro-editor/</guid>
       <description></description>
@@ -103,7 +121,7 @@
     <item>
       <title>Spectrwm</title>
       <link>https://absolute-beginner.netlify.com/tags/spectrwm/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/spectrwm/</guid>
       <description></description>
@@ -112,7 +130,7 @@
     <item>
       <title>Trizen</title>
       <link>https://absolute-beginner.netlify.com/tags/trizen/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/trizen/</guid>
       <description></description>

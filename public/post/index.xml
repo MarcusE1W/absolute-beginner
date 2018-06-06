@@ -22,6 +22,17 @@
     </item>
     
     <item>
+      <title>My system setup</title>
+      <link>https://absolute-beginner.netlify.com/post/sys-setup/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/post/sys-setup/</guid>
+      <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Simple syntax highlighting for the Micro editor</title>
       <link>https://absolute-beginner.netlify.com/post/micro-syntax1/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
@@ -39,17 +50,6 @@
       
       <guid>https://absolute-beginner.netlify.com/post/qemu-start/</guid>
       <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My system setup</title>
-      <link>https://absolute-beginner.netlify.com/post/sys-setup/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/sys-setup/</guid>
-      <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

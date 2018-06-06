@@ -72,7 +72,7 @@
 
 <h1 id="spacemacs-for-beginner">Spacemacs for Beginner</h1>
 
-<p>Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the neccessary key strokes.</p>
+<p>Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the necessary key strokes.</p>
 
 <p>This text tries to give an introduction into spacemacs for someone who is not familiar with Vim or Emacs.
 After reading this you should be able to do some productive work with it.
@@ -137,7 +137,7 @@ The vim mode is a so called modal model. This means it has several different mod
 </ul>
 
 <p>Vim (and Spacemacs uses a Vim emulation) is famous for being a modal editor. That means basically it has one mode to write text called <code>insert mode</code> and some other modes to work with and format the text. Hence the name modal editor, there are several modes where different things happen like writing, editing, working with selections.
-The most important of these functional modes is <code>normal mode</code>. When you start spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.</p>
+The most important of these functional modes is <code>normal mode</code>. When you start Spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.</p>
 
 <p>In normal mode you can use normal keys to execute commands, no need for Ctrl-this or that.
 E.g. if you want tom copy the char under the cursor, you press <code>y</code> in normal mode. To inset what has been copied press <code>p</code>. If you want to select more than one character as you normally do, you enter visual mode with <code>v</code>, then mark the test to select and press <code>y</code> to copy your selection and again <code>p</code> to paste.</p>
@@ -426,7 +426,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 
 <p>Windows are the text areas you see in Spacemacs. When you start it is usually one window. You can split the screen to see two or more windows at the same time.</p>
 
-<p>Additinally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the <code>*Messages</code> buffer.</p>
+<p>Additionally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the <code>*Messages</code> buffer.</p>
 
 <p>To keep an overview there are several SPC commands to manage windows and buffer.</p>
 
@@ -449,7 +449,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <li>To switch back to the last buffer in the current window use <code>SPC TAB</code></li>
 </ul>
 
-<h2 id="configuration">Configuration</h2>
+<h1 id="configuration">Configuration</h1>
 
 <p>As mentioned in many places, configuration  in Spacemacs happens in the .spacemacs file. The .spacemacs file is largely split in 6 sections:</p>
 
@@ -500,7 +500,19 @@ other-layer
 
 <p><a href="https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933">Good docu to customise Spacemacs</a></p>
 
-<h2 id="useful-links">Useful links:</h2>
+<h1 id="beginner-friendly-key-bindings">Beginner friendly key-bindings</h1>
+
+<p>Vim&rsquo;s normal mode has some very powerful editing tool, but if you are used to the key-bindings that are very common on most GUI&rsquo;s and you only use Spacemacs occasionally then you might wish to use the common key-bindings in Spacemacs as well.</p>
+
+<p>One nice solution could be to use GUI (common) keybindings in insert-mode and vim commands in normal mode.</p>
+
+<p>There is one solution for this.</p>
+
+<p>PhilipDaniels created <a href="https://github.com/PhilipDaniels/windows-defaults">windows_default - mode</a></p>
+
+<p>For installation please read the description in the repository. This layer defines many useful keybindings, so it is worth to read the complete README.</p>
+
+<h1 id="useful-links">Useful links:</h1>
 
 <ul>
 <li>An absolute beginners guide to Spacemacs for academic <a href="https://ontologicalblog.com/2016/10/14/an-absolute-beginners-guide-to-spacemacs-for-academic-writing/">writing</a></li>
@@ -537,6 +549,10 @@ other-layer
 	</header>
 	<div class="row" id="sidebar-tags"><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/archlinux" title="archlinux">
 				archlinux (3)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/atom" title="atom">
+				atom (1)
+			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/fish-shell" title="fish shell">
+				fish shell (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/kwin" title="kwin">
 				kwin (1)
 			</a><a class="button row-item" href="https://absolute-beginner.netlify.com/tags/linux" title="linux">
