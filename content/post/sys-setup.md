@@ -1,12 +1,11 @@
 
 +++
 title = "My system setup"
-date = "2018-03-28"
+date = "2018-04-28"
 hide_authorbox = false
 disable_comments = false
 categories = ["System"]
-tags = ["Archlinux", "Spectrwm", "Micro editor", "trizen"]
-aliases = ["/post/all-grown-up/"]
+tags = ["Archlinux", "Spectrwm", "Micro editor", "trizen", "Fish shell", "Atom"]
 draft = false
 +++
 
@@ -35,8 +34,8 @@ To enable the use of arrow keys in the Linux console (no GUI) follow these [inst
 
 
 ## Atom editor
-- Comand palette remembers last word
-- set absolutely fabulous East End syntax/ui theme
+- Comand palette remembers last word -> settings edior
+- set absolutely fabulous East End notebook syntax/ui theme
 - remove RET from autocomplete-plus (set in settings menu)
 - set ctrl-space for command pallete
 - set alt-pageup/down to swith between left an right pane
@@ -84,12 +83,13 @@ These commands usually also work with a pacman helper like trizen.
 ```
 sudo pacman -Qqe
 ```
-that are not also a dependency for other packages.
+
+- that are not also a dependency for other packages.
 ```
 sudo pacman -Qent
 ```
 
-- List all foreign packages. That means from AUR or manually installed.
+- List all _foreign_ packages. That means from AUR or manually installed.
 ```
 pacman -Qn
 ```
@@ -99,7 +99,7 @@ pacman -Qn
 sudo pacman -Ql package_name
 ```
 
-- List all packages that have been installed as dependency to anouther package
+- List all packages that have been installed as dependency to another package
 ```
 sudo pacman -Qd
 ```
@@ -116,7 +116,7 @@ To get rid of the title bar on top of every window add this (at the end) of the 
 ```
 new_window pixel 1
 ```
-This leafes you with a small (blue) frame arounf the active window. If you want is to be more visible change the number to 2 or 3.
+This leafes you with a small (blue) frame around the active window. If you want it to be more visible change the number to 2 or 3.
 TO make the frame go away entirely use 0 or `new window none`
 
 To switch from one workspace to the next with the `Win` plus `PageUp` / `PageDown` keys add this in the config file.
@@ -199,6 +199,22 @@ chsh -s /usr/bin/fish
 ```
 Instead of using setting varialbles (and this includes the $PATH) in .bashrc or .profile or so in fish you use the `set` command.
 So with `set TERM xterm-256color` you add a variable.
+
+I tink to export the variable you add  `-x`
+
+### Aliases and functions in fish
+
+To see all defined functions you can use the `functions` comand. NOte the plural.
+
+To see the definition of a specific function add the name after the command e.g. `functions ll`
+
+Aliases are nothing else but functions in fish. Functions are described in the tutuorial. however, there is a convenient shortcut to define a functionin the form of the alias command. Not unsimilar to bash.
+
+With `alias la "ls -a"` you can define a alias/function for la.
+
+With `functions la` you can see how the functions definition you just created looks like.
+
+If you want to save the functions to make it permanent use "funcsave la"
 
 ## spectrwm tiling window manager
 Install with

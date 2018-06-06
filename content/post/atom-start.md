@@ -40,3 +40,12 @@ trizen -S atom
 
 ## Symbols
 To be able to use the pre-installed symbols package a version of ctags has to be installed on your computer
+
+# Useful packages
+
+## Packages to improve editing
+- expand-region
+
+## Packages to improve markdown
+- language-markdown
+- markdown-table-editor

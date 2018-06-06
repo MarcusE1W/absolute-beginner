@@ -44,40 +44,19 @@ in `editor.less` or
 .line {
 ```
 
+### Editor-mini
+
+atom-text-editor[mini]
+
+  color: #d9d7ca;
+  background-color: #797171;
+
+TODO: find atom-text-in project (Ctrl-Shift-F)
+  - the colour could be chnaged to the one of the editor, how does that look ?
+
 # General
 - package.json
   - set up "theme"
 - publish picture for readme
 - file `index.less`
 - How to set up settings
-
-[link](heise.de)
-
-**fett**
-
-_cursive_
-
-- [ ] dies und das
-
-<!-- TODO dies und das -->
-
-
-| dies | und                               |
-| ---- | --------------------------------- |
-| das  | klappt doch fine. nur doofe farbe |
-| kann | man den text normal haben         |
-| und  | nur den Rahmen in farbe ?         |
-| das  | ware was                          |
-
-was \
-neues. super, klappt ja mal gar nicht.
-
-# hallo
-## dies
-### das
-
-{und dies ?}
-[ hallo]
-"und dies"?
-
-dies/das

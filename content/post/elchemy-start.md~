@@ -9,7 +9,7 @@ aliases = ["/post/all-grown-up/"]
 draft = true
 +++
 
-Elchemy compiles code compatible with ELm to ELixir.
+ELchemy compiles code compatible with ELm to ELixir.
 
 <!--more-->
 
@@ -30,17 +30,6 @@ Check if the install was correct:
 elchemy version
 ```
 
-# Update
-
-```
-npm update -g elchemy
-```
-
-if that does not work try
-
-```
-npm install -g elchemy
-```
 
 # Getting started
 
@@ -56,7 +45,6 @@ TO add Elchemy in this folder use:
 ```
 elchemy init
 ```
-
 
 You will see something similar to this, depending on your elchemy version
 > Found existing entry: /home/mmw/.mix/archives/elchemy-0.6.6

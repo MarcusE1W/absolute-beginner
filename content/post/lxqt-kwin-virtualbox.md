@@ -91,7 +91,7 @@ I have chosen Qupzilla. Serves me well and is relatively light.
 Alternative:
 > `sudo pacman -S firefox`
 
-###AUR repository
+### AUR repository
 To use packages from the AUR repository it is very helpful to use a package manager for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.
 
 ```

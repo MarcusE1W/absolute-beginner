@@ -1,0 +1,52 @@
++++
+title = "Poly ML"
+date = "2018-05-21"
+hide_authorbox = false
+disable_comments = false
+categories = ["Programming languages"]
+tags = ["Functional Programming", "SML"]
+markup = "org"
+draft = true
++++
+
+PolyML is a SML functional programming language with parallel programming support.
+
+<!--more-->
+
+* PolyML installation on Archlinux
+
+~sudo pacman -S polyml~
+
+for other options see GitHub [[https://github.com/polyml/polyml][page]]
+
+This gives you:
+- *poly* :  The interactive REPL
+- *polyc* :  The compiler
+- *polyimport* :  import a ml programme and run it, no idea
+
+NOTE: All three commands have /man pages/
+     
+* First Impression
+- Installation is super straight forward compared to Alice ML  
+- Compiled to native code
+- Documentation only foe polyml special features like the thread library
+- On first glance the tread library looks a bit old fashioned, it seems like a wrapper for system functions 
+
+* Usage     
+
+** Tutorials
+- Documentation is very limited and restricted to PolyML specific subjects like threads, debugging, etc
+** REPL
+- The REPL in the ML language context is also called /top level/
+- To use a module you have to /open/ it first. e.g.
+~open Math~
+- To leave the REPL press ~Ctrl-d~
+- ~man poly~ for man page
+** compile a programme
+- polyc to compile
+- main function called =main=. e.g.
+~fun main() = print "Hello World\n";~
+
+** Debugging
+
+The docu for debugging is quite good. See [[http://www.polyml.org/documentation/Tutorials/Debugging.html][link]]

@@ -5,7 +5,6 @@ hide_authorbox = false
 disable_comments = false
 categories = ["Editor"]
 tags = ["Spacemacs", "Org-Mode"]
-aliases = ["/post/all-grown-up/"]
 markup = "org"
 draft = true
 +++
@@ -22,12 +21,12 @@ A first look at org-mode in Spacemacs
  In org mode you structure your document like in markdown with headers.
  Instead of #, ##, ### in markdown you use `*`, `**`, and `***`.
 
-| Function | key |
-|----------+-----|
-|          |     |
-|          |     |
-|          |     |
-|          |     |
+| Function        | key             |
+|-----------------+-----------------|
+| demote header   | M-arrow_right   |
+| promote header  | M-arrow_left    |
+| new header line | Ctrl-RET        |
+|                 |                 |
 
 ** Org-mode and markdown compared side by side
 
@@ -39,7 +38,7 @@ A first look at org-mode in Spacemacs
 | =_text_=      | /text/    | Italics           | /Hurray/                     |
 | =*text*=      | *text*    | Bold              | *Hurray*                     |
 |               | _text_    | Underline         | _Hurray_                     |
-|               | ~text~    | Source-Code       |                              |
+| ``` txt ```   | ~text~    | Source-Code       |                              |
 |               | =text=    | Literal           |                              |
 | N/A           | see below | Other text blocks |                              |
 | -             | -         | Bullet List       |                              |
@@ -59,11 +58,11 @@ _underline_
 - dies :: das
 +strike through+
 
-
+~
 ~source block, of some sort
 seems not to work ?
 Ah, dies functioniert etwas anders~
-
+~
 
 - [] hallo
 - [x] hallo

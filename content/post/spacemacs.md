@@ -15,7 +15,7 @@ An introduction into the Spacemacs editor for a user with little Vim/Emacs exper
 
 # Spacemacs for Beginner
 
-Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the neccessary key strokes.
+Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the necessary key strokes.
 
 This text tries to give an introduction into spacemacs for someone who is not familiar with Vim or Emacs. 
 After reading this you should be able to do some productive work with it.
@@ -55,7 +55,7 @@ Spacemacs also shows a different colour for the window number depending on your 
 
 
 Vim (and Spacemacs uses a Vim emulation) is famous for being a modal editor. That means basically it has one mode to write text called `insert mode` and some other modes to work with and format the text. Hence the name modal editor, there are several modes where different things happen like writing, editing, working with selections. 
-The most important of these functional modes is `normal mode`. When you start spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.
+The most important of these functional modes is `normal mode`. When you start Spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.
 
 In normal mode you can use normal keys to execute commands, no need for Ctrl-this or that.
 E.g. if you want tom copy the char under the cursor, you press `y` in normal mode. To inset what has been copied press `p`. If you want to select more than one character as you normally do, you enter visual mode with `v`, then mark the test to select and press `y` to copy your selection and again `p` to paste.
@@ -154,7 +154,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 ## Window handling
 Windows are the text areas you see in Spacemacs. When you start it is usually one window. You can split the screen to see two or more windows at the same time.
 
-Additinally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the `*Messages` buffer. 
+Additionally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the `*Messages` buffer. 
 
 To keep an overview there are several SPC commands to manage windows and buffer.
 
@@ -169,7 +169,7 @@ To keep an overview there are several SPC commands to manage windows and buffer.
 - If you have several buffer (files) open and want to show a different buffer file in your current window then open the buffer selection screen (SPC b b) to jump to other open buffers (files)
 - To switch back to the last buffer in the current window use `SPC TAB`
 
-## Configuration
+# Configuration
 As mentioned in many places, configuration  in Spacemacs happens in the .spacemacs file. The .spacemacs file is largely split in 6 sections:
 
 
@@ -220,8 +220,20 @@ If you make changes, save with `SPC f s` and restart with `SPC q R`.
 
 [Good docu to customise Spacemacs](https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933)
 
+# Beginner friendly key-bindings
 
-## Useful links:
+Vim's normal mode has some very powerful editing tool, but if you are used to the key-bindings that are very common on most GUI's and you only use Spacemacs occasionally then you might wish to use the common key-bindings in Spacemacs as well.
+
+One nice solution could be to use GUI (common) keybindings in insert-mode and vim commands in normal mode.
+
+There is one solution for this.
+
+PhilipDaniels created [windows_default - mode](https://github.com/PhilipDaniels/windows-defaults)
+
+For installation please read the description in the repository. This layer defines many useful keybindings, so it is worth to read the complete README.
+
+# Useful links:
 
 - An absolute beginners guide to Spacemacs for academic [writing](https://ontologicalblog.com/2016/10/14/an-absolute-beginners-guide-to-spacemacs-for-academic-writing/)
+- Great [introduction](https://practicalli.github.io/spacemacs/documentation/) into Spacemacs with additional info about Clojure and Cider.
 
