@@ -28,6 +28,7 @@ The good news is that with Spacemacs you don't have to remember all commands but
 ## Executing commands in Spacemacs
 The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once `SPC` has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.
 
+Double letters in the SPC menu usually are used for particular useful commands like SPC b b for the list of buffers or SPC f f to open a file . 
 
 ## Opening files
 There are several ways to open a file, but a good start is the file selector neotree, activated with `SPC f t`.
@@ -60,17 +61,17 @@ The most important of these functional modes is `normal mode`. When you start Sp
 In normal mode you can use normal keys to execute commands, no need for Ctrl-this or that.
 E.g. if you want tom copy the char under the cursor, you press `y` in normal mode. To inset what has been copied press `p`. If you want to select more than one character as you normally do, you enter visual mode with `v`, then mark the test to select and press `y` to copy your selection and again `p` to paste.
 
-| function                                           | normal mode | Spacemacs |
-| ---                                                | ---         | ---       |
-| enter visual mode for selections                   | v           |           |
-| copy (yank) marked selection or char under cursor  | y           |           |
-| paste (insert)                                     | p           |           |
-| cut (delete) character under cursor                | x           |           |
-| enter visual mode for whole line selections        | V           |           |
-| enter insert mode to write text.                   | i           |           |
-| leave insert mode to execute commands.             | ESC         |           |
-| move (or select) to the beginning of the next word | w           |           |
-| move (or select) to the end of the current word    | e           |           |
+| function                                           | normal mode |
+| ---                                                | ---         |
+| enter visual mode for selections                   | v           |
+| copy (yank) marked selection or char under cursor  | y           |
+| paste (insert)                                     | p           |
+| cut (delete) character under cursor                | x           |
+| enter visual mode for whole line selections        | V           |
+| enter insert mode to write text.                   | i           |
+| leave insert mode to execute commands.             | ESC         |
+| move (or select) to the beginning of the next word | w           |
+| move (or select) to the end of the current word    | e           |
 
 ## Move cursor in the current buffer
 
