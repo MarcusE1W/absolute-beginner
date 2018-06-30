@@ -6,7 +6,7 @@ disable_comments = false
 categories = ["Programming languages"]
 tags = ["Ocaml"]
 aliases = ["/post/all-grown-up/"]
-draft = true
+draft = false
 +++
 
 Explore Ocaml, an functional programming language that is mayby not as strict as some others.

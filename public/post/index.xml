@@ -5,10 +5,21 @@
     <link>https://absolute-beginner.netlify.com/post/</link>
     <description>Recent content in Posts on The Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://absolute-beginner.netlify.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use iOS with a keyboard</title>
+      <link>https://absolute-beginner.netlify.com/post/lofree-keyboard/</link>
+      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/post/lofree-keyboard/</guid>
+      <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Spacemacs for beginner</title>
@@ -61,6 +72,17 @@
       
       <guid>https://absolute-beginner.netlify.com/post/man-markdown/</guid>
       <description>&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ocaml for beginner</title>
+      <link>https://absolute-beginner.netlify.com/post/ocaml-start/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/post/ocaml-start/</guid>
+      <description>&lt;p&gt;Explore Ocaml, an functional programming language that is mayby not as strict as some others.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

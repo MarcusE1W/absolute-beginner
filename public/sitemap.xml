@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://absolute-beginner.netlify.com/post/lofree-keyboard/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://absolute-beginner.netlify.com/post/spacemacs/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
@@ -33,6 +38,11 @@
   </url>
   
   <url>
+    <loc>https://absolute-beginner.netlify.com/post/ocaml-start/</loc>
+    <lastmod>2017-12-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
@@ -46,6 +56,12 @@
   <url>
     <loc>https://absolute-beginner.netlify.com/tags/atom/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://absolute-beginner.netlify.com/tags/bluetooth/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -79,6 +95,18 @@
   </url>
   
   <url>
+    <loc>https://absolute-beginner.netlify.com/tags/ios/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://absolute-beginner.netlify.com/tags/keyboard/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://absolute-beginner.netlify.com/tags/kwin/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -87,6 +115,12 @@
   <url>
     <loc>https://absolute-beginner.netlify.com/tags/linux/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://absolute-beginner.netlify.com/tags/lofree/</loc>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -121,8 +155,20 @@
   </url>
   
   <url>
+    <loc>https://absolute-beginner.netlify.com/tags/ocaml/</loc>
+    <lastmod>2017-12-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://absolute-beginner.netlify.com/post/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://absolute-beginner.netlify.com/categories/programming-languages/</loc>
+    <lastmod>2017-12-07T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -146,7 +192,7 @@
   
   <url>
     <loc>https://absolute-beginner.netlify.com/categories/system/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -158,7 +204,7 @@
   
   <url>
     <loc>https://absolute-beginner.netlify.com/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
