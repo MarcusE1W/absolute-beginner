@@ -197,18 +197,18 @@ Once you have the path to fish use the command `chsh` (change shell) to make fis
 ```
 chsh -s /usr/bin/fish
 ```
-Instead of using setting varialbles (and this includes the $PATH) in .bashrc or .profile or so in fish you use the `set` command.
+Instead of  setting variables (and this includes the $PATH) in .bashrc or .profile or so in fish you use the `set` command.
 So with `set TERM xterm-256color` you add a variable.
 
-I tink to export the variable you add  `-x`
+I think to export the variable you add  `-x`
 
 ### Aliases and functions in fish
 
-To see all defined functions you can use the `functions` comand. NOte the plural.
+To see all defined functions you can use the `functions` command. Note the plural.
 
 To see the definition of a specific function add the name after the command e.g. `functions ll`
 
-Aliases are nothing else but functions in fish. Functions are described in the tutuorial. however, there is a convenient shortcut to define a functionin the form of the alias command. Not unsimilar to bash.
+Aliases are nothing else but functions in fish. Functions are described in the tutorial. however, there is a convenient shortcut to define a function in the form of the alias command. Not un-similar to bash.
 
 With `alias la "ls -a"` you can define a alias/function for la.
 

@@ -18,7 +18,10 @@ Lofree keyboard with iOS
 
 ## Pairing
 
-Hold fn + 1 ( or 2,3) until the light next to the caps-lock key blinks.
+1. Hold fn + 1 ( or 2,3) until the light next to the caps-lock key blinks.
+2. Find _DOT@LOFREE_ and pair the keyboard.
+
+You can pair two more devices and switch with fn + 1 or 2 or3
 
 ## Settings
 
@@ -40,13 +43,14 @@ You can also change other settings specifically for your bluetooth keyboard in t
 | Screeshot to camera roll | CMD + Shift + 3 |
 | Screeshot to edit mode   | CMD + Shift + 4 |
 |                          |                 |
-As bluetooth keyboards can have different symbols for the function keys, here is a description what is meant:
+As bluetooth keyboards can have different symbols for the function keys, here is a description what is meant in this text:
 
 | Key     | Apple symbols        | Windows symbols |
 | ------- | -------------------- | --------------- |
 | CMD key | Command or Apple key | Windows key     |
 | alt     | Alt or Option        | alt             |
 | Ctrl    | Ctrl                 | Ctrl            |
+
 
 ## How to use iOS with a keyboard
 
@@ -63,8 +67,15 @@ Press `CMD + SPACE` to activate Spotlight, then key in your search.
 
 You can then use the cursor keys to select a result. ENTER will activate the selection.
 
+The first serch result will be selected automatically and you can just press ENTER to select it e.g. to start an app.
+
 ### Jump to the iOS home screen
 You will see the home screen. No idea what that is good for when you use the keyboard. The arrow keys seems not to work. I guess from here it's fingers.
+
+# Good links
+http://www.iphonehacks.com/2018/03/ipad-keyboard-shortcuts.html
+https://www.cultofmac.com/421737/apple-smart-keyboard-shortcuts/
+
 
 ## Open questons
 - key repeat in iOS Joplin, and anywhere else? Works with Windows
