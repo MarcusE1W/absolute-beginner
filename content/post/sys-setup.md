@@ -182,6 +182,10 @@ sudo usermod -a -G vboxsf mmw
 
 ?? seems not to work ...
 
+back to the lovely script then.
+
+`sudo mount -t vboxsf VM_Share /home/mmw/VM`
+
 ## Change (bash) shell to fish.
 This describes how to make fish your default shell.
 Fist install the fish shell.
@@ -200,7 +204,8 @@ chsh -s /usr/bin/fish
 Instead of  setting variables (and this includes the $PATH) in .bashrc or .profile or so in fish you use the `set` command.
 So with `set TERM xterm-256color` you add a variable.
 
-I think to export the variable you add  `-x`
+- To export the variable you add  `-x`
+- To set a variable globally add `-g`. This will save it permanently.
 
 ### Aliases and functions in fish
 
@@ -215,6 +220,11 @@ With `alias la "ls -a"` you can define a alias/function for la.
 With `functions la` you can see how the functions definition you just created looks like.
 
 If you want to save the functions to make it permanent use "funcsave la"
+
+### bash scripts in fish
+You can execute bash scripts from fish normally if a so called shebang is mentioned in the bash script. Means in the first line of the script you have this line '#!/bin/bash' . Basically the path to the bash command.
+- If the shell script is in a different folder adapt the path in the shebang
+- If you use a different shell than bash then add the path to that shell
 
 ## spectrwm tiling window manager
 Install with

@@ -78,5 +78,5 @@ https://www.cultofmac.com/421737/apple-smart-keyboard-shortcuts/
 
 
 ## Open questons
-- key repeat in iOS Joplin, and anywhere else? Works with Windows
+- key repeat in iOS Joplin, and anywhere else? Works with Windows -> ios setting in _accessibility / keyboard / .._
 - Fn also swaps key-layouts
