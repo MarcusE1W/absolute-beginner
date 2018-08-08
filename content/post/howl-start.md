@@ -23,6 +23,8 @@ trizen -S howl
 
 # Define a custom Theme
 
+Copy the template Theme
+
 
 ## dies und das
 ### level 3

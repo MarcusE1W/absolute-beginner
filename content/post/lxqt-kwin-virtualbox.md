@@ -158,10 +158,10 @@ Error message during trizen build is:
 If you trust the package copy the public `KEYID` from the error message
 Then use these commands in the console to add the new key:
 
-
-> gpg --recv-key `KEYID`
-> gpg --lsign `KEYID`
-
+```
+gpg --recv-key KEYID
+gpg --lsign KEYID
+```
 
 For details how that works [read:](http://allanmcrae.com/2015/01/two-pgp-keyrings-for-package-management-in-arch-linux/)
 
