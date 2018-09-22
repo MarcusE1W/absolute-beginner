@@ -9,7 +9,7 @@ tags = ["Howl"]
 draft = true
 +++
 
-An introduction into very keyboard focused Howl editor
+An introduction into the very keyboard focused Howl editor
 
 <!--more-->
 # First thoughts
@@ -21,32 +21,41 @@ trizen -S howl
 ```
 
 
+# Config
+Everyone has different expectations for a standard config. These examples rreflect my own preferences. Many more things can be configured in many different ways.
+
+Ctrl+q
+
+howl.config.popup_menu_accept_key = 'tab'
+
+
+
 # Define a custom Theme
 
-Copy the template Theme
+Note: to see the default themes in action, have a look at the theme selector in the documentation. All the examples can be seen with different themes. The selector is on the top right of every docu page
+
+Copy the Eastend template Theme
+
+Define a list of your own colours and add them to the top.
+then just link the new colors to the already defined ones.
+
+# Define lexer for a programming language
+
+The 'styles:' definitions in the theme can be used to connect themes and lexer.
+
+All the definitions in the upper part get listed in the 'any' table at the bottom.
+
+By leaving thing out of the 'any' table parts can be turned on and off
+
+[Docu for Textadept LPEG lexing](https://foicica.com/textadept/api.html#lexer)
+
+[Video for LPeg](https://vimeo.com/1485123)
+
+[Lua LPeg docu](http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html)
+
+## c( xxx, yyy) structure
 
 
-## dies und das
-### level 3
+## Definition of Identifier
 
-- list und so
-- mehr list
 
-1. dies
-2. das
-
-hier ein `comment`
-
-```
-hier some source code
-```
-
-[link](zu.com)
-
-**fett**
-
-_kursiv_
-
-| die | tablelle |
-| --- | --- |
-| test | test |
