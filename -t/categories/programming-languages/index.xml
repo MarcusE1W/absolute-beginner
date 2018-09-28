@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming Languages on The Absolute Beginner</title>
+    <link>http://localhost:1313/categories/programming-languages/</link>
+    <description>Recent content in Programming Languages on The Absolute Beginner</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/categories/programming-languages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ocaml for beginner</title>
+      <link>http://localhost:1313/post/ocaml-start/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/ocaml-start/</guid>
+      <description>&lt;p&gt;Explore Ocaml, an functional programming language that is mayby not as strict as some others.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
