@@ -132,7 +132,7 @@ Often you want to add more text in your existing document and for that you need 
 | function                             | normal mode | spacemacs |
 | ---                                  | ---         | ---       |
 | mark (unmark) a selection as comment | gc          | SPC c l   |
-| mark current line as comment         | gcc         |           |
+| mark current line as comment         | gcc         | SPC c l   |
 
 __Super bonus function to move in text__
 A very nifty function to jump quickly to text currently displayed in the window is `SPC j j`.

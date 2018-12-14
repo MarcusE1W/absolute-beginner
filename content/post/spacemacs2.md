@@ -43,16 +43,17 @@ Lots of interresting stuff there like:
 - Move lines up and down. To move your current line up or down use `SPC x K` for up and `SPC x J` for down. This also works with selections.
 - Uppper/lower case text selections (`SPC x U` for upper and `SPC x u` for lower case)
 
-- Describe how to set variables.
+TODO: - Describe how to set variables.
 
 ## Improved Spacemace experience
 
 ### Treemacs
-If you are on the develop branch (March 2018, that might change) then you have the option to replace neotree with treemacs. Treemacs looks more pretty and has a consisten key mapping.
+If you are on the develop branch (as of Dec 2018 but that might change) then you have the option to replace neotree with treemacs. Treemacs looks more pretty and has a consisten key mapping.
 
 To install just add `treemacs` to the list of layouts.
 
 ### Modeline with all-the-icons
+**Note:** It seems that this adds quite some time to Emacs startup time.
 
 All the icons makes the modeline more pretty.
 
