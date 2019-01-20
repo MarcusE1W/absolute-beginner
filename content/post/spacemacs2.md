@@ -36,12 +36,22 @@ Example for mass processing at end of line: Ctrl-V, mark lines, $A, write text, 
 
 
 Spacemacs 2
-### Text manipulation
+## Text manipulation
 
 To be found in sub-menu SPC x...
 Lots of interresting stuff there like:
 - Move lines up and down. To move your current line up or down use `SPC x K` for up and `SPC x J` for down. This also works with selections.
 - Uppper/lower case text selections (`SPC x U` for upper and `SPC x u` for lower case)
+
+## Text selection
+
+### Mark, delete, etc text beween somethiing ( "{[{")
+
+There is a clever vim command that marks or copies or deletes text between delimiters, eg: everything within brackets.
+
+In normal mode press e.g. `v` to mark text and then `i` (v for visual and i for inner). You will notive that a spacemacs menu appears to show you the next options.
+
+![example](vi.png "visual inner selection options")
 
 TODO: - Describe how to set variables.
 
@@ -57,9 +67,11 @@ To install just add `treemacs` to the list of layouts.
 
 All the icons makes the modeline more pretty.
 
+XXXX Picture XXXX
+
 https://github.com/domtronn/spaceline-all-the-icons.el
 
-While all-the-icons is quite pretty and works fine it seems to add quite some time to the start-up. So if you experience this you might either want to turn it off already or consider daemon mode.
+**NOTE: While all-the-icons is quite pretty and works fine it seems to add quite some time to the start-up. So if you experience this you might either want to turn it off already or consider daemon mode.**
 
 ### Daemon mode
 
