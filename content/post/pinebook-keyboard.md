@@ -1,45 +1,42 @@
++++
+title = "Pinebook keyboard first"
+date = "2019-02-19"
+hide_authorbox = false
+disable_comments = false
+categories = ["Pinebook" "Keyboard"]
+tags = ["LXQt"]
+draft = true
++++
 
-# Using the Pinebook with the keyboard (mainly) 
- 
-Principle approach
-Meta: 	for DE
-Ctrl: 	for Apps
-Alt: 	for User and Extensions
+How to use the the Pinebook with Manjaro LXQt and a keyboard first approach ?
 
-Allow for common exceptions like Alt+TAB
+<!--more-->
 
-The Pinebook is a great little Laptop. Except for the touchpad. The touchpad feels a bit unresponsive and unprecise. Also, ahve you noticed that you often do the same things with your mouse agia and again ? 
-Start a programme, move the window, start another window move that as well, so that it is all visible and then work. Maybe start a third programme and so on.
+# A keyboard first approach to use Manajro LXQt
 
-So the suggestion is to use the keyboard a bit more to organise where your programme windows are on your display and to move between them.
 
-There are probably many ways of doing that but here is my suggestion. My example is based on the desctop environment LXQt but this setup can be done in other desktop environments as well (KDE, Xfce)
+The Pinebook is a great little Laptop. Except for the touchpad. The touchpad feels a bit unresponsive and unprecise, to say it nicely. Also, have you noticed that you often do the same things with your mouse again and again ?
+Start a programme, move the window, start another window move that as well so that it is all visible and then do some work. Maybe start a third programme and so on.
+after a while your display has a lot of windows open and might looka bit like this.
+[Pic of display with three overlapping windows]
 
-There are two main ideas:
-1. You use 4 different desktops. That means programms can be assigned to different desktoprs and be maximised without getting much in each others way.
+
+You can tidy that up with the mouse a bit and maybe it looks like this?
+[Pic of the three windows, not overlapping]
+
+The truth is that there is only so much space on a laptop screen so arrangements with more than two or three windows open are probably a mbit messy. Also the effort to move the windows around with the mouse on the screen might be a bit much. You can always minimise and maximise, that helps a bit.
+
+So the suggestion is to use the keyboard a bit more to organise where your programme windows are on your display and to move around  between them. As this are always the same activities you would also use the keyboard in the same way again and again and by that, so is the idea learn this rather quickly. Also, this text is not about doing everything with the keyboard, just some reoccuring basic things.
+
+To do so some shortcuts have to be defined. As it so happens that has kindly already been done  in the Pinebook Manjaro ARM LXQt release. So if you want to try it, you can copy this distro to an SD card and follow this guide but this setup is also possible in  other desktop environments like (KDE, Xfce, ..). However some setup might be required.
+
+## Moving windows around with the keyboard
+
+Here is the  main idea:
+1. You use 4 different desktops instead of having all programms open in one window.  That means programms can be assigned to different desktoprs and be maximised without getting much in each others way. Hey, you say, that has nothing to do with mose or keyboard usage. Correct, but bare with me..
 2. If you have more than one programme running on one dektop or you only want to use one then there is a conveniet way to split the screen into half and place the windows next to each other.
 
-In addition to that but not so important is to use regulary use the same desktop for tha same programms. e.g.
 
-| Desktop | Programme |
-| -----   | -----     |
-| 1       | Terminal  |
-| 2       | Browser   |
-| 3       | Editor    |
-| 4       | Work      |
-That way you don't have to think much about on which desktop a programme is. All sorts of variations that fit your way of working are possible of course.
-
-How does a workflow to open 3 programmes and work with them look like look in this scenario? 
-
-1. switch to desktop 2 
-2. open a browser, search some context and copy it
-3. switch to desktop 4 and open LibreOffice, paste your content, maybe add some more.
-4. switch to desktop 1 and open one terminal and start a system update
-5. because you want a second terminal on this desctop you move this one to the left side of the screen
-6. open another terminal, search for a configuration file and copy a paragraph from it.
-7. switch to desktop 2, open a forum and paste your config.
-
-All this could happen with no, or very little use of the mouse or touchpad.
 
 Now keybindings exactly do you use ?
 
@@ -50,9 +47,86 @@ Now keybindings exactly do you use ?
 | META + Enter              | Start new Terminal                                  |
 | META + Arrow Left         | Move window to the left half of the desktop         |
 | META + Arrow Right        | Move window to the right half of the desktop        |
-|                           |                                                     |
+| Shift META + 1 (or 2 or 3 or 4) | Move window to another desktop and switch to that desktop   |
 
-(Again, here are many ways to set the keybindings but these are partially borrowed from Windows (Meta-Left / Right) or other keyboard oriented window manager (META-1 (2/3/4) )
+## Using more than one desktop.
 
-Shift META move window to another desktop and switch to that desktop
+The problem is, once a desktop is full with windows, however cleverly arranged, it's full.
+One option is to minimise and maximise the window and then switch between them and that works.
+A second way and I feel a bit more practical is to use more than one desktop ands then use keyboard shortcuts to switch between them quickly.
 
+So how to do that ?
+Rather than place all windows on one desktop you use, let's say four. A second desktop looks like the first, just initially empty again before you start a programme. All initially started programms on desktop 1 are still there and one klick (or keyboard shortcut away).
+[pic showing three apps on one desktop and then two desktops first, two apps next ot each other and a second desktop with a full screen firefox]
+
+
+Now you can start the second descktop just like the first and arrange windows if required. Or use a third desktop or a fourth. On thing that works well is to have your applications maximised on each desktop and therefore less need to arrange windows in the first place.
+
+
+
+## More fine tuning of the approach
+
+In addition to multiple desktops you can assign certain desktops to be used with specific desktops. That way you don't have to think too much abouth where's what.
+
+Eg. I have the terminal and maybe settings always on Desktop 1 and Firefox always maximised on Desktop 2. The other desktops I use a bit more freely but here is a pattern that works for me:
+
+
+| Desktop | Programme |
+| -----   | -----     |
+| 1       | Terminal / System |
+| 2       | Browser   |
+| 3       | Editor    |
+| 4       | Other work      |
+That way you don't have to think much about on which desktop a programme is. All sorts of variations that fit your way of working are possible of course.
+
+
+
+
+## Make it more consistent.
+
+One more thing.
+
+At the beginning it was said that it should be easy to remember the keyboard shortcuts and all considered, the sortcuts used here are all a bit over the place.
+
+
+
+## Starting common apps with the keyboard.
+
+So now that moving windows around is nicely sorted, the other activity that is very common is starting applications.
+Everyone has their own important applications so here is a suggestion to focus on the essential:
+
+1. a shortcut to start the termian (of your choice)
+2. a shortcut to start any programme
+3. a shortcut to start the Settings
+
+This is all very driven by your personal preference, but I feel it's a good basis. You might want to add other applications.
+
+| Description | Key |
+| --- | --- |
+| start the terminal |
+
+
+## It's all coming together
+
+How does a workflow to open 3 programmes and work with them look like look with this brand new approach?
+
+Start your freshly customized Desktop Environment
+start a terminal, update manjaro, or so
+start some settings, move the settings window to the left of the desktop
+switch to the termianl app
+
+switch to desktop 2
+open a browser, search some context and copy it
+switch to desktop 4 and open LibreOffice, paste your content, maybe add some more.
+switch to desktop 1 and open one terminal and start a system update
+because you want a second terminal on this desctop you move this one to the left side of the screen
+open another terminal, search for a configuration file and copy a paragraph from it.
+switch to desktop 2, open a forum and paste your config.
+
+All this could happen with no, or very little use of the mouse or touchpad.
+
+## List of standard shortcuts in Pinebook Manjaro LXQt
+
+.
+.
+.
