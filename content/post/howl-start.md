@@ -9,7 +9,7 @@ tags = ["Howl"]
 draft = true
 +++
 
-An introduction into very keyboard focused Howl editor
+An introduction into the very keyboard focused Howl editor
 
 <!--more-->
 # First thoughts
@@ -26,10 +26,20 @@ Usefull commands and shortcuts
 - alt-s for document structure
 - Ctrl-g for document grep
 
+# Config
+Everyone has different expectations for a standard config. These examples rreflect my own preferences. Many more things can be configured in many different ways.
+
+Ctrl+q
+
+howl.config.popup_menu_accept_key = 'tab'
+
+
+
 # Define a custom Theme
 
-Copy the template Theme
+Note: to see the default themes in action, have a look at the theme selector in the documentation. All the examples can be seen with different themes. The selector is on the top right of every docu page
 
+<<<<<<< HEAD
 Provide styles for the lexer
 TODO: What is the differnece in color definition with Xo and # ?
 
@@ -97,5 +107,30 @@ RegEx:
 - misc/example
 
 
+=======
+Copy the Eastend template Theme
+
+Define a list of your own colours and add them to the top.
+then just link the new colors to the already defined ones.
+
+# Define lexer for a programming language
+
+The 'styles:' definitions in the theme can be used to connect themes and lexer.
+
+All the definitions in the upper part get listed in the 'any' table at the bottom.
+
+By leaving thing out of the 'any' table parts can be turned on and off
+
+[Docu for Textadept LPEG lexing](https://foicica.com/textadept/api.html#lexer)
+
+[Video for LPeg](https://vimeo.com/1485123)
+
+[Lua LPeg docu](http://www.inf.puc-rio.br/~roberto/lpeg/lpeg.html)
+
+## c( xxx, yyy) structure
+
+
+## Definition of Identifier
+>>>>>>> 3207aaa9dc8039cb4e47c77bbfde36b208c7f3cb
 
 

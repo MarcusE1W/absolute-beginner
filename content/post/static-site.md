@@ -130,3 +130,16 @@ https://www.pexels.com/
 
 - now the submodules are in the state you want, so
 `git commit -am "Pulled down update to submodule_dir"`
+
+### experiment with themes
+
+Before defining the theme in the config.toml you can use these paramaneters:
+
+- use `--theme` to set a theme from the theme folder
+- use `--config to set your config file
+
+Example:
+```
+hugo server -D --theme name-of-theme --config name-of-config
+```
+
