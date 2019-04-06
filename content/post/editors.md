@@ -30,14 +30,17 @@ This type of editors is characterised by using common key bindings like Ctrl-s f
 ## LightTable
 - currently development is a bit slow and some important issues do net get resolved. On the other side it is a very capable, stylish editor that can be modified easily in Closure. It has a very pleasant feel.
 ## Textadept
-- Based on scintilla
+- Based on scintilla. Menu system feels a bit all over the place with menu, command pallette and a command line. None covers all functions.
+
 ## Cudatext
 - Command palette
 - Multiplatform (Mac, Windows, Linux) with easy one package install
+
 ## VScode
 - Microsoft
 - A bit unclear communicated license leads to almost everyone using the copyrighted version that can be downloaded from the Microsoft page.
 - hardly used, looks like a very capable editor
+
 ## Textosaurus
 - very promising editor
 - a lot of text conversion tools to vonvert between Unix, Mac, Windows formats and different text encodings
@@ -50,7 +53,7 @@ This type of editors is characterised by using common key bindings like Ctrl-s f
 - The original
 - quite a learning curve
 ## Spacemacs
-- Really helpful menu and plugin /?? system makes it very approachable 
+- Really helpful menu and plugin /?? system makes it very approachable
 ## mg (terminal)
 ## QEmacs
 - actually quite nice editor
@@ -60,6 +63,7 @@ This type of editors is characterised by using common key bindings like Ctrl-s f
 ## MicroEmacs
 - A bit hard core from todays view
 - select needs a bit getting used to
+
 # Modal editors
 
 ## Kakoune (terminal)

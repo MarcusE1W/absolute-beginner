@@ -24,6 +24,7 @@ Vim has some very powerful and sometimes very cryptic commands, only some of the
 Also the tables you see in the text only give you a selection of commands. 
 The good news is that with Spacemacs you don't have to remember all commands but you can also use the Spacemacs menu (SPC).
 
+[Also read the latest official Spacemacs beginner guid (Develop Version)](http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html)
 
 ## Executing commands in Spacemacs
 The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once `SPC` has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.
@@ -219,7 +220,7 @@ NOTE: the whole large section of standard configuration is called `(defun dotspa
 
 If you make changes, save with `SPC f s` and restart with `SPC q R`.
 
-[Good docu to customise Spacemacs](https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933)
+[Good docu how to customise Spacemacs](https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933)
 
 # Beginner friendly key-bindings
 
