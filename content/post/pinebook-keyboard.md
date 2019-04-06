@@ -15,7 +15,9 @@ How to use the the Pinebook with Manjaro LXQt and a keyboard first approach ?
 # A keyboard first approach to use Manajro LXQt
 
 
-The Pinebook is a great little Laptop. Except for the touchpad. The touchpad feels a bit unresponsive and unprecise, to say it nicely. Also, have you noticed that you often do the same things with your mouse again and again ?
+The Pinebook is a great little Laptop. Except for the touchpad. 
+The touchpad feels a bit unresponsive and imprecise, to say it nicely. 
+Also, have you noticed that you often do the same things with your mouse again and again ?
 Start a programme, move the window, start another window move that as well so that it is all visible and then do some work. Maybe start a third programme and so on.
 after a while your display has a lot of windows open and might looka bit like this.
 [Pic of display with three overlapping windows]
@@ -24,30 +26,31 @@ after a while your display has a lot of windows open and might looka bit like th
 You can tidy that up with the mouse a bit and maybe it looks like this?
 [Pic of the three windows, not overlapping]
 
-The truth is that there is only so much space on a laptop screen so arrangements with more than two or three windows open are probably a mbit messy. Also the effort to move the windows around with the mouse on the screen might be a bit much. You can always minimise and maximise, that helps a bit.
+The truth is that there is only so much space on one laptop screen so arrangements with more than two or three windows are probably a bit messy. Also the effort to move the windows around with the mouse on the screen might be a bit much. 
 
-So the suggestion is to use the keyboard a bit more to organise where your programme windows are on your display and to move around  between them. As this are always the same activities you would also use the keyboard in the same way again and again and by that, so is the idea learn this rather quickly. Also, this text is not about doing everything with the keyboard, just some reoccuring basic things.
+So the suggestion is to use the keyboard a bit more to organise where your programme windows are on your display and to move around  between them. 
+As this are always the same activities you would also use the keyboard in the same way again and again and by that, so is the idea learn this rather quickly. 
+Also, this text is not about doing everything with the keyboard, just some reoccuring basic things.
 
-To do so some shortcuts have to be defined. As it so happens that has kindly already been done  in the Pinebook Manjaro ARM LXQt release. So if you want to try it, you can copy this distro to an SD card and follow this guide but this setup is also possible in  other desktop environments like (KDE, Xfce, ..). However some setup might be required.
+To do so some keyboard shortcuts have to be defined. 
+As it so happens that has kindly already been done in the Pinebook Manjaro ARM LXQt release. 
+So if you want to try it, you can copy this distro to an SD card and follow this guide but this setup is also possible in  other desktop environments like (KDE, Xfce, ..). 
+However some setup is required for the full
+
+**Here is the  main idea:**
+
+1. If you have more than one programme running on one dektop or you only want to use one desktop then there is a conveniet way to split the screen into half and place the windows next to each other.
+
+2. You use 4 different desktops instead of having all programms open in one window.  That means programms can be assigned to different desktoprs and be maximised without getting much in each others way. Hey, you say, that has nothing to do with mose or keyboard usage. Correct, but bare with me..
 
 ## Moving windows around with the keyboard
 
-Here is the  main idea:
-1. You use 4 different desktops instead of having all programms open in one window.  That means programms can be assigned to different desktoprs and be maximised without getting much in each others way. Hey, you say, that has nothing to do with mose or keyboard usage. Correct, but bare with me..
-2. If you have more than one programme running on one dektop or you only want to use one then there is a conveniet way to split the screen into half and place the windows next to each other.
+As the desktop of the pinebook is widescreen it is actually quite usefull to splitt the screen and show two programms next to ecah other.
+[Something like this:](images/splitt-screen1.png)
+The shortcuts for that are easy:
 
 
 
-Now keybindings exactly do you use ?
-
-| Description               | Key                                                 |
-| ---                       | ---                                                 |
-| META + 1 (or 2 or 3 or 4) | Switch to desktop 1 (or 2 or 3 or 4)                |
-| META + Space              | Start a programme with Runner, the LXQt app starter |
-| META + Enter              | Start new Terminal                                  |
-| META + Arrow Left         | Move window to the left half of the desktop         |
-| META + Arrow Right        | Move window to the right half of the desktop        |
-| Shift META + 1 (or 2 or 3 or 4) | Move window to another desktop and switch to that desktop   |
 
 ## Using more than one desktop.
 
@@ -73,7 +76,7 @@ Eg. I have the terminal and maybe settings always on Desktop 1 and Firefox alway
 
 | Desktop | Programme |
 | -----   | -----     |
-| 1       | Terminal / System |
+| 1       | Terminal  System |
 | 2       | Browser   |
 | 3       | Editor    |
 | 4       | Other work      |
@@ -88,6 +91,22 @@ One more thing.
 
 At the beginning it was said that it should be easy to remember the keyboard shortcuts and all considered, the sortcuts used here are all a bit over the place.
 
+There is no ready made way to solve that as many programms and desktop environments or termianls have shortcut and they are all over the place.
+
+That said here is a way to splitt the available shortcut keys like META, Alt and Ctrl and try to get some cnosistency.
+
+Principle approach
+
+- **Meta:** 	for Desktop environments
+- **Ctrl:** 	for Programmes
+- **Alt:**	 	for User and Extensions
+
+An useful expecption Alt+TAB as this is just a very well known shortcut
+
+META 1/2/3/4 to activate desktop/workspace
+Shift META move window to another desktop and switch to that desktop
+META-Space - Start programme with Runner, the LXQt app starter
+META-Enter - Start new Terminal
 
 
 ## Starting common apps with the keyboard.

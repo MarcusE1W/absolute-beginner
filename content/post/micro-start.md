@@ -22,6 +22,11 @@ The installation in Archlinux is really easy.
 ```bash
 trizen -S micro-bin
 ```
+or on aarch64 systems
+
+```
+trizen -S micro-git
+```
 
 ## Useful Keybindings
 

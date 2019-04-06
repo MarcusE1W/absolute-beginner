@@ -90,7 +90,7 @@ If you install the all-the-icons spacebar the terminal mode spacebar looks almos
 
 ### Font
 
-The standard XXX font works well, if you are looking for a slightly different font, I have good experiences with `Iosevka Term`.
+The standard `Source Code Pro` font works well. But if you are looking for a slightly different font, I like `Iosevka Term`.
 
 To add it to spacemacs you first need to install [Iosevka](https://be5invis.github.io/Iosevka/).
 
@@ -110,6 +110,13 @@ Then change this part of your .spacemacs config:
 ```
 
 Save with `SPC f s` and restart with `SPC q R`.
+
+## Spell checking
+- add `spell-checking` layer
+- check that a dictionary is installed: `$ aspell dicts`
+- add required dictionaries
+
+
 
 # Spacemacs (Emacs) terminology
 

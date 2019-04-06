@@ -22,6 +22,15 @@ Position: Left of Desktop
 # Wifi
 Set `rtw_power_mgnt=0` in /etc/modprobe.d/8723cs.conf
 
+# Additional Packages
+yay
+git
+htop
+fakeroot
+micro-git
+xorg-xinput
+
+
 # Keyboard
 - To get the key between LShift and Z working correctly set the keyboard variant to `English (intl, with AltGr dead keys)`
 - I think the SUPER/META key is very useful but I also learned to like the MENU key that is mapped in the pinebook between FN and Alt. So I suggest the following mapping: MENU -> META, CapsLock -> MENU.
@@ -37,8 +46,9 @@ I have added this to .bash_profile but I am sure there is a better more Xorg lik
 
 To set touchpad parametres from the cli you can use the command xinput.
 To use it correctly you first need to determine the device id / name for your touchpad. Use 
+
 ```
-xinput list` 
+xinput list
 ```
 to do so.
 
@@ -74,7 +84,7 @@ To set mouse speed
 ```
 xinput --set-prop 7 'libinput Accel Speed' 0.95
 ```
-
+##
 For more details on xinput and mouse speed also see the [Archlinux Wiki]( https://wiki.archlinux.org/index.php/Mouse_acceleration#Using_xinput)
 
 
@@ -237,29 +247,28 @@ META-Space - Start programme with Runner, the LXQt app starter
 META-Enter - Start new Terminal
 
 
-# Additional Packages
-trizen
-git
-htop
-emacs (spacemacs)
-fakeroot
 
 
 # Niggels
 - Setup in Manjaro-settings seems not to work
-	- Timezone
+	- Timezone -> now set up  in initial startup
 - Window movement is suspiciously slow and runs over..
 	- transparency in the kvantum manager seems to help a bit
 	- in openbox settings untick change window while moving (does that do anything ?)
 - Window size is not saved
 - Sound does not work out of the box for newly set up user. the original manjaro user should work
-- bluetooth not installed correctly ?
 - LXQt settings: mouse acceleration seems not to work -> xinput
 - power management
-    - wifi power management has to be turned off
     - how does sleep actually work
     - the display seems not to turn off completely ?
 - LXQt settings: reverse scrolling does not work -> xinput
+- qpdfview is not in application list
+
+- Error message: platform regulatory.0: Direct firmware load for regulatory.db failed with error -2
+	-> Solution: Install package `crda`
+
+- Add inc/dec brightess to shortcuts does not work
+
 
 
 # Kernel stuff

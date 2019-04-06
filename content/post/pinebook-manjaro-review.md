@@ -35,12 +35,48 @@ Feb 2019 review of Manjaro on Pinebook
      (0xffffe8317da8) Debug: Output is not connected
 
 - Icons in the Taskmanager are not centered whereas the icosn in the QuickLauncher are.
-- Some LXQt widgets cannot be added to the Panel at all Sysinfo etc..
+- sometimes the system just freezes, occasionally in small steps -> rans out of memory ?
+- suspend does not really wake up. it first shows the screen but then the display becomes dark and stays dark .. ?
+- .config/lxqt/session: one entry has environment spellt wrongly
+- dmesg error: sun50i-de2-bus 1000000.de2: Error couldn't map SRAM to device
+  Seems to be related to this device tree code (29/12/2017)
+  ``` C
+   + if (sunxi_de2_clk_has_sram(pdev->dev.of_node)) {
+   + ret = sunxi_sram_claim(&pdev->dev);
+   + if (ret) {
+   + dev_err(&pdev->dev,
+   + "Error couldn't map SRAM to device\n");
+   + return ret;
+   + }
+  Another code snippet: (16/03/2018)
+  ```
+  
+  ``` C
+   + static int sun50i_de2_bus_probe(struct platform_device *pdev)
+   + {
+   +	 struct device_node *np = pdev->dev.of_node;
+   +	 int ret;
+   +
+   +	 ret = sunxi_sram_claim(&pdev->dev);
+   +	 if (ret) {
+   +		dev_err(&pdev->dev, "Error couldn't map SRAM to device\n");
+   +		return ret;
+   +	 }
+   +
+   +	 if (np) 
+   +		of_platform_populate(np, NULL, NULL, &pdev->dev);
+   +
+   + 	return 0;
+  ```
+
+# Fine tuning
+- [Solved] Some LXQt widgets cannot be added to the Panel at all Sysinfo etc..
+	- > add `libstatgrab` to get cpu monitor working
+	- > add `libsysstat` to get system statistics
 - Moving windows with the mouse can be very slow. The Graphic creates a tail effect.
   - Termite is super fast
   - File manager is so so
   - Emacs looks very strange
   - Firefox is super super slow
-- sometimes the system just freezes, occasionally in small stepts -> rans out of memory ?
-- suspend does not really wake up. it first shows the screen but then the display becomes dark and stays dark .. ?
--
+	-> `compton` helps
+	
