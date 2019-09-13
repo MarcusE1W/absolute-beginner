@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static site generation on </title>
+    <link>/categories/static-site-generation/</link>
+    <description>Recent content in Static site generation on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/static-site-generation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Create a static web site with Hugo</title>
+      <link>/post/static-site/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/static-site/</guid>
+      <description>&lt;p&gt;Static web sites are an excellent start to set up your blog or web site and you can be up and running in a few hours.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

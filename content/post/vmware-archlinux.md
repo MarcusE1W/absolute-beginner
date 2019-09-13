@@ -1,3 +1,15 @@
++++
+title = "Set up VM Ware for Archlinux"
+date = "2018-12-07"
+categories = ["Linux"]
+tags = ["VM"]
+draft = false
++++
+
+VM Ware archlinux setup
+<!--more-->
+
+
 # Install
 
 - git

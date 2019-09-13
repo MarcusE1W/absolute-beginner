@@ -1,0 +1,53 @@
+baseURL = "https://example.com/"
+languageCode = "en-US"
+title = "The absolute beginner"
+theme = "bootstrap-bp-hugo-theme"
+# googleAnalytics = "UA-123-45"
+copyright = ""
+enableRobotsTXT = true
+pygmentsCodeFences = true
+canonifyurls = true
+paginate = 30
+
+[sitemap]
+    changefreq = "weekly"
+    priority = 0.5
+
+[permalinks]
+    posts = "/:year/:month/:slug/"
+    post = "/:year/:month/:slug/"
+    pages = "/:slug/"
+    page = "/:slug/"
+
+[Author]  
+  name = "MarcusE1W"
+
+[params]
+  description = "Hallo"
+  images = ["/flower-bg.jpg"]
+  showPostSummary = true
+  startPageColumns = true
+  # customDateFormat = "02.01.2006"
+  # colorTheme  = light
+
+[menu]
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 10
+    pre = "<i class='fas fa-newspaper'></i>"
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 30
+    

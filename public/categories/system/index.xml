@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>System on The Absolute Beginner</title>
-    <link>https://absolute-beginner.netlify.com/categories/system/</link>
-    <description>Recent content in System on The Absolute Beginner</description>
+    <title>System on </title>
+    <link>/categories/system/</link>
+    <description>Recent content in System on </description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://absolute-beginner.netlify.com/categories/system/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>How to use iOS with a keyboard</title>
-      <link>https://absolute-beginner.netlify.com/post/lofree-keyboard/</link>
+      <link>/post/ios-keyboard/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/lofree-keyboard/</guid>
-      <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>/post/ios-keyboard/</guid>
+      <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My system setup</title>
-      <link>https://absolute-beginner.netlify.com/post/sys-setup/</link>
+      <link>/post/sys-setup/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/sys-setup/</guid>
-      <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>/post/sys-setup/</guid>
+      <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A QEMU Virtual machine with a Windows host and a Linux guest</title>
-      <link>https://absolute-beginner.netlify.com/post/qemu-start/</link>
+      <link>/post/qemu-start/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/qemu-start/</guid>
-      <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+      <guid>/post/qemu-start/</guid>
+      <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,11 +1,8 @@
 +++
 title = "Ocaml for beginner"
 date = "2017-12-07"
-hide_authorbox = false
-disable_comments = false
 categories = ["Programming languages"]
 tags = ["Ocaml"]
-aliases = ["/post/all-grown-up/"]
 draft = false
 +++
 

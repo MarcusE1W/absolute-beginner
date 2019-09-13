@@ -1,3 +1,39 @@
 [submodule "themes/BluestNight"]
 	path = themes/BluestNight
 	url = https://gitlab.com/BluestNight/BluestNight
+[submodule "themes/themes/hugo-flex"]
+	path = themes/themes/hugo-flex
+	url = https://github.com/de-souza/hugo-flex.git
+[submodule "themes/themes/hug"]
+	path = themes/themes/hug
+	url = https://github.com/spech66/bootstrap-bp-hugo-theme.git
+[submodule "themes/hugo-flex"]
+	path = themes/hugo-flex
+	url = https://github.com/de-souza/hugo-flex.git
+[submodule "themes/bootstrap-bp-hugo-theme"]
+	path = themes/bootstrap-bp-hugo-theme
+	url = https://github.com/spech66/bootstrap-bp-hugo-theme.git
+[submodule "themes/airspace-hugo"]
+	path = themes/airspace-hugo
+	url = https://github.com/themefisher/airspace-hugo.git
+[submodule "themes/Midnight"]
+	path = themes/Midnight
+	url = https://gitlab.com/BluestNight/Midnight.git
+[submodule "themes/meme"]
+	path = themes/meme
+	url = https://github.com/reuixiy/hugo-theme-meme.git
+[submodule "themes/parsa"]
+	path = themes/parsa
+	url = https://github.com/themefisher/parsa-hugo-personal-blog-theme.git
+[submodule "themes/aether"]
+	path = themes/aether
+	url = https://github.com/josephhutch/aether.git
+[submodule "themes/mediumish"]
+	path = themes/mediumish
+	url = https://github.com/lgaida/mediumish-gohugo-theme
+[submodule "themes/simple-a"]
+	path = themes/simple-a
+	url = https://github.com/AlexFinn/simple-a.git
+[submodule "themes/hugo-theme-basic"]
+	path = themes/hugo-theme-basic
+	url = https://github.com/siegerts/hugo-theme-basic.git

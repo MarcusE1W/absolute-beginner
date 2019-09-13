@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>F# on </title>
+    <link>/tags/f#/</link>
+    <description>Recent content in F# on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 Dec 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/f#/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>F# for beginner</title>
+      <link>/post/fsharp/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/fsharp/</guid>
+      <description> F# installation on Archlinux  There are two libraries mono and .net core 2 to choose from. mono covers more than .net core it is a bit unclear if you can install them in parallel after some reading probably best to go with the more modern .net core   </description>
+    </item>
+    
+  </channel>
+</rss>

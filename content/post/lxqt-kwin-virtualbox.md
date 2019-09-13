@@ -5,7 +5,6 @@ hide_authorbox = false
 disable_comments = false
 categories = ["Desktop Environments"]
 tags = ["Linux","Archlinux","LXQt","KWin"]
-aliases = ["/post/all-grown-up/"]
 draft = false
 +++
 
@@ -15,7 +14,7 @@ Setting up LXQt with KWin in Virtualbox using Anarchy Linux
 <!--more-->
 
 
-#KWin and LXQt and VirtualBox
+# KWin and LXQt and VirtualBox
 
 This guide describes how to set up KWin and LXQt in Virtualbox using Arch Anywhere.
 

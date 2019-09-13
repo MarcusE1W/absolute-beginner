@@ -3,7 +3,7 @@ title = "Pinebook keyboard first"
 date = "2019-02-19"
 hide_authorbox = false
 disable_comments = false
-categories = ["Pinebook" "Keyboard"]
+categories = ["Pinebook", "Keyboard"]
 tags = ["LXQt"]
 draft = true
 +++

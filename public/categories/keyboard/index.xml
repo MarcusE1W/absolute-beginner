@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keyboard on </title>
+    <link>/categories/keyboard/</link>
+    <description>Recent content in Keyboard on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 19 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pinebook keyboard first</title>
+      <link>/post/pinebook-keyboard/</link>
+      <pubDate>Tue, 19 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/pinebook-keyboard/</guid>
+      <description>&lt;p&gt;How to use the the Pinebook with Manjaro LXQt and a keyboard first approach ?&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

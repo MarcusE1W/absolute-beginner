@@ -1,3 +1,14 @@
++++
+title = "Pinebook review"
+date = "2019-01-19"
+hide_authorbox = false
+disable_comments = false
+categories = ["Pinebook"]
+tags = ["LXQt"]
+draft = true
++++
+
+
 
 # Pinebook: First impressions
 

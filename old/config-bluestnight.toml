@@ -1,0 +1,83 @@
+baseurl = "https://absolute-beginner.netlify.com"
+title = "The Absolute Beginner"
+author = "Marcus"
+paginate = 20
+theme = "BluestNight"
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+pygmentsUseClassic=true
+enableRobotsTXT = true
+
+[outputs]
+    home = ["HTML", "CSS", "JSON", "RSS"]
+    section = ["HTML", "RSS"]
+
+[Params]
+    tagline = "Experiences from a permanent beginner"
+    description = "parameter: Description" # Description of your site
+    authorbox = false
+    author = ""
+    post_navigation = false
+#    thumbnail = "images/wale.jpg"
+    thumbnail_radius = "10%"
+
+
+# Privacy policy support
+# [Params.iubenda]
+#     id = "8219381"
+#     legal_only = false
+#
+# [Params.iubenda.pro]
+#     enable_pro = true
+#     site_id = "908104"
+#     enable_cookie_policy = true
+#     disable_footer_link = true
+#     prior_consent = true
+
+[Params.background]
+    src = "images/flower.jpg"
+    medium_src = "images/flower-med.jpg"
+    small_src = "images/flowed-sml.jpg"
+    fit_width = false
+    tile = false
+
+[Params.widgets]
+    search = false
+    recent_articles = false
+    categories = true
+    tags = true
+    tags_counter = true
+#    patreon = "shadow53"
+    upcoming_events = false
+
+[Params.social]
+    github = "MarcusE1W/absolute-beginner"
+    
+# [menu]
+#   [[menu.main]]
+#     name = "Alert"
+#     weight = 1
+#     parent = "docs-pages"
+#     identifier = "alert-for-pages"
+#     url = "docs/site/alert/#page-specific-alerts"
+#   [[menu.main]]
+#     name = "Alert"
+#     weight = 1
+#     parent = "docs-shortcodes"
+#     identifier = "alert-shortcode"
+#     url = "docs/site/alert/#shortcode"
+
+[Params.color]
+    page_background = "#ecf5f5"
+    main_background = "#fafbfb"
+    alt_background = "#f5f4ec"
+    main_text = "#373839"
+    alt_text = "#676464"
+    accent = "#29c72f"
+    accent_text = "#e2e2e2"
+
+[Params.fonts]
+  header_style = "sans-serif"
+  body_style = "sans-serif"
+  print_header_style = "sans-serif"
+  print_body_style = "serif"
