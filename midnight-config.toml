@@ -86,7 +86,7 @@ guide and the [user documentation](https://bluestnight.com/docs/midnight/users/)
     ## except those with a smaller image defined.
     ## The file path must be relative to the assets/ directory. For example,
     ## the below file is found at assets/images/background.jpg
-    src = "/images/background.jpg"
+    # src = "/images/background.jpg"
 
     ## Background image to use on all medium (< 1024px) and smaller screens
     #medium_src = "/images/background_medium.jpg"

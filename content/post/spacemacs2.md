@@ -28,9 +28,9 @@ To  make this tip work you have to change the _dotspacemacs-visual-line-move-tex
 `dotspacemacs-visual-line-move-text t 
 ```
 
-Once the change is done you van enter visual mode and move the current (selected) line up and down with J and K. 
+Once the change is done you can enter visual mode and move the current (selected) line up and down with J and K. 
 
-# Spacemacs 2
+# Text processing
 example for mass processing of a text block: Ctrl-v, mark lines, i, write text, <ESC>
 Example for mass processing at end of line: Ctrl-V, mark lines, $A, write text, <ESC>
 
@@ -55,7 +55,7 @@ In normal mode press e.g. `v` to mark text and then `i` (v for visual and i for 
 
 TODO: - Describe how to set variables.
 
-## Improved Spacemace experience
+# Improved Spacemace experience
 
 ### Treemacs
 If you are on the develop branch (as of Dec 2018 but that might change) then you have the option to replace neotree with treemacs. Treemacs looks more pretty and has a consisten key mapping.
@@ -116,6 +116,31 @@ Save with `SPC f s` and restart with `SPC q R`.
 - check that a dictionary is installed: `$ aspell dicts`
 - add required dictionaries
 
+e.g.
+```
+yay -S aspell
+yay -S aspell-en
+```
+
+# Spacemacs lite (spacemacs-base)
+
+This is to how to set up a lighter Spacemacs that still has many usefull functions but less than the full version.
+
+The full Spacemacs setup (spacemacs) has a lot of functions that are not always needed, especially if your focus is not on software development. However it increases the startup time of Spacemacs and subjectively makes it slower.
+
+So when you install Spacemacs the first time select `spacemacs-base` instead of `spacemacs` as the model (???) .
+
+- Replace helm with ivy (plus additional comment ??), Ivy is lighter
+
+- Support search with avy (SPC jj)
+Add layer `Spacemacs-editing`
+
+- close and restart emacs and switch to window with SPC #
+
+Add layer `Spacemacs-navigation`
+
+- comment/uncomment
+Add layer `Spacemacs-evil`
 
 
 # Spacemacs (Emacs) terminology
