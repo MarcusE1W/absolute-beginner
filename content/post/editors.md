@@ -3,7 +3,7 @@ title = "Editors"
 date = "2018-08-20"
 hide_authorbox = false
 disable_comments = false
-categories = ["Editors"]
+categories = ["Editor"]
 tags = [""]
 draft = true
 +++

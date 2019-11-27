@@ -1,23 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>iOS on </title>
-    <link>/tags/ios/</link>
-    <description>Recent content in iOS on </description>
+    <title>iOS - Absolute beginner</title>
+    <link>http://example.org/tags/ios/</link>
+    <description>Recent content in iOS on Absolute beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/ios/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="http://example.org/tags/ios/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How to use iOS with a keyboard</title>
-      <link>/post/ios-keyboard/</link>
+      <link>http://example.org/post/ios-keyboard/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/ios-keyboard/</guid>
+      <guid>http://example.org/post/ios-keyboard/</guid>
       <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

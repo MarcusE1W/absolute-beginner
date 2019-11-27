@@ -1,59 +1,55 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on </title>
-    <link>/categories/</link>
-    <description>Recent content in Categories on </description>
+    <title>Categories - Absolute beginner</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on Absolute beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Linux</title>
+      <link>http://example.org/categories/linux/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/categories/linux/</guid>
+      <description></description>
+    </item><item>
       <title>System</title>
-      <link>/categories/system/</link>
+      <link>http://example.org/categories/system/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/system/</guid>
+      <guid>http://example.org/categories/system/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Editor</title>
-      <link>/categories/editor/</link>
+      <link>http://example.org/categories/editor/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/editor/</guid>
+      <guid>http://example.org/categories/editor/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Development</title>
-      <link>/categories/development/</link>
+      <link>http://example.org/categories/development/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/development/</guid>
+      <guid>http://example.org/categories/development/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Programming languages</title>
-      <link>/categories/programming-languages/</link>
+      <link>http://example.org/categories/programming-languages/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/programming-languages/</guid>
+      <guid>http://example.org/categories/programming-languages/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Desktop Environments</title>
-      <link>/categories/desktop-environments/</link>
+      <link>http://example.org/categories/desktop-environments/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/categories/desktop-environments/</guid>
+      <guid>http://example.org/categories/desktop-environments/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

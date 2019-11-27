@@ -1,32 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Editor on </title>
-    <link>/categories/editor/</link>
-    <description>Recent content in Editor on </description>
+    <title>Editor - Absolute beginner</title>
+    <link>http://example.org/categories/editor/</link>
+    <description>Recent content in Editor on Absolute beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/categories/editor/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="http://example.org/categories/editor/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Spacemacs for beginner</title>
-      <link>/post/spacemacs/</link>
+      <link>http://example.org/post/spacemacs/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/spacemacs/</guid>
+      <guid>http://example.org/post/spacemacs/</guid>
       <description>&lt;p&gt;An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Simple syntax highlighting for the Micro editor</title>
-      <link>/post/micro-syntax1/</link>
+      <link>http://example.org/post/micro-syntax1/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/micro-syntax1/</guid>
+      <guid>http://example.org/post/micro-syntax1/</guid>
       <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

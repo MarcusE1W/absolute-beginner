@@ -1,120 +1,76 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on </title>
-    <link>/post/</link>
-    <description>Recent content in Posts on </description>
+    <title>Posts - Absolute beginner</title>
+    <link>http://example.org/post/</link>
+    <description>Recent content in Posts on Absolute beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="http://example.org/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Set up VM Ware for Archlinux</title>
+      <link>http://example.org/post/vmware-archlinux/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/post/vmware-archlinux/</guid>
+      <description>&lt;p&gt;VM Ware archlinux setup&lt;/p&gt;</description>
+    </item><item>
       <title>How to use iOS with a keyboard</title>
-      <link>/post/ios-keyboard/</link>
+      <link>http://example.org/post/ios-keyboard/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/ios-keyboard/</guid>
+      <guid>http://example.org/post/ios-keyboard/</guid>
       <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Spacemacs for beginner</title>
-      <link>/post/spacemacs/</link>
+      <link>http://example.org/post/spacemacs/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/spacemacs/</guid>
+      <guid>http://example.org/post/spacemacs/</guid>
       <description>&lt;p&gt;An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>My system setup</title>
-      <link>/post/sys-setup/</link>
+      <link>http://example.org/post/sys-setup/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/sys-setup/</guid>
+      <guid>http://example.org/post/sys-setup/</guid>
       <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Simple syntax highlighting for the Micro editor</title>
-      <link>/post/micro-syntax1/</link>
+      <link>http://example.org/post/micro-syntax1/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/micro-syntax1/</guid>
+      <guid>http://example.org/post/micro-syntax1/</guid>
       <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>A QEMU Virtual machine with a Windows host and a Linux guest</title>
-      <link>/post/qemu-start/</link>
+      <link>http://example.org/post/qemu-start/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/qemu-start/</guid>
+      <guid>http://example.org/post/qemu-start/</guid>
       <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Creating a man page from markdown with pandoc</title>
-      <link>/post/man-markdown/</link>
+      <link>http://example.org/post/man-markdown/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/man-markdown/</guid>
+      <guid>http://example.org/post/man-markdown/</guid>
       <description>&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Ocaml for beginner</title>
-      <link>/post/ocaml-start/</link>
+      <link>http://example.org/post/ocaml-start/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/ocaml-start/</guid>
+      <guid>http://example.org/post/ocaml-start/</guid>
       <description>&lt;p&gt;Explore Ocaml, an functional programming language that is mayby not as strict as some others.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>An Archlinux Desktop with LXQt and KWin</title>
-      <link>/post/lxqt-kwin-virtualbox/</link>
+      <link>http://example.org/post/lxqt-kwin-virtualbox/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/lxqt-kwin-virtualbox/</guid>
+      <guid>http://example.org/post/lxqt-kwin-virtualbox/</guid>
       <description>&lt;p&gt;Setting up LXQt with KWin in Virtualbox using Anarchy Linux&lt;/p&gt;</description>
     </item>
-    
-    <item>
-      <title></title>
-      <link>/post/pinebook-review/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/pinebook-review/</guid>
-      <description>Pinebook: First impressions Light, sturdy, plasticy but not in a bad way.
-The hardware The display of the Pinebook is porbably the germ of this notebook. It is super sharp with a resolution of 1920x1080 and very much in difference to most cheap notebooks it is not glossy. The display does hardly have any reflection at all.
-The keyboard is actually quite nice to type on (I am doing it right now).</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/pinebook-setup/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/pinebook-setup/</guid>
-      <description>Appearance  LXQt theme: Ambiance Font: Point Size: 12 Resolution (DPI) 120  Panel Size: 50 Icon Size: 32 Position: Left of Desktop
-Widgets  Add spacer between quick launcher and task whatsnot
-Locate Set your location
- Does not work propperly yet
-  Openbox Settings  Font: All one up: 11 11 10 10 10 10  Wifi Set rtw_power_mgnt=0 in /etc/modprobe.d/8723cs.conf
-Additional Packages yay git htop fakeroot micro-git xorg-xinput</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/vmware-archlinux/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/vmware-archlinux/</guid>
-      <description> Install  git yay xorg-server micro-nightly-bin xclip xorg-xinit xterm  spectrwm - cp /etc/spectrwm.conf ~/.spectrwm.conf - edit spectrwm.conf: bar_font = xos4 Terminus:pixelsize=14:antialias=true - set &#39;program[term] = termite&#39;  xorg-xrandr - check monitor and resolution mode with: &#39;xrandr&#39; - add to .xinitrc: &#39;xrandr --output Virtual1 --mode 1360x768&#39;  firefox termite - mkdir .config/termite - cp /etc/xdg/termite/config ~/.config/termite/config - edit font size - change termite colour scheme fot more contrast  exa - change fish func for ll to exa -l  kitty </description>
-    </item>
-    
   </channel>
 </rss>

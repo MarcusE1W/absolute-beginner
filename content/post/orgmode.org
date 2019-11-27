@@ -21,51 +21,45 @@ A first look at org-mode in Spacemacs
  In org mode you structure your document like in markdown with headers.
  Instead of #, ##, ### in markdown you use `*`, `**`, and `***`.
 
-| Function        | key             |
-|-----------------+-----------------|
-| demote header   | M-arrow_right   |
-| promote header  | M-arrow_left    |
-| new header line | Ctrl-RET        |
-|                 |                 |
 
 ** Org-mode and markdown compared side by side
 
-| Markdown-mode | Org-mode  | Description       | Example                      |
-|---------------+-----------+-------------------+------------------------------|
-| #             | *         | Header level 1    |                              |
-| ##            | **        | Header level 2    |                              |
-| ###           | ***       | Header level 3    |                              |
-| =_text_=      | /text/    | Italics           | /Hurray/                     |
-| =*text*=      | *text*    | Bold              | *Hurray*                     |
-|               | _text_    | Underline         | _Hurray_                     |
-| ``` txt ```   | ~text~    | Source-Code       |                              |
-|               | =text=    | Literal           |                              |
-| N/A           | see below | Other text blocks |                              |
-| -             | -         | Bullet List       |                              |
-| 1.            | 1.        | Numbered Lists    |                              |
-| N/A           | -  ::     | Definition list   | - Definition :: rest of line |
-| N/A           | +text+    | Strike through    | +this and that+              |
-| [text](link)  | [[link][description]] |       | [[heise.de][Heise]]                             |
+ | Markdown-mode | Org-mode  | Description       | Example                      |
+ |---------------+-----------+-------------------+------------------------------|
+ | #             | *         | Header level 1    |                              |
+ | ##            | **        | Header level 2    |                              |
+ | ###           | ***       | Header level 3    |                              |
+ | =_text_=      | /text/    | Italics           | /Hurray/                     |
+ | =*text*=      | *text*    | Bold              | *Hurray*                     |
+ | N/A           | _text_    | Underline         | _Hurray_                     |
+ | ``` txt ```   | ~text~    | Source-Code       |                              |
+ |               | =text=    | Literal           |                              |
+ | N/A           | see below | Other text blocks |                              |
+ | -             | -         | Bullet List       |                              |
+ | 1.            | 1.        | Numbered Lists    |                              |
+ | N/A           | -  ::     | Definition list   | - Definition :: rest of line |
+ | N/A           | +text+    | Strike through    | +this and that+              |
+ | [text](link)  | [[link][description]] |       | [[heise.de][Heise]]                             |
 
-Test:
-/italics/
-*bold*
-_underline_
-~source~
-=literal=
-- Bullet list
-1. numbered list
-- dies :: das
-+strike through+
+ Test:
+ /italics/
+ *bold*
+ _underline_
+ ~source~
+ =literal=
+ - Bullet list
+ 1. numbered list
+ - dies :: das
+ +strike through+
 
-~
-~source block, of some sort
-seems not to work ?
-Ah, dies functioniert etwas anders~
-~
+ ~
+ source block, of some sort
+ seems not to work ?
+ Ah, dies functioniert etwas anders~
+ ~
 
-- [] hallo
-- [x] hallo
+ - [] hallo
+ - [x] hallo
 
 * Organise tasks
 
@@ -81,6 +75,12 @@ Ah, dies functioniert etwas anders~
 |              |            |                                                                        |
 
 
+| Function        | key             |
+|-----------------+-----------------|
+| demote header   | M-arrow_right   |
+| promote header  | M-arrow_left    |
+| new header line | Ctrl-RET        |
+|                 |                 |
 * create list
 
 
@@ -88,4 +88,3 @@ Ah, dies functioniert etwas anders~
 - [[http://pragmaticemacs.com/org-mode-tutorials/][beginner tutorial]]
 
 
-dies das jenes

@@ -1,194 +1,160 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on </title>
-    <link>/tags/</link>
-    <description>Recent content in Tags on </description>
+    <title>Tags - Absolute beginner</title>
+    <link>http://example.org/tags/</link>
+    <description>Recent content in Tags on Absolute beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 30 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+        <atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>VM</title>
+      <link>http://example.org/tags/vm/</link>
+      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/tags/vm/</guid>
+      <description></description>
+    </item><item>
       <title>Bluetooth</title>
-      <link>/tags/bluetooth/</link>
+      <link>http://example.org/tags/bluetooth/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/bluetooth/</guid>
+      <guid>http://example.org/tags/bluetooth/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>iOS</title>
-      <link>/tags/ios/</link>
+      <link>http://example.org/tags/ios/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ios/</guid>
+      <guid>http://example.org/tags/ios/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Keyboard</title>
-      <link>/tags/keyboard/</link>
+      <link>http://example.org/tags/keyboard/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/keyboard/</guid>
+      <guid>http://example.org/tags/keyboard/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Lofree</title>
-      <link>/tags/lofree/</link>
+      <link>http://example.org/tags/lofree/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/lofree/</guid>
+      <guid>http://example.org/tags/lofree/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Spacemacs</title>
-      <link>/tags/spacemacs/</link>
+      <link>http://example.org/tags/spacemacs/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/spacemacs/</guid>
+      <guid>http://example.org/tags/spacemacs/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Vim</title>
-      <link>/tags/vim/</link>
+      <link>http://example.org/tags/vim/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/vim/</guid>
+      <guid>http://example.org/tags/vim/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Archlinux</title>
-      <link>/tags/archlinux/</link>
+      <link>http://example.org/tags/archlinux/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/archlinux/</guid>
+      <guid>http://example.org/tags/archlinux/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Atom</title>
-      <link>/tags/atom/</link>
+      <link>http://example.org/tags/atom/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/atom/</guid>
+      <guid>http://example.org/tags/atom/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Fish shell</title>
-      <link>/tags/fish-shell/</link>
+      <link>http://example.org/tags/fish-shell/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/fish-shell/</guid>
+      <guid>http://example.org/tags/fish-shell/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Micro editor</title>
-      <link>/tags/micro-editor/</link>
+      <link>http://example.org/tags/micro-editor/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/micro-editor/</guid>
+      <guid>http://example.org/tags/micro-editor/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Spectrwm</title>
-      <link>/tags/spectrwm/</link>
+      <link>http://example.org/tags/spectrwm/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/spectrwm/</guid>
+      <guid>http://example.org/tags/spectrwm/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>trizen</title>
-      <link>/tags/trizen/</link>
+      <link>http://example.org/tags/trizen/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/trizen/</guid>
+      <guid>http://example.org/tags/trizen/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Micro</title>
-      <link>/tags/micro/</link>
+      <link>http://example.org/tags/micro/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/micro/</guid>
+      <guid>http://example.org/tags/micro/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>QEMU</title>
-      <link>/tags/qemu/</link>
+      <link>http://example.org/tags/qemu/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/qemu/</guid>
+      <guid>http://example.org/tags/qemu/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>man pages</title>
-      <link>/tags/man-pages/</link>
+      <link>http://example.org/tags/man-pages/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/man-pages/</guid>
+      <guid>http://example.org/tags/man-pages/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>markdown</title>
-      <link>/tags/markdown/</link>
+      <link>http://example.org/tags/markdown/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/markdown/</guid>
+      <guid>http://example.org/tags/markdown/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Ocaml</title>
-      <link>/tags/ocaml/</link>
+      <link>http://example.org/tags/ocaml/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/ocaml/</guid>
+      <guid>http://example.org/tags/ocaml/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>KWin</title>
-      <link>/tags/kwin/</link>
+      <link>http://example.org/tags/kwin/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/kwin/</guid>
+      <guid>http://example.org/tags/kwin/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>Linux</title>
-      <link>/tags/linux/</link>
+      <link>http://example.org/tags/linux/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/linux/</guid>
+      <guid>http://example.org/tags/linux/</guid>
       <description></description>
-    </item>
-    
-    <item>
+    </item><item>
       <title>LXQt</title>
-      <link>/tags/lxqt/</link>
+      <link>http://example.org/tags/lxqt/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/lxqt/</guid>
+      <guid>http://example.org/tags/lxqt/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>
