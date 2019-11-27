@@ -3,202 +3,202 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://absolute-beginner.netlify.com/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/linux/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/linux/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/vmware-archlinux/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/vmware-archlinux/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/vm/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/vm/</loc>
     <lastmod>2018-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/bluetooth/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/bluetooth/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/ios-keyboard/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/ios-keyboard/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ios/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/ios/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/keyboard/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/keyboard/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/lofree/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/lofree/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/system/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/system/</loc>
     <lastmod>2018-06-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/editor/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/editor/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/spacemacs/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/spacemacs/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/spacemacs/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/spacemacs/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/vim/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/vim/</loc>
     <lastmod>2018-05-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/archlinux/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/archlinux/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/atom/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/atom/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/fish-shell/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/fish-shell/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/micro-editor/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/micro-editor/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/sys-setup/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/sys-setup/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/spectrwm/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/spectrwm/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/trizen/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/trizen/</loc>
     <lastmod>2018-04-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/micro/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/micro/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/micro-syntax1/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/micro-syntax1/</loc>
     <lastmod>2018-04-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/qemu-start/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/qemu-start/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/qemu/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/qemu/</loc>
     <lastmod>2018-03-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/man-markdown/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/man-markdown/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/development/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/development/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/man-pages/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/man-pages/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/markdown/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/markdown/</loc>
     <lastmod>2018-02-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/ocaml/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/ocaml/</loc>
     <lastmod>2017-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/ocaml-start/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/ocaml-start/</loc>
     <lastmod>2017-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/programming-languages/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/programming-languages/</loc>
     <lastmod>2017-12-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/post/lxqt-kwin-virtualbox/</loc>
+    <loc>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/desktop-environments/</loc>
+    <loc>https://absolute-beginner.netlify.com/categories/desktop-environments/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/kwin/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/kwin/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/linux/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/linux/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/tags/lxqt/</loc>
+    <loc>https://absolute-beginner.netlify.com/tags/lxqt/</loc>
     <lastmod>2017-12-03T00:00:00+00:00</lastmod>
   </url>
   

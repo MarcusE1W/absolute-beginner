@@ -1,54 +1,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories - Absolute beginner</title>
-    <link>http://example.org/categories/</link>
+    <link>https://absolute-beginner.netlify.com/categories/</link>
     <description>Recent content in Categories on Absolute beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://absolute-beginner.netlify.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Linux</title>
-      <link>http://example.org/categories/linux/</link>
+      <link>https://absolute-beginner.netlify.com/categories/linux/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/linux/</guid>
+      <guid>https://absolute-beginner.netlify.com/categories/linux/</guid>
       <description></description>
     </item><item>
       <title>System</title>
-      <link>http://example.org/categories/system/</link>
+      <link>https://absolute-beginner.netlify.com/categories/system/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/system/</guid>
+      <guid>https://absolute-beginner.netlify.com/categories/system/</guid>
       <description></description>
     </item><item>
       <title>Editor</title>
-      <link>http://example.org/categories/editor/</link>
+      <link>https://absolute-beginner.netlify.com/categories/editor/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/editor/</guid>
+      <guid>https://absolute-beginner.netlify.com/categories/editor/</guid>
       <description></description>
     </item><item>
       <title>Development</title>
-      <link>http://example.org/categories/development/</link>
+      <link>https://absolute-beginner.netlify.com/categories/development/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/development/</guid>
+      <guid>https://absolute-beginner.netlify.com/categories/development/</guid>
       <description></description>
     </item><item>
       <title>Programming languages</title>
-      <link>http://example.org/categories/programming-languages/</link>
+      <link>https://absolute-beginner.netlify.com/categories/programming-languages/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/programming-languages/</guid>
+      <guid>https://absolute-beginner.netlify.com/categories/programming-languages/</guid>
       <description></description>
     </item><item>
       <title>Desktop Environments</title>
-      <link>http://example.org/categories/desktop-environments/</link>
+      <link>https://absolute-beginner.netlify.com/categories/desktop-environments/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://example.org/categories/desktop-environments/</guid>
+      <guid>https://absolute-beginner.netlify.com/categories/desktop-environments/</guid>
       <description></description>
     </item>
   </channel>
