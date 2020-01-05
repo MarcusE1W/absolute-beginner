@@ -1,7 +1,7 @@
 +++
 title = "Set up VM Ware for Archlinux"
 date = "2018-12-07"
-categories = ["Linux"]
+categories = ["System"]
 tags = ["VM"]
 draft = false
 +++
