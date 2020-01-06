@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Editor - Absolute beginner</title>
+    <title>Editor on Absolute Beginner</title>
     <link>https://absolute-beginner.netlify.com/categories/editor/</link>
-    <description>Recent content in Editor on Absolute beginner</description>
+    <description>Recent content in Editor on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
     <lastBuildDate>Mon, 14 May 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://absolute-beginner.netlify.com/categories/editor/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://absolute-beginner.netlify.com/categories/editor/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Spacemacs for beginner</title>
@@ -15,7 +18,9 @@
       
       <guid>https://absolute-beginner.netlify.com/post/spacemacs/</guid>
       <description>&lt;p&gt;An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.&lt;/p&gt;</description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Simple syntax highlighting for the Micro editor</title>
       <link>https://absolute-beginner.netlify.com/post/micro-syntax1/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
@@ -23,5 +28,6 @@
       <guid>https://absolute-beginner.netlify.com/post/micro-syntax1/</guid>
       <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>

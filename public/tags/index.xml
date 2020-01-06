@@ -1,12 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags - Absolute beginner</title>
+    <title>Tags on Absolute Beginner</title>
     <link>https://absolute-beginner.netlify.com/tags/</link>
-    <description>Recent content in Tags on Absolute beginner</description>
+    <description>Recent content in Tags on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 06 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://absolute-beginner.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://absolute-beginner.netlify.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mermaid</title>
+      <link>https://absolute-beginner.netlify.com/tags/mermaid/</link>
+      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://absolute-beginner.netlify.com/tags/mermaid/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>VM</title>
@@ -15,140 +27,180 @@
       
       <guid>https://absolute-beginner.netlify.com/tags/vm/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Bluetooth</title>
       <link>https://absolute-beginner.netlify.com/tags/bluetooth/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/bluetooth/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>iOS</title>
       <link>https://absolute-beginner.netlify.com/tags/ios/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/ios/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Keyboard</title>
       <link>https://absolute-beginner.netlify.com/tags/keyboard/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/keyboard/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Lofree</title>
       <link>https://absolute-beginner.netlify.com/tags/lofree/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/lofree/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Spacemacs</title>
       <link>https://absolute-beginner.netlify.com/tags/spacemacs/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/spacemacs/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Vim</title>
       <link>https://absolute-beginner.netlify.com/tags/vim/</link>
       <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/vim/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Archlinux</title>
       <link>https://absolute-beginner.netlify.com/tags/archlinux/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/archlinux/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Atom</title>
       <link>https://absolute-beginner.netlify.com/tags/atom/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/atom/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Fish shell</title>
       <link>https://absolute-beginner.netlify.com/tags/fish-shell/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/fish-shell/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Micro editor</title>
       <link>https://absolute-beginner.netlify.com/tags/micro-editor/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/micro-editor/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Spectrwm</title>
       <link>https://absolute-beginner.netlify.com/tags/spectrwm/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/spectrwm/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>trizen</title>
       <link>https://absolute-beginner.netlify.com/tags/trizen/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/trizen/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Micro</title>
       <link>https://absolute-beginner.netlify.com/tags/micro/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/micro/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>QEMU</title>
       <link>https://absolute-beginner.netlify.com/tags/qemu/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/qemu/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>man pages</title>
       <link>https://absolute-beginner.netlify.com/tags/man-pages/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/man-pages/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>markdown</title>
       <link>https://absolute-beginner.netlify.com/tags/markdown/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/markdown/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Ocaml</title>
       <link>https://absolute-beginner.netlify.com/tags/ocaml/</link>
       <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/ocaml/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>KWin</title>
       <link>https://absolute-beginner.netlify.com/tags/kwin/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/kwin/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://absolute-beginner.netlify.com/tags/linux/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://absolute-beginner.netlify.com/tags/linux/</guid>
       <description></description>
-    </item><item>
+    </item>
+    
+    <item>
       <title>LXQt</title>
       <link>https://absolute-beginner.netlify.com/tags/lxqt/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
@@ -156,5 +208,6 @@
       <guid>https://absolute-beginner.netlify.com/tags/lxqt/</guid>
       <description></description>
     </item>
+    
   </channel>
 </rss>

@@ -1,78 +1,28 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Spacemacs for beginner &middot; Absolute beginner</title>
-  <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  
-  
-  
-  
-  
-  <link href="https://absolute-beginner.netlify.com/css/concated.min.css" rel="stylesheet">
-  
-  <style>
-    body {
-      background: #ecedef url("https://absolute-beginner.netlify.com/flower-bg.jpg") repeat;
-    }
-  </style>
-</head>
-
-  <body class="single-body">
-    <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://absolute-beginner.netlify.com/" class="nav-text">absolute beginner</a></h1>
-  <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://absolute-beginner.netlify.com/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments" class="hamburger-menu-overlay-link">Desktop environments</a></li><li><a href="https://absolute-beginner.netlify.com/categories/development" class="hamburger-menu-overlay-link">Development</a></li><li><a href="https://absolute-beginner.netlify.com/categories/editor" class="hamburger-menu-overlay-link">Editor</a></li><li><a href="https://absolute-beginner.netlify.com/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://absolute-beginner.netlify.com/categories/programming-languages" class="hamburger-menu-overlay-link">Programming languages</a></li><li><a href="https://absolute-beginner.netlify.com/categories/system" class="hamburger-menu-overlay-link">System</a></li>
-      
-    </ul>
-  </div>
-</nav>
-
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">Spacemacs for beginner</h1>
-          <p class="post-date">Posted <time datetime="2018-05-14">May 14, 2018</time></p>
-        </header>
-        
-        <p>An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.</p>
-
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Spacemacs for beginner&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
+    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">Spacemacs for beginner</h1><p class="article date">May 14 2018</p></section>
+<article class="article markdown-body"><p>An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.</p>
 <h1 id="spacemacs-for-beginner">Spacemacs for Beginner</h1>
-
 <p>Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the necessary key strokes.</p>
-
 <p>This text tries to give an introduction into spacemacs for someone who is not familiar with Vim or Emacs.
 After reading this you should be able to do some productive work with it.
 The assumption is that you have installed Spacemacs with Evil (Vim) support.
 Vim has some very powerful and sometimes very cryptic commands, only some of them will be covered in this text.
 Also the tables you see in the text only give you a selection of commands.
-The good news is that with Spacemacs you don&rsquo;t have to remember all commands but you can also use the Spacemacs menu (SPC).</p>
-
-<p><a href="http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html">Also read the latest official Spacemacs beginner guid (Develop Version)</a></p>
-
+The good news is that with Spacemacs you don't have to remember all commands but you can also use the Spacemacs menu (SPC).</p>
+<p><a href="http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html"target="_blank">Also read the latest official Spacemacs beginner guid (Develop Version)</a></p>
 <h2 id="executing-commands-in-spacemacs">Executing commands in Spacemacs</h2>
-
 <p>The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once <code>SPC</code> has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.</p>
-
 <p>Double letters in the SPC menu usually are used for particular useful commands like SPC b b for the list of buffers or SPC f f to open a file .</p>
-
 <h2 id="opening-files">Opening files</h2>
-
 <p>There are several ways to open a file, but a good start is the file selector neotree, activated with <code>SPC f t</code>.
-Move to the neotree window with SPC 0 and back to the other previous buffer with it&rsquo;s number <code>SPC &lt;window number&gt;</code>.</p>
-
+Move to the neotree window with SPC 0 and back to the other previous buffer with it's number <code>SPC &lt;window number&gt;</code>.</p>
 <p>While using neotree</p>
-
 <table>
 <thead>
 <tr>
@@ -80,49 +30,38 @@ Move to the neotree window with SPC 0 and back to the other previous buffer with
 <th>key</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Show content of a sub-folder</td>
 <td>RET or l (list?)</td>
 </tr>
-
 <tr>
 <td>Rename a file.</td>
 <td>r (rename)</td>
 </tr>
-
 <tr>
 <td>Create a new file</td>
 <td>c (create)</td>
 </tr>
-
 <tr>
 <td>To toggle between hiding and showing hidden (.) files.</td>
 <td>s</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="basic-spacemacs-evil-vim-commands">Basic Spacemacs Evil (Vim) commands</h2>
-
-<p>There are (I am sure but have not made it that far yet) many useful vim commands to edit your text and work with the editor. I think as a beginner you don&rsquo;t need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
-The vim mode is a so called modal model. This means it has several different modes that are specialized in doing one thing especially good. The Spacemacs documentation describes this very <a href="http://spacemacs.org/doc/DOCUMENTATION.html#states">well</a>.</p>
-
+<p>There are (I am sure but have not made it that far yet) many useful vim commands to edit your text and work with the editor. I think as a beginner you don't need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
+The vim mode is a so called modal model. This means it has several different modes that are specialized in doing one thing especially good. The Spacemacs documentation describes this very <a href="http://spacemacs.org/doc/DOCUMENTATION.html#states"target="_blank">well</a>.</p>
 <p>Spacemacs also shows a different colour for the window number depending on your mode.</p>
-
 <ul>
 <li>Normal mode (ESC). This is where you execute vim commands and edit text, not to write text. To write text you switch to insert mode.</li>
 <li>Insert mode (i). Use insert mode to write text. some more basic text editing also works here.</li>
 <li>Visual mode (v/V) This is where you select text. Change to visual mode and select text. Then execute commands. You can execute vim commands like copy but you can also execute the SPC commands from spacemacs that are relevant for text selection.</li>
 </ul>
-
 <p>Vim (and Spacemacs uses a Vim emulation) is famous for being a modal editor. That means basically it has one mode to write text called <code>insert mode</code> and some other modes to work with and format the text. Hence the name modal editor, there are several modes where different things happen like writing, editing, working with selections.
 The most important of these functional modes is <code>normal mode</code>. When you start Spacemacs it will be in normal mode first. You can see that parts of the mode line are yellow.</p>
-
 <p>In normal mode you can use normal keys to execute commands, no need for Ctrl-this or that.
 E.g. if you want tom copy the char under the cursor, you press <code>y</code> in normal mode. To inset what has been copied press <code>p</code>. If you want to select more than one character as you normally do, you enter visual mode with <code>v</code>, then mark the test to select and press <code>y</code> to copy your selection and again <code>p</code> to paste.</p>
-
 <table>
 <thead>
 <tr>
@@ -130,57 +69,46 @@ E.g. if you want tom copy the char under the cursor, you press <code>y</code> in
 <th>normal mode</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>enter visual mode for selections</td>
 <td>v</td>
 </tr>
-
 <tr>
 <td>copy (yank) marked selection or char under cursor</td>
 <td>y</td>
 </tr>
-
 <tr>
 <td>paste (insert)</td>
 <td>p</td>
 </tr>
-
 <tr>
 <td>cut (delete) character under cursor</td>
 <td>x</td>
 </tr>
-
 <tr>
 <td>enter visual mode for whole line selections</td>
 <td>V</td>
 </tr>
-
 <tr>
 <td>enter insert mode to write text.</td>
 <td>i</td>
 </tr>
-
 <tr>
 <td>leave insert mode to execute commands.</td>
 <td>ESC</td>
 </tr>
-
 <tr>
 <td>move (or select) to the beginning of the next word</td>
 <td>w</td>
 </tr>
-
 <tr>
 <td>move (or select) to the end of the current word</td>
 <td>e</td>
 </tr>
 </tbody>
 </table>
-
 <h2 id="move-cursor-in-the-current-buffer">Move cursor in the current buffer</h2>
-
 <table>
 <thead>
 <tr>
@@ -189,38 +117,32 @@ E.g. if you want tom copy the char under the cursor, you press <code>y</code> in
 <th>alternative</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>one character left</td>
 <td>h</td>
 <td>arrow-left</td>
 </tr>
-
 <tr>
 <td>one row down</td>
 <td>j</td>
 <td>arrow-down</td>
 </tr>
-
 <tr>
 <td>one row up</td>
 <td>k</td>
 <td>arrow-up</td>
 </tr>
-
 <tr>
 <td>one character right</td>
 <td>l</td>
 <td>arrow-right</td>
 </tr>
-
 <tr>
 <td>one word right</td>
 <td>w</td>
 <td>Ctrl-arrow-left</td>
 </tr>
-
 <tr>
 <td>one word left</td>
 <td>b</td>
@@ -228,22 +150,15 @@ E.g. if you want tom copy the char under the cursor, you press <code>y</code> in
 </tr>
 </tbody>
 </table>
-
 <p>The idea behind the hjkl keys for cursor movement is that the hands have not to move from the base key line of your keyboard to move the cursor. The base row is the middle row of characters on your keyboard. This way your hands do not have to move around so much to reach the arrow-keys or the mouse. However,  you can also use the arrow keys.</p>
-
 <ul>
 <li>In insert mode the arrow keys, page-up, page-down, Home and End keys can be used.</li>
 </ul>
-
 <h3 id="the-clever-editing-bits">The clever editing bits</h3>
-
-<p>So what&rsquo;s all the hype about. so far the vim editor functions have made you switch between insert mode to enter text and normal mode to do some very basic editing.
+<p>So what's all the hype about. so far the vim editor functions have made you switch between insert mode to enter text and normal mode to do some very basic editing.
 Here now some more clever bits, and they benefit very much form the fact that you can use normal keys as commands in normal mode as opposed to Ctrl-this and Ctrl-that in other editors.</p>
-
 <p>In Vim and spacemacs you can combine commands. E.g.</p>
-
 <p><strong>Text selection</strong></p>
-
 <table>
 <thead>
 <tr>
@@ -251,25 +166,20 @@ Here now some more clever bits, and they benefit very much form the fact that yo
 <th>keys</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>select the word under the cursor</td>
 <td>viw</td>
 </tr>
-
 <tr>
 <td>copy the word under the cursor</td>
 <td>yiw</td>
 </tr>
 </tbody>
 </table>
-
 <p><code>viw</code> changes to visual mode and selects the word currently under the cursor.
 <code>yiw</code> is similar but yancs (copies) the word under the cursor. If you want to see what you copy you can also press <code>viwy</code></p>
-
 <p><strong>Text deletion</strong></p>
-
 <table>
 <thead>
 <tr>
@@ -277,33 +187,26 @@ Here now some more clever bits, and they benefit very much form the fact that yo
 <th>keys</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>cut the current line</td>
 <td>dd</td>
 </tr>
-
 <tr>
 <td>cut and copy the word under the cursor</td>
 <td>diw</td>
 </tr>
-
 <tr>
 <td>cut until next . (sentence end)</td>
 <td>df.</td>
 </tr>
 </tbody>
 </table>
-
 <p><code>diw</code> works similar to yiw. It deletes the word under the cursor.
 <code>df.</code> is a clever bit. It deletes everything until it finds the next <code>.</code> You can search for other letters as well.</p>
-
-<p>Mind you that all operations with <code>d</code> cut the text and don&rsquo;t just delete it. The current content of your standard clipboard will be overwritten.</p>
-
+<p>Mind you that all operations with <code>d</code> cut the text and don't just delete it. The current content of your standard clipboard will be overwritten.</p>
 <p><strong>Add more space</strong>
 Often you want to add more text in your existing document and for that you need space. So here are some useful normal mode commands to add more space.</p>
-
 <table>
 <thead>
 <tr>
@@ -311,22 +214,18 @@ Often you want to add more text in your existing document and for that you need 
 <th></th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>add a new line over the current line</td>
 <td>[ SPC</td>
 </tr>
-
 <tr>
 <td>add a new line under the current line</td>
 <td>] SPC</td>
 </tr>
 </tbody>
 </table>
-
-<h3 id="mark-unmark-lines-as-comments">Mark/unmark lines as comments</h3>
-
+<h3 id="markunmark-lines-as-comments">Mark/unmark lines as comments</h3>
 <table>
 <thead>
 <tr>
@@ -335,14 +234,12 @@ Often you want to add more text in your existing document and for that you need 
 <th>spacemacs</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>mark (unmark) a selection as comment</td>
 <td>gc</td>
 <td>SPC c l</td>
 </tr>
-
 <tr>
 <td>mark current line as comment</td>
 <td>gcc</td>
@@ -350,19 +247,15 @@ Often you want to add more text in your existing document and for that you need 
 </tr>
 </tbody>
 </table>
-
 <p><strong>Super bonus function to move in text</strong>
 A very nifty function to jump quickly to text currently displayed in the window is <code>SPC j j</code>.</p>
-
 <ol>
-<li>After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it&rsquo;s first letter.</li>
+<li>After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it's first letter.</li>
 <li>All the corresponding letters in the visible text of the window will be marked with a two letter combination.</li>
 <li>Key in the two colourful letters of the position at the beginning of the word where you want to jump and there you are.</li>
 <li>It is much more straight forward than it sounds. Try it.</li>
 </ol>
-
 <h2 id="file-handling">File handling</h2>
-
 <table>
 <thead>
 <tr>
@@ -371,20 +264,17 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <th>Spacemacs</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>save</td>
 <td>:w</td>
 <td>SPC f s</td>
 </tr>
-
 <tr>
 <td>close buffer</td>
 <td>:q</td>
 <td>SPC b d</td>
 </tr>
-
 <tr>
 <td>save and close buffer</td>
 <td>:wq</td>
@@ -392,138 +282,86 @@ A very nifty function to jump quickly to text currently displayed in the window 
 </tr>
 </tbody>
 </table>
-
 <h2 id="window-handling">Window handling</h2>
-
 <p>Windows are the text areas you see in Spacemacs. When you start it is usually one window. You can split the screen to see two or more windows at the same time.</p>
-
 <p>Additionally spacemacs uses the term buffer. Every buffer is assigned to one file. You can have a large number of buffers open but only show a few in windows. Also spacemacs always has some internal buffers open like the <code>*Messages</code> buffer.</p>
-
 <p>To keep an overview there are several SPC commands to manage windows and buffer.</p>
-
 <ul>
 <li>To activate a specific window on your screen you can type <code>SPC &lt;buffer-number&gt;</code></li>
 </ul>
-
 <h3 id="close-a-window-or-buffer">Close a window or buffer</h3>
-
 <ul>
 <li><code>SPC w d</code> (window delete). This will close the currently active window. The buffer is still open but not visible and you can continue writing at a later time.</li>
-<li><code>SPC b d</code> (buffer delete). This will close the buffer (file). That means either you have saved the text or you will be asked to save it and then it is closed. the window however will stay open and a different buffer will be shown in this window. Confusingly it can happen that the same buffer (file) is shown in two windows. In that case you probably don&rsquo;t need all the windows and you can close one with <code>SPC w d</code> or open another file in the second window.</li>
+<li><code>SPC b d</code> (buffer delete). This will close the buffer (file). That means either you have saved the text or you will be asked to save it and then it is closed. the window however will stay open and a different buffer will be shown in this window. Confusingly it can happen that the same buffer (file) is shown in two windows. In that case you probably don't need all the windows and you can close one with <code>SPC w d</code> or open another file in the second window.</li>
 <li>To close window and buffer at the same time you can use <code>SPC w x</code> or <code>SPC b x</code></li>
 </ul>
-
 <h3 id="show-a-different-buffer-file-in-your-current-window">Show a different buffer (file) in your current window.</h3>
-
 <ul>
 <li>If you have several buffer (files) open and want to show a different buffer file in your current window then open the buffer selection screen (SPC b b) to jump to other open buffers (files)</li>
 <li>To switch back to the last buffer in the current window use <code>SPC TAB</code></li>
 </ul>
-
 <h1 id="configuration">Configuration</h1>
-
 <p>As mentioned in many places, configuration  in Spacemacs happens in the .spacemacs file. The .spacemacs file is largely split in 6 sections:</p>
-
 <p>&hellip;.. some comments at the top</p>
-
 <ol>
-<li><p><code>(defun dotspacemacs/layers ()</code></p></li>
-
-<li><p><code>Dotspacemacs-configuration-layers</code> &hellip; add layers</p></li>
-
-<li><p><code>defun dotspacemacs/init</code> &ndash; spacemacs config</p></li>
-
-<li><p><code>(defun dotspacemacs/user-init ()</code> &ndash; setup for the very start of emacs</p></li>
-
-<li><p><code>(defun dotspacemacs/user-config ()</code> &ndash; personal user configuration</p></li>
-
-<li><p><code>(defun dotspacemacs/emacs-custom-settings ()</code> &ndash; don&rsquo;t make changes</p></li>
+<li>
+<p><code>(defun dotspacemacs/layers ()</code></p>
+</li>
+<li>
+<p><code>Dotspacemacs-configuration-layers</code> &hellip; add layers</p>
+</li>
+<li>
+<p><code>defun dotspacemacs/init</code> &ndash; spacemacs config</p>
+</li>
+<li>
+<p><code>(defun dotspacemacs/user-init ()</code> &ndash; setup for the very start of emacs</p>
+</li>
+<li>
+<p><code>(defun dotspacemacs/user-config ()</code> &ndash; personal user configuration</p>
+</li>
+<li>
+<p><code>(defun dotspacemacs/emacs-custom-settings ()</code> &ndash; don't make changes</p>
+</li>
 </ol>
-
 <p>&hellip;&hellip; some stuff at the bottom</p>
-
 <ol>
 <li>In the first section you find already predefined configuration functions with default settings. Not so important fo the beginner</li>
 <li>This is the important bit. Here you can add and remove layers. A core function of Spacemacs</li>
 <li>Here are all sorts of parameter and switches for Spacemacs. You find a small description of what they do in the comments above.</li>
 <li>Here you can put settings for the start of Spacemacs. If in doubt use section 5 though.</li>
 <li>User settings. Small pieces of code similar to the standards settings in sections 3 to set parameter for Spacemacs.</li>
-<li>Don&rsquo;t use</li>
+<li>Don't use</li>
 </ol>
-
 <h3 id="add-and-remove-layers-packages">Add and remove layers (packages)</h3>
-
 <p>Hit <code>SPC f e d</code> (file emacs dotfile) to open the .spacemacs file. This is where you can customize everything.</p>
-
 <p>Find the <code>dotspacemacs-configuration-layers</code> line.</p>
-
 <p>To add latex into the layer list it should look like this:</p>
-
-<pre><code class="language-elisp">dotspacemacs-configuration-layers '(
-latex
-other-layer
-other-layer
-)
-</code></pre>
-
-<p>Now spacemacs will load that layer on startup for you, which includes a major mode for editing latex and a bunch of commands. You can now either restart emacs, or hit <code>spc f e R</code> (file emacs reload) to reload your config. Now if you hit <code>SPC f f</code>  (file find) and open a latex file you should have some syntax highlighting and latex specific commands.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-elisp" data-lang="elisp"><span class="nv">dotspacemacs-configuration-layers</span> <span class="o">&#39;</span><span class="p">(</span>
+<span class="nv">latex</span>
+<span class="nv">other-layer</span>
+<span class="nv">other-layer</span>
+<span class="p">)</span>
+</code></pre></div><p>Now spacemacs will load that layer on startup for you, which includes a major mode for editing latex and a bunch of commands. You can now either restart emacs, or hit <code>spc f e R</code> (file emacs reload) to reload your config. Now if you hit <code>SPC f f</code>  (file find) and open a latex file you should have some syntax highlighting and latex specific commands.</p>
 <p>NOTE: the whole large section of standard configuration is called <code>(defun dotspacemacs/layers ()</code> whereas the small paragraph where you add your own selection of layers is called <code>dotspacemacs-configuration-layers</code>.</p>
-
 <p>If you make changes, save with <code>SPC f s</code> and restart with <code>SPC q R</code>.</p>
-
-<p><a href="https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933">Good docu how to customise Spacemacs</a></p>
-
+<p><a href="https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933"target="_blank">Good docu how to customise Spacemacs</a></p>
 <h1 id="beginner-friendly-key-bindings">Beginner friendly key-bindings</h1>
-
-<p>Vim&rsquo;s normal mode has some very powerful editing tool, but if you are used to the key-bindings that are very common on most GUI&rsquo;s and you only use Spacemacs occasionally then you might wish to use the common key-bindings in Spacemacs as well.</p>
-
+<p>Vim's normal mode has some very powerful editing tool, but if you are used to the key-bindings that are very common on most GUI's and you only use Spacemacs occasionally then you might wish to use the common key-bindings in Spacemacs as well.</p>
 <p>One nice solution could be to use GUI (common) keybindings in insert-mode and vim commands in normal mode.</p>
-
 <p>There is one solution for this.</p>
-
-<p>PhilipDaniels created <a href="https://github.com/PhilipDaniels/windows-defaults">windows_default - mode</a></p>
-
+<p>PhilipDaniels created <a href="https://github.com/PhilipDaniels/windows-defaults"target="_blank">windows_default - mode</a></p>
 <p>For installation please read the description in the repository. This layer defines many useful keybindings, so it is worth to read the complete README.</p>
-
 <h1 id="useful-links">Useful links:</h1>
-
 <ul>
-<li>An absolute beginners guide to Spacemacs for academic <a href="https://ontologicalblog.com/2016/10/14/an-absolute-beginners-guide-to-spacemacs-for-academic-writing/">writing</a></li>
-<li>Great <a href="https://practicalli.github.io/spacemacs/documentation/">introduction</a> into Spacemacs with additional info about Clojure and Cider.</li>
-</ul>
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/post/sys-setup/" class="card blog-card" rel="bookmark" >
-  
-  <article class="card-body">
-    <h2 class="card-title">My system setup</h2>
-    <p class="card-text"><p>These are my notes to remember how to set up my system.</p></p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2018-04-28 428:00">Apr 28, 2018</time></p>
-      <p>#System </p>
-    </div>
-  </article>
-</a>
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/" class="card home-card" style="background-image: url( https://absolute-beginner.netlify.com/sky.jpg )" rel="bookmark" >
-  Home
-</a>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-  
-  <script src="https://absolute-beginner.netlify.com/js/core.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
+<li>An absolute beginners guide to Spacemacs for academic <a href="https://ontologicalblog.com/2016/10/14/an-absolute-beginners-guide-to-spacemacs-for-academic-writing/"target="_blank">writing</a></li>
+<li>Great <a href="https://practicalli.github.io/spacemacs/documentation/"target="_blank">introduction</a> into Spacemacs with additional info about Clojure and Cider.</li>
+</ul></article><section class="article labels"><a class="article category" href=/categories/editor/><span class="hashtag">#</span>Editor</a><a class="article tag" href=/tags/spacemacs/><span class="hashtag">#</span>Spacemacs</a><a class="article tag" href=/tags/vim/><span class="hashtag">#</span>Vim</a></section><section class="article navigation"><p><a class="link" href="/post/ios-keyboard/"><span class="li"></span>How to use iOS with a keyboard</a></p><p><a class="link" href="/post/sys-setup/"><span class="li"></span>My system setup</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
 
-  </body>
 </html>

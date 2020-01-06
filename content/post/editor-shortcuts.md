@@ -1,11 +1,9 @@
 +++
 title = "Common editor shortcuts"
 date = "2018-05-11"
-hide_authorbox = false
 disable_comments = false
 categories = ["Editor"]
-tags = ["Shortcuts"]
-aliases = ["/post/all-grown-up/"]
+tags = ["Keyboard Shortcuts"]
 draft = true
 +++
 

@@ -1,220 +1,105 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Simple syntax highlighting for the Micro editor &middot; Absolute beginner</title>
-  <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  
-  
-  
-  
-  
-  <link href="https://absolute-beginner.netlify.com/css/concated.min.css" rel="stylesheet">
-  
-  <style>
-    body {
-      background: #ecedef url("https://absolute-beginner.netlify.com/flower-bg.jpg") repeat;
-    }
-  </style>
-</head>
-
-  <body class="single-body">
-    <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://absolute-beginner.netlify.com/" class="nav-text">absolute beginner</a></h1>
-  <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://absolute-beginner.netlify.com/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments" class="hamburger-menu-overlay-link">Desktop environments</a></li><li><a href="https://absolute-beginner.netlify.com/categories/development" class="hamburger-menu-overlay-link">Development</a></li><li><a href="https://absolute-beginner.netlify.com/categories/editor" class="hamburger-menu-overlay-link">Editor</a></li><li><a href="https://absolute-beginner.netlify.com/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://absolute-beginner.netlify.com/categories/programming-languages" class="hamburger-menu-overlay-link">Programming languages</a></li><li><a href="https://absolute-beginner.netlify.com/categories/system" class="hamburger-menu-overlay-link">System</a></li>
-      
-    </ul>
-  </div>
-</nav>
-
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">Simple syntax highlighting for the Micro editor</h1>
-          <p class="post-date">Posted <time datetime="2018-04-11">Apr 11, 2018</time></p>
-        </header>
-        
-        <p>How to write a simple file for syntax highlighting for any language for the Micro editor</p>
-
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Simple syntax highlighting for the Micro editor&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
+    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">Simple syntax highlighting for the Micro editor</h1><p class="article date">Apr 11 2018</p></section>
+<article class="article markdown-body"><p>How to write a simple file for syntax highlighting for any language for the Micro editor</p>
 <h1 id="language-highlighting-for-beginner">Language highlighting for beginner</h1>
-
-<p>For a quick overview about syntax highlighting read this documentation for micro  <a href="https://github.com/zyedidia/micro/blob/master/runtime/help/colors.md">colors</a></p>
-
+<p>For a quick overview about syntax highlighting read this documentation for micro  <a href="https://github.com/zyedidia/micro/blob/master/runtime/help/colors.md"target="_blank">colors</a></p>
 <p>This text gives a simple introduction how to build a syntax highlighting file for micro.</p>
-
 <p>The examples of this text cut together gives a template for your own definitions.</p>
-
 <p>Before you start you might need a list of keywords for the language you want to define. One option is to find and copy a syntax file from an other editor.However it can also be helpful to just add a few keywords, edit the symbols, get the comments right and be ready.</p>
-
 <p>You can probably do many more clever things for your language syntax than is described in this text, but after reading this text you will be able to create a syntax file already.</p>
-
 <h2 id="the-syntax-yaml-file">The syntax YAML file</h2>
-
-<p>Micro syntax files are defined following the <a href="https://en.wikipedia.org/wiki/YAML">YAML</a> configuration syntax. To create a new syntax file create a new file with the ending <code>.yaml</code>.</p>
-
+<p>Micro syntax files are defined following the <a href="https://en.wikipedia.org/wiki/YAML"target="_blank">YAML</a> configuration syntax. To create a new syntax file create a new file with the ending <code>.yaml</code>.</p>
 <p>To make your own syntax definition available to Micro you have to add the new syntax file in your home folder into  <code>~/.config/micro/syntax</code>.</p>
-
 <p>If you want to comment your syntax definition then you can use <code>#</code> to mark your comments.</p>
-
 <h2 id="file-header">File header</h2>
-
 <p>To start some general information are needed. Most importantly the language you want to describe gets defined with <code>filetype:</code></p>
-
 <p>The filetype gets detected by the file ending described with <code>detect:</code>. For advanced users it is also possible to check the first line of the file to determine the filetype. Replace the  values in the example with the relevant name and file ending for your new language.</p>
-
 <p>With the <code>rules:</code> keyword the actual language description gets started. Please mind that indentation is important. Everything after <code>rules:</code> has to be indented.</p>
-
 <p>e.g.</p>
-
-<pre><code class="language-Yaml">filetype: Test-lang
-
-detect:
-    filename: &quot;\\.tst$&quot;
-
-rules:
-</code></pre>
-
-<h2 id="language-keywords">Language keywords</h2>
-
-<p>In this section you can describe the language keywords. The syntax looks a bit complex at first but you can mostly copy and paste it. There are three section:
-- <code>-type :</code> defines the types of the language
-- <code>statement:</code> defines the keywords of the language. YOu can cram all keywords in one statement or split them up on several statements.
-- <code>special:</code> can be used to highlight certain keywords of a language in a different color to the othe rkeywords. In Ocaml the function definition is worht a special highlight. In Elixir the <code>do</code> and <code>end</code> could be useful to highlight. It is down to you if you want to use it at all and for which keywords.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml">filetype<span class="p">:</span><span class="w"> </span>Test-lang<span class="w">
+</span><span class="w">
+</span><span class="w"></span>detect<span class="p">:</span><span class="w">
+</span><span class="w">    </span>filename<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\.tst$&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w"></span>rules<span class="p">:</span><span class="w">
+</span></code></pre></div><h2 id="language-keywords">Language keywords</h2>
+<p>In this section you can describe the language keywords. The syntax looks a bit complex at first but you can mostly copy and paste it. There are three section:</p>
+<ul>
+<li><code>-type :</code> defines the types of the language</li>
+<li><code>statement:</code> defines the keywords of the language. YOu can cram all keywords in one statement or split them up on several statements.</li>
+<li><code>special:</code> can be used to highlight certain keywords of a language in a different color to the othe rkeywords. In Ocaml the function definition is worht a special highlight. In Elixir the <code>do</code> and <code>end</code> could be useful to highlight. It is down to you if you want to use it at all and for which keywords.</li>
+</ul>
 <p>For each of the above sections a string is defined with the relevant keywords:
 e.g. <code>&quot;\\b(?i:(int|float|bool|char|string|unit))\\b&quot;</code>. To define your own profile replace the part in the inner brackets () with your own keywords.</p>
-
 <p>e.g.</p>
-
-<pre><code class="language-Yaml">    - type: &quot;\\b(?i:(int|float|bool|char|string|unit))\\b&quot;
-
-    - statement: &quot;\\b(if|then|else)\\b&quot;
-    - statement: &quot;\\b(for|and|or)\\b&quot;
-
-    - special: &quot;\\b(let|rec|function|in)\\b&quot;
-</code></pre>
-
-<h2 id="operators-symbols-strings-comments">Operators, symbols, strings, comments</h2>
-
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span>-<span class="w"> </span>type<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\b(?i:(int|float|bool|char|string|unit))\\b&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>statement<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\b(if|then|else)\\b&#34;</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>statement<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\b(for|and|or)\\b&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>special<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\b(let|rec|function|in)\\b&#34;</span><span class="w">
+</span></code></pre></div><h2 id="operators-symbols-strings-comments">Operators, symbols, strings, comments</h2>
 <h3 id="symbols-and-operators">Symbols and operators</h3>
-
 <p>Symbols are used in many languages for different thing. That said most languages use similar symbols, so from the highlighting perspactive there is not so much difference. Below list of symbols gives you some common symbols and operators. These can be extended for you r language. There is no need to remove unused symbols. They just do not get used.</p>
-
 <p>e.g.</p>
-
-<pre><code class="language-Yaml">    - symbol: &quot;(\\||@|!|:|::|_|~|=|\\\\|;|\\(\\)|||\\[|\\]|\\{|\\})&quot;
-
-    - symbol.operator: &quot;(==|/=|&amp;&amp;|\\|\\||&lt;|&gt;|&lt;=|&gt;=)&quot;
-</code></pre>
-
-<h3 id="language-constants">Language constants</h3>
-
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span>-<span class="w"> </span>symbol<span class="p">:</span><span class="w"> </span><span class="s2">&#34;(\\||@|!|:|::|_|~|=|\\\\|;|\\(\\)|||\\[|\\]|\\{|\\})&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>symbol.operator<span class="p">:</span><span class="w"> </span><span class="s2">&#34;(==|/=|&amp;&amp;|\\|\\||&lt;|&gt;|&lt;=|&gt;=)&#34;</span><span class="w">
+</span></code></pre></div><h3 id="language-constants">Language constants</h3>
 <p>Language constants means words like <code>true</code> that are no statements and cannot be changed. Depending on the language there can be other constants.</p>
-
 <p>e.g.</p>
-
-<pre><code class="language-Yaml">    - constant: &quot;(Nothing|Just|LT|EQ|GT)&quot;
-
-    - constant.bool: &quot;\\b(true|false)\\b&quot;
-</code></pre>
-
-<h3 id="strings">Strings</h3>
-
-<p>Strings in most languages are within within quotation marks &ldquo; &rdquo; and characters are within singel quote &lsquo; &lsquo;. In this case you can just use the example below. The additional rule is to show additional controls in the string. e.g &ldquo;Hallo /n&rdquo; If your languages does not have that you can also write <code>rules: []</code></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span>-<span class="w"> </span>constant<span class="p">:</span><span class="w"> </span><span class="s2">&#34;(Nothing|Just|LT|EQ|GT)&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>constant.bool<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\b(true|false)\\b&#34;</span><span class="w">
+</span></code></pre></div><h3 id="strings">Strings</h3>
+<p>Strings in most languages are within within quotation marks &quot; &quot; and characters are within singel quote ' &lsquo;. In this case you can just use the example below. The additional rule is to show additional controls in the string. e.g &ldquo;Hallo /n&rdquo; If your languages does not have that you can also write <code>rules: []</code></p>
 <p>e.g.</p>
-
-<pre><code class="language-Yaml">    - constant.string:
-        start: &quot;\&quot;&quot;
-        end: &quot;\&quot;&quot;
-        skip: &quot;\\\\.&quot;
-        rules:
-            - constant.specialChar: &quot;\\\\.&quot;
-
-    - constant.string:
-        start: &quot;'&quot;
-        end: &quot;'&quot;
-        skip: &quot;\\\\.&quot;
-        rules:
-            - constant.specialChar: &quot;\\\\.&quot;
-</code></pre>
-
-<h3 id="comments">Comments</h3>
-
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span>-<span class="w"> </span>constant.string<span class="p">:</span><span class="w">
+</span><span class="w">        </span>start<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\&#34;&#34;</span><span class="w">
+</span><span class="w">        </span>end<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\&#34;&#34;</span><span class="w">
+</span><span class="w">        </span>skip<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\\\.&#34;</span><span class="w">
+</span><span class="w">        </span>rules<span class="p">:</span><span class="w">
+</span><span class="w">            </span>-<span class="w"> </span>constant.specialChar<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\\\.&#34;</span><span class="w">
+</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>constant.string<span class="p">:</span><span class="w">
+</span><span class="w">        </span>start<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#39;&#34;</span><span class="w">
+</span><span class="w">        </span>end<span class="p">:</span><span class="w"> </span><span class="s2">&#34;&#39;&#34;</span><span class="w">
+</span><span class="w">        </span>skip<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\\\.&#34;</span><span class="w">
+</span><span class="w">        </span>rules<span class="p">:</span><span class="w">
+</span><span class="w">            </span>-<span class="w"> </span>constant.specialChar<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\\\.&#34;</span><span class="w">
+</span></code></pre></div><h3 id="comments">Comments</h3>
 <p>Most languages have different symbols for single line and multi liine comments.</p>
-
 <p>e.g. for a multi line comment (<em>&hellip;</em>)</p>
-
-<pre><code class="language-Yaml">    - comment:
-        start: &quot;\\(\\*&quot;
-        end: &quot;\\*\\)&quot;
-        rules:
-            - todo: &quot;(TODO|XXX|FIXME):?&quot;
-</code></pre>
-
-<p>e.g. for a single line comment after # &hellip;</p>
-
-<pre><code class="language-Yaml">    - comment:
-        start: &quot;#&quot;
-        end: &quot;$&quot;
-        rules: []
-</code></pre>
-
-<p>To keep the overview in your syntax file you can and should add some comments. Single line comments in a <code>.yaml</code> file start with <code>#</code>. There are no multi line comments.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span>-<span class="w"> </span>comment<span class="p">:</span><span class="w">
+</span><span class="w">        </span>start<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\(\\*&#34;</span><span class="w">
+</span><span class="w">        </span>end<span class="p">:</span><span class="w"> </span><span class="s2">&#34;\\*\\)&#34;</span><span class="w">
+</span><span class="w">        </span>rules<span class="p">:</span><span class="w">
+</span><span class="w">            </span>-<span class="w"> </span>todo<span class="p">:</span><span class="w"> </span><span class="s2">&#34;(TODO|XXX|FIXME):?&#34;</span><span class="w">
+</span></code></pre></div><p>e.g. for a single line comment after # &hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span>-<span class="w"> </span>comment<span class="p">:</span><span class="w">
+</span><span class="w">        </span>start<span class="p">:</span><span class="w"> </span><span class="s2">&#34;#&#34;</span><span class="w">
+</span><span class="w">        </span>end<span class="p">:</span><span class="w"> </span><span class="s2">&#34;$&#34;</span><span class="w">
+</span><span class="w">        </span>rules<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="p">]</span><span class="w">
+</span></code></pre></div><p>To keep the overview in your syntax file you can and should add some comments. Single line comments in a <code>.yaml</code> file start with <code>#</code>. There are no multi line comments.</p>
 <p>e.g. for a single line comment with a comment</p>
+<div class="highlight"><pre class="chroma"><code class="language-Yaml" data-lang="Yaml"><span class="w">    </span><span class="c"># single line comment # ...</span><span class="w">
+</span><span class="w">    </span>-<span class="w"> </span>comment<span class="p">:</span><span class="w">
+</span><span class="w">        </span>start<span class="p">:</span><span class="w"> </span><span class="s2">&#34;#&#34;</span><span class="w">
+</span><span class="w">        </span>end<span class="p">:</span><span class="w"> </span><span class="s2">&#34;$&#34;</span><span class="w">
+</span><span class="w">        </span>rules<span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="p">]</span><span class="w">
+</span></code></pre></div><p>The full example with comments can be found <a href="https://github.com/MarcusE1W/hello-world/blob/master/test-syntax.yaml"target="_blank">here</a></p></article><section class="article labels"><a class="article category" href=/categories/editor/><span class="hashtag">#</span>Editor</a><a class="article tag" href=/tags/micro/><span class="hashtag">#</span>Micro</a></section><section class="article navigation"><p><a class="link" href="/post/sys-setup/"><span class="li"></span>My system setup</a></p><p><a class="link" href="/post/qemu-start/"><span class="li"></span>A QEMU Virtual machine with a Windows host and a Linux guest</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
 
-<pre><code class="language-Yaml">    # single line comment # ...
-    - comment:
-        start: &quot;#&quot;
-        end: &quot;$&quot;
-        rules: []
-</code></pre>
-
-<p>The full example with comments can be found <a href="https://github.com/MarcusE1W/hello-world/blob/master/test-syntax.yaml">here</a></p>
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/post/qemu-start/" class="card blog-card" rel="bookmark" >
-  
-  <article class="card-body">
-    <h2 class="card-title">A QEMU Virtual machine with a Windows host and a Linux guest</h2>
-    <p class="card-text"><p>Run a (Arch)Linux system in a QEMU virtual machine on your Windows.</p></p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2018-03-29 329:00">Mar 29, 2018</time></p>
-      <p>#System </p>
-    </div>
-  </article>
-</a>
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/" class="card home-card" style="background-image: url( https://absolute-beginner.netlify.com/sky.jpg )" rel="bookmark" >
-  Home
-</a>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-  
-  <script src="https://absolute-beginner.netlify.com/js/core.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
-  </body>
 </html>

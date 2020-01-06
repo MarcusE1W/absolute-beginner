@@ -1,60 +1,16 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Ocaml for beginner &middot; Absolute beginner</title>
-  <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  
-  
-  
-  
-  
-  <link href="https://absolute-beginner.netlify.com/css/concated.min.css" rel="stylesheet">
-  
-  <style>
-    body {
-      background: #ecedef url("https://absolute-beginner.netlify.com/flower-bg.jpg") repeat;
-    }
-  </style>
-</head>
-
-  <body class="single-body">
-    <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://absolute-beginner.netlify.com/" class="nav-text">absolute beginner</a></h1>
-  <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://absolute-beginner.netlify.com/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments" class="hamburger-menu-overlay-link">Desktop environments</a></li><li><a href="https://absolute-beginner.netlify.com/categories/development" class="hamburger-menu-overlay-link">Development</a></li><li><a href="https://absolute-beginner.netlify.com/categories/editor" class="hamburger-menu-overlay-link">Editor</a></li><li><a href="https://absolute-beginner.netlify.com/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://absolute-beginner.netlify.com/categories/programming-languages" class="hamburger-menu-overlay-link">Programming languages</a></li><li><a href="https://absolute-beginner.netlify.com/categories/system" class="hamburger-menu-overlay-link">System</a></li>
-      
-    </ul>
-  </div>
-</nav>
-
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">Ocaml for beginner</h1>
-          <p class="post-date">Posted <time datetime="2017-12-07">Dec 7, 2017</time></p>
-        </header>
-        
-        <p>Explore Ocaml, an functional programming language that is mayby not as strict as some others.</p>
-
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Ocaml for beginner&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
+    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">Ocaml for beginner</h1><p class="article date">Dec 07 2017</p></section>
+<article class="article markdown-body"><p>Explore Ocaml, an functional programming language that is mayby not as strict as some others.</p>
 <h1 id="intro">Intro</h1>
-
 <p>Ocaml is an interesting language and technic. However for the beginner it is not that easy to get your head around which tools to use.</p>
-
 <p>There seems to be consensus that the package manager to use is <code>opam</code>. That makes at least the installation of the other tools easy once the preferred tool has been chosen.</p>
-
 <p>Other things that need to be considered are (and this list is from the beginners view and probably not complete):</p>
-
 <ol>
 <li>Standard Library</li>
 <li>Build system</li>
@@ -62,96 +18,55 @@
 <li>The interactive REPL (called toplevel in the Ocaml world)</li>
 <li>Tutorials</li>
 </ol>
-
 <h2 id="the-standard-library">The Standard Library</h2>
-
-<p>The standard library provides the most basic functions every developer needs from time to time like print, file handling and so on. You would be foriven to think that it beeing called the standard library it would be a clear thing and that&rsquo;s what to use.
+<p>The standard library provides the most basic functions every developer needs from time to time like print, file handling and so on. You would be foriven to think that it beeing called the standard library it would be a clear thing and that's what to use.
 Apparently the original Ocaml std. library seems to have a few design inconsistencies and gaps. This lead to the development to new &ldquo;standard libraries&rdquo;.
-A nice but not conclusise discussion about the best standard library can be found <a href="https://www.reddit.com/r/ocaml/comments/665w26/which_standard_library_is_the_best/">here</a>.</p>
-
-<p>I have found  mostly these libraries discussed:
-- the original one: with inconsistencies and gaps
-- Batteries: A community driven effort to replace the original Std. Library.
-- Core: A very comprehensive library but it comes as a big block and if you use one function you end up with the full library linked to your programm wich makes it unneccessary big.
-- Containers: Community driven library to replace the Standard Library. It is an a bit newer effort compared to Batteries.
-- <a href="https://github.com/janestreet/base">Base</a> and Stdio: This has been developed based on the learning of the development of Core. The Base library is small and covers about the same as the original std. library with the exception that standard input - output is in a seperate library called &lsquo;Stdio&rsquo;. The documentation for Base and Stdio is still improving. How Core and Base are related is a bit unclear to me.</p>
-
+A nice but not conclusise discussion about the best standard library can be found <a href="https://www.reddit.com/r/ocaml/comments/665w26/which_standard_library_is_the_best/"target="_blank">here</a>.</p>
+<p>I have found  mostly these libraries discussed:</p>
+<ul>
+<li>the original one: with inconsistencies and gaps</li>
+<li>Batteries: A community driven effort to replace the original Std. Library.</li>
+<li>Core: A very comprehensive library but it comes as a big block and if you use one function you end up with the full library linked to your programm wich makes it unneccessary big.</li>
+<li>Containers: Community driven library to replace the Standard Library. It is an a bit newer effort compared to Batteries.</li>
+<li><a href="https://github.com/janestreet/base"target="_blank">Base</a> and Stdio: This has been developed based on the learning of the development of Core. The Base library is small and covers about the same as the original std. library with the exception that standard input - output is in a seperate library called &lsquo;Stdio&rsquo;. The documentation for Base and Stdio is still improving. How Core and Base are related is a bit unclear to me.</li>
+</ul>
 <p>I am sure all of these libraries are useful, and it is now for the beginner to decide what to use. Not ideal.</p>
-
 <p>Based on gut feeling and a look on the documentation and which library has been downloaded how often from OPAM I will go with Base and Stdio.</p>
-
 <h2 id="the-build-system">The build system</h2>
-
 <p>The build system manages all dependencies that your programme might have and
-There are tools available for Ocaml like: ocamlbuild and oasis, jenga, probably many others and jbuilder. To make it short I think the general advise is to use jbuilder for new projects. As a beginner that&rsquo;s a given, so jbuilder it is.</p>
-
+There are tools available for Ocaml like: ocamlbuild and oasis, jenga, probably many others and jbuilder. To make it short I think the general advise is to use jbuilder for new projects. As a beginner that's a given, so jbuilder it is.</p>
 <h2 id="the-editor">The editor</h2>
-
 <p>This text is not to give you advice which editor to use. Emacs, Vim, NeoVim, Spacemacs, Sublime text,  Atom  and VScode (plus more) seem all to be popular choices for   Ocaml.
-If you don&rsquo;t have a choise already I fined the open source options Atom and VScode quite approchable.
+If you don't have a choise already I fined the open source options Atom and VScode quite approchable.
 The important bit as I see it is that the editor supports the Merlin Ocaml editor tool. Merlin provides essential functions for Ocaml editing that can be implemented by all editors.
 The above mentioned editors all support Merlin more or less.
 Merlin requires a description (.merlin file) of your programme in your project folder. It comes handy then that the build system jbuilder creates the .merlin file automatically.</p>
-
-<h2 id="repl-toplevel">Repl / toplevel</h2>
-
+<h2 id="repl--toplevel">Repl / toplevel</h2>
 <p>The Ocaml world the tool to interactively execute commands is called top level. In many other languages this tool is called REPL (R.. Execute P.. Loop). It tool is especiall tractiacal for learnig and is referred to in most tutorials. The standard REPL can be started with <code>ocaml</code>. Hoever most people reccomed an alternative REPL called <code>utop</code> and is is the most reccomended REPL.</p>
-
 <h1 id="ocaml-installation-on-archlinux">Ocaml installation on Archlinux</h1>
-
 <ul>
 <li>install: opam</li>
 <li>install: rsync</li>
 <li>a package called gringo is needed, it is part of community package clingo</li>
-<li>follow this instructions: <a href="https://github.com/realworldocaml/book/wiki/Installation-Instructions">link</a></li>
+<li>follow this instructions: <a href="https://github.com/realworldocaml/book/wiki/Installation-Instructions"target="_blank">link</a></li>
 <li>install the repl: <code>opam install utop</code></li>
 <li>run REPL utop the first time, remember to write ;; (really ? you ask, yes really) if something should be executed, exit utop with #quit;;</li>
 </ul>
-
 <h3 id="switch-to-another-ocaml-version">Switch to another Ocaml version</h3>
-
 <p><code>opam switch list</code> to see the availabe Ocaml versions
 <code>opam switch set XXX</code> to switch to versioin XXX. if the version is not yet installed it will be installed.</p>
-
 <h2 id="ocaml-tutorials-for-beginner">Ocaml tutorials for beginner</h2>
-
 <ul>
 <li>RWO</li>
 <li>tryme</li>
 <li>Ocaml doc</li>
-</ul>
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/" class="card blog-card" rel="bookmark" >
-  
-  <article class="card-body">
-    <h2 class="card-title">An Archlinux Desktop with LXQt and KWin</h2>
-    <p class="card-text"><p>Setting up LXQt with KWin in Virtualbox using Anarchy Linux</p></p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2017-12-03 123:00">Dec 3, 2017</time></p>
-      <p>#Desktop Environments </p>
-    </div>
-  </article>
-</a>
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/" class="card home-card" style="background-image: url( https://absolute-beginner.netlify.com/sky.jpg )" rel="bookmark" >
-  Home
-</a>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-  
-  <script src="https://absolute-beginner.netlify.com/js/core.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
+</ul></article><section class="article labels"><a class="article category" href=/categories/programming-languages/><span class="hashtag">#</span>Programming languages</a><a class="article tag" href=/tags/ocaml/><span class="hashtag">#</span>Ocaml</a></section><section class="article navigation"><p><a class="link" href="/post/man-markdown/"><span class="li"></span>Creating a man page from markdown with pandoc</a></p><p><a class="link" href="/post/lxqt-kwin-virtualbox/"><span class="li"></span>An Archlinux Desktop with LXQt and KWin</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
 
-  </body>
 </html>

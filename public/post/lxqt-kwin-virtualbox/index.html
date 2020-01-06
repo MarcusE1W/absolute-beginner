@@ -1,64 +1,21 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>An Archlinux Desktop with LXQt and KWin &middot; Absolute beginner</title>
-  <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  
-  
-  
-  
-  
-  <link href="https://absolute-beginner.netlify.com/css/concated.min.css" rel="stylesheet">
-  
-  <style>
-    body {
-      background: #ecedef url("https://absolute-beginner.netlify.com/flower-bg.jpg") repeat;
-    }
-  </style>
-</head>
-
-  <body class="single-body">
-    <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://absolute-beginner.netlify.com/" class="nav-text">absolute beginner</a></h1>
-  <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://absolute-beginner.netlify.com/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments" class="hamburger-menu-overlay-link">Desktop environments</a></li><li><a href="https://absolute-beginner.netlify.com/categories/development" class="hamburger-menu-overlay-link">Development</a></li><li><a href="https://absolute-beginner.netlify.com/categories/editor" class="hamburger-menu-overlay-link">Editor</a></li><li><a href="https://absolute-beginner.netlify.com/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://absolute-beginner.netlify.com/categories/programming-languages" class="hamburger-menu-overlay-link">Programming languages</a></li><li><a href="https://absolute-beginner.netlify.com/categories/system" class="hamburger-menu-overlay-link">System</a></li>
-      
-    </ul>
-  </div>
-</nav>
-
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">An Archlinux Desktop with LXQt and KWin</h1>
-          <p class="post-date">Posted <time datetime="2017-12-03">Dec 3, 2017</time></p>
-        </header>
-        
-        <p>Setting up LXQt with KWin in Virtualbox using Anarchy Linux</p>
-
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>An Archlinux Desktop with LXQt and KWin&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
+    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">An Archlinux Desktop with LXQt and KWin</h1><p class="article date">Dec 03 2017</p></section>
+<article class="article markdown-body"><p>Setting up LXQt with KWin in Virtualbox using Anarchy Linux</p>
 <h1 id="kwin-and-lxqt-and-virtualbox">KWin and LXQt and VirtualBox</h1>
-
 <p>This guide describes how to set up KWin and LXQt in Virtualbox using Arch Anywhere.</p>
-
 <p>The basic setup should work with any Computer, Virtualbox is just what I use.</p>
-
 <p>I have tried to install a relative light version with only a small memory footprint. There might be a more elegant solution though. If someone has an idea, please let me know.</p>
-
 <h2 id="setup-virtualbox">Setup VirtualBox</h2>
-
 <ul>
 <li>2 cores</li>
+</ul>
+<ul>
 <li>2 GB ram (If you can spare that, 1GB also works, I hav not tested with less)</li>
 <li>Chipset: ICH9</li>
 <li>3D acceleration on ?</li>
@@ -66,189 +23,146 @@
 <li>Display mem 64MB</li>
 <li>Shared folder (this is nice to have, later I will show how to set up the share)</li>
 </ul>
-
 <h2 id="run-arch-anywhere">Run Arch Anywhere</h2>
-
 <p>Start Arch Anywhere. I have chosen the following setup. Feel free to change.</p>
-
 <ul>
 <li>no Wifi: network comes from the host-pc of VirtualBox.</li>
-<li>no swap partition (a swap file can be set up later if required, I don&rsquo;t have one)</li>
+<li>no swap partition (a swap file can be set up later if required, I don't have one)</li>
 <li>Accept virtualbox-guest-additions</li>
 </ul>
-
 <h3 id="additional-apps">Additional apps</h3>
-
 <ul>
 <li>VLC: I have chosen that for video</li>
 </ul>
-
 <h2 id="install">Install</h2>
-
 <ol>
 <li>choose LXQT as desktop environment</li>
 <li>Reboot</li>
 </ol>
-
 <h2 id="after-the-first-boot">After the first boot</h2>
-
 <ol>
 <li>login as root</li>
-
-<li><p>Create a user  in the terminal
-&gt; <code>useradd -m -G users,wheel,audio  archuser</code>
-&gt;
-&gt;<code>passwd archuser</code></p></li>
-
-<li><p>Update the system
-&gt; <code>sudo pacman -Syu</code></p></li>
-
-<li><p>Install Kwin
-&gt; <code>sudo pacman -S kwin</code></p></li>
-
-<li><p>Install Kwin system setting dialog
-This enanbles the Kwin setting dialog. You can access the setting by clicking in the upper left menu of a window. There you see <em>more actions</em> and in that menu you see
-&gt; <code>sudo pacman -S kde-cli-tools</code></p></li>
-
-<li><p>Kwin-Gtk compatibility
-To change the theme of GTK apps in LXQt you need the LXDE appearance app. It has almost no dependencies, so it does not add much.
-&gt; <code>sudo pacman -S lxappearance</code>
+<li>Create a user  in the terminal</li>
+</ol>
+<blockquote>
+<p><code>useradd -m -G users,wheel,audio  archuser</code></p>
+<p><code>passwd archuser</code></p>
+</blockquote>
+<ol start="3">
+<li>Update the system</li>
+</ol>
+<blockquote>
+<p><code>sudo pacman -Syu</code></p>
+</blockquote>
+<ol start="4">
+<li>Install Kwin</li>
+</ol>
+<blockquote>
+<p><code>sudo pacman -S kwin</code></p>
+</blockquote>
+<ol start="5">
+<li>Install Kwin system setting dialog
+This enanbles the Kwin setting dialog. You can access the setting by clicking in the upper left menu of a window. There you see <em>more actions</em> and in that menu you see</li>
+</ol>
+<blockquote>
+<p><code>sudo pacman -S kde-cli-tools</code></p>
+</blockquote>
+<ol start="6">
+<li>Kwin-Gtk compatibility
+To change the theme of GTK apps in LXQt you need the LXDE appearance app. It has almost no dependencies, so it does not add much.</li>
+</ol>
+<blockquote>
+<p><code>sudo pacman -S lxappearance</code>
 In the lxappearance app you can chose the theme the gtk apps use.
 To see gtk apps with the Kwin Breeze themes add
-&gt; <code>sudo pacman -S breeze-gtk</code></p></li>
-
-<li><p>Fine tuning
-In my installation I had trouble with changing apps using Alt-Tab. Looking into the logs it turned out an app called <code>kglobalaccel5</code> was not running. I have no idea where this app should be started but adding it to the LXQt autostart did it for me.
-&gt; add to LXQt autostart:
-<code>Menu -&gt; Preferences -&gt; LXQT settings -&gt; Session Settings</code>
-&gt; In tab Autostart add kglobalaccel5 to LXQT Autostart</p></li>
+<code>sudo pacman -S breeze-gtk</code></p>
+</blockquote>
+<ol start="7">
+<li>Fine tuning
+In my installation I had trouble with changing apps using Alt-Tab. Looking into the logs it turned out an app called <code>kglobalaccel5</code> was not running. I have no idea where this app should be started but adding it to the LXQt autostart did it for me.</li>
 </ol>
-
+<blockquote>
+<p>add to LXQt autostart:
+<code>Menu -&gt; Preferences -&gt; LXQT settings -&gt; Session Settings</code>
+In tab Autostart add kglobalaccel5 to LXQT Autostart</p>
+</blockquote>
 <p>( If you still have trouble check the  Kwin settings in tab <code>Task switcher</code>.  The flag <code>current activity</code> has to be set to on )</p>
-
 <h2 id="install-additional-software">Install additional software</h2>
-
 <p>This is a selection of mostly Qt software that I found useful.</p>
-
 <h3 id="browser">Browser</h3>
-
-<p>I have chosen Qupzilla. Serves me well and is relatively light.
-&gt; <code>sudo pacman -S qupzilla</code></p>
-
-<p>Alternative:
-&gt; <code>sudo pacman -S firefox</code></p>
-
+<p>I have chosen Qupzilla. Serves me well and is relatively light.</p>
+<blockquote>
+<p><code>sudo pacman -S qupzilla</code></p>
+</blockquote>
+<p>Alternative:</p>
+<blockquote>
+<p><code>sudo pacman -S firefox</code></p>
+</blockquote>
 <h3 id="aur-repository">AUR repository</h3>
-
 <p>To use packages from the AUR repository it is very helpful to use a package manager for AUR. Pacman does not cover AUR packages. There are many options but I like trizen the best. It works like pacman with some additional functions for AUR packages.</p>
-
 <pre><code>git clone https://aur.archlinux.org/trizen.git
 cd trizen
 makepkg -si
-</code></pre>
-
-<p>You can basically replace your use of pacman with trizen. Only for some special cases you can still use pacman.</p>
-
+</code></pre><p>You can basically replace your use of pacman with trizen. Only for some special cases you can still use pacman.</p>
 <h3 id="graphical-editor-howl">Graphical Editor: howl</h3>
-
-<p>Install howl ( gui editor) from AUR repository
-&gt; <code>trizen -S howl</code></p>
-
-<p>You don&rsquo;t need to use sudo for trizen, you will be asked for the sudo passwd later</p>
-
+<p>Install howl ( gui editor) from AUR repository</p>
+<blockquote>
+<p><code>trizen -S howl</code></p>
+</blockquote>
+<p>You don't need to use sudo for trizen, you will be asked for the sudo passwd later</p>
 <h3 id="image-viewer-lx-image">Image viewer: LX-Image</h3>
-
-<p>Install lximage package from AUR repository
-&gt; <code>trizen -S lximage-qt</code></p>
-
+<p>Install lximage package from AUR repository</p>
+<blockquote>
+<p><code>trizen -S lximage-qt</code></p>
+</blockquote>
 <h3 id="pdf-viewer-qpdfview">PDF viewer: qPDFview</h3>
-
 <blockquote>
 <p><code>trizen -S qpdfview</code></p>
 </blockquote>
-
 <h3 id="disk-space-checker-qdirstat">Disk space checker: QDirStat</h3>
-
 <blockquote>
 <p><code>trizen -S qdirstat</code></p>
 </blockquote>
-
 <h3 id="terminal-lx-terminal">Terminal: LX Terminal</h3>
-
 <p>Many LXQt editions use Qterminal. I like it but some keys are not accessible from programs in the console. So I use LX Terminal which has hardly any dependencies and is a bit smoother in my view.</p>
-
 <blockquote>
 <p><code>sudo pacman -S lxterminal</code></p>
 </blockquote>
-
 <h3 id="console-editor-micro">Console Editor Micro</h3>
-
 <p>Install Micro from the AUR repository:</p>
-
 <blockquote>
 <p><code>trizen -S micro-bin</code></p>
 </blockquote>
-
 <h3 id="alternative-console-editor-tilde">Alternative: Console Editor: Tilde</h3>
-
 <p>Install Tilde (console editor)  from AUR repository
 Tilde is a very user friendly console text editor that uses mostly the same keybindings as graphical apps like Ctrl-C for copy, Ctrl-V for paste and so on and comes with the menu (Alt-f for the file-menu for example)</p>
-
 <p>This package requires the packages <code>fakeroot</code> and  <code>pkg_config</code>.  Install these packages before you install tilde</p>
-
 <blockquote>
 <p><code>trizen -S tilde</code></p>
 </blockquote>
-
 <p>When you install Tilde several libraries will be installed during the process as dependencies. Most called ligt3*, etc.</p>
-
 <h3 id="download-the-arch-anywhere-tool-fetchmirrors">Download the arch-anywhere tool fetchmirrors</h3>
-
 <blockquote>
 <p><code>trizen -S fetchmirrors</code></p>
 </blockquote>
-
 <p>Use this tool to set up the right mirror servers for the Arch repository</p>
-
 <p><code>fetchmirrors --help</code> for help</p>
-
 <h2 id="trizen-pgp-tip">trizen PGP Tip</h2>
-
 <p>If you face a PGP authentication issue using trizen check this:</p>
-
 <p>Error message during trizen build is:
 <code>ERROR: One or more PGP signatures could not be verified!</code>
 :</p>
-
 <p>If you trust the package copy the public <code>KEYID</code> from the error message
 Then use these commands in the console to add the new key:</p>
-
 <pre><code>gpg --recv-key KEYID
 gpg --lsign KEYID
-</code></pre>
+</code></pre><p>For details how that works <a href="http://allanmcrae.com/2015/01/two-pgp-keyrings-for-package-management-in-arch-linux/"target="_blank">read:</a></p>
+<p>Helpful hints, comments and questions are welcome</p></article><section class="article labels"><a class="article category" href=/categories/desktop-environments/><span class="hashtag">#</span>Desktop Environments</a><a class="article tag" href=/tags/linux/><span class="hashtag">#</span>Linux</a><a class="article tag" href=/tags/archlinux/><span class="hashtag">#</span>Archlinux</a><a class="article tag" href=/tags/lxqt/><span class="hashtag">#</span>LXQt</a><a class="article tag" href=/tags/kwin/><span class="hashtag">#</span>KWin</a></section><section class="article navigation"><p><a class="link" href="/post/ocaml-start/"><span class="li"></span>Ocaml for beginner</a></p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
 
-<p>For details how that works <a href="http://allanmcrae.com/2015/01/two-pgp-keyrings-for-package-management-in-arch-linux/">read:</a></p>
-
-<p>Helpful hints, comments and questions are welcome</p>
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/" class="card home-card" style="background-image: url( https://absolute-beginner.netlify.com/sky.jpg )" rel="bookmark" >
-  Home
-</a>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-  
-  <script src="https://absolute-beginner.netlify.com/js/core.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
-  </body>
 </html>

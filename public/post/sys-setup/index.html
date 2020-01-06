@@ -1,75 +1,23 @@
 <!DOCTYPE html>
-<html lang="" dir="ltr">
-  <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>My system setup &middot; Absolute beginner</title>
-  <meta name="description" content="" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
-  
-  
-  
-  
-  
-  <link href="https://absolute-beginner.netlify.com/css/concated.min.css" rel="stylesheet">
-  
-  <style>
-    body {
-      background: #ecedef url("https://absolute-beginner.netlify.com/flower-bg.jpg") repeat;
-    }
-  </style>
-</head>
-
-  <body class="single-body">
-    <nav class="nav-bar side-padding">
-  <h1 class="nav-header"><a href="https://absolute-beginner.netlify.com/" class="nav-text">absolute beginner</a></h1>
-  <div class="hamburger-menu">
-    <button onclick="hamburgerMenuPressed.call(this)" aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Menu">
-      <span></span>
-      <span></span>
-    </button>
-    <ul id="menu" class="hamburger-menu-overlay">
-      <li><a href="https://absolute-beginner.netlify.com/" class="hamburger-menu-overlay-link">Home</a></li>
-      <li><a href="https://absolute-beginner.netlify.com/categories/desktop-environments" class="hamburger-menu-overlay-link">Desktop environments</a></li><li><a href="https://absolute-beginner.netlify.com/categories/development" class="hamburger-menu-overlay-link">Development</a></li><li><a href="https://absolute-beginner.netlify.com/categories/editor" class="hamburger-menu-overlay-link">Editor</a></li><li><a href="https://absolute-beginner.netlify.com/categories/linux" class="hamburger-menu-overlay-link">Linux</a></li><li><a href="https://absolute-beginner.netlify.com/categories/programming-languages" class="hamburger-menu-overlay-link">Programming languages</a></li><li><a href="https://absolute-beginner.netlify.com/categories/system" class="hamburger-menu-overlay-link">System</a></li>
-      
-    </ul>
-  </div>
-</nav>
-
-    <main class="content side-text-padding">
-      <article class="post dropcase">
-        <header class="post-header">
-        	<h1 class="post-title">My system setup</h1>
-          <p class="post-date">Posted <time datetime="2018-04-28">Apr 28, 2018</time></p>
-        </header>
-        
-        <p>These are my notes to remember how to set up my system.</p>
-
+<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>My system setup&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
+    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">My system setup</h1><p class="article date">Apr 28 2018</p></section>
+<article class="article markdown-body"><p>These are my notes to remember how to set up my system.</p>
 <h1 id="set-up-programms">Set up programms</h1>
-
 <p>This whole article is probably only useful to myself, unless you use Archlinux and similar programms as me, in which case you are welcome to have a look how I try to set mine up.</p>
-
 <h2 id="micro-editor">Micro Editor</h2>
-
 <p>Micro does not (yet) work with the termite terminal out of the box
 To change the <code>TERM</code> variable in the shell add to .bash_profile or whatever the equivalent in your shell</p>
-
 <pre><code>export TERM=xterm-256color
-</code></pre>
-
-<p>To have copy and paste working with all other X11 apps install <code>xclip</code></p>
-
+</code></pre><p>To have copy and paste working with all other X11 apps install <code>xclip</code></p>
 <pre><code>trizen -S xclip
-</code></pre>
-
-<p>This is an optional dependency of micro but is really very useful.</p>
-
-<p>To enable the use of arrow keys in the Linux console (no GUI) follow these <a href="https://github.com/zyedidia/micro/wiki/Linux-Console-Keybindings">instructions</a></p>
-
+</code></pre><p>This is an optional dependency of micro but is really very useful.</p>
+<p>To enable the use of arrow keys in the Linux console (no GUI) follow these <a href="https://github.com/zyedidia/micro/wiki/Linux-Console-Keybindings"target="_blank">instructions</a></p>
 <h2 id="atom-editor">Atom editor</h2>
-
 <ul>
 <li>Comand palette remembers last word -&gt; settings edior</li>
 <li>set absolutely fabulous East End notebook syntax/ui theme</li>
@@ -78,324 +26,180 @@ To change the <code>TERM</code> variable in the shell add to .bash_profile or wh
 <li>set alt-pageup/down to swith between left an right pane</li>
 <li>TODO: check keymap settings to</li>
 </ul>
-
 <h2 id="termite">Termite</h2>
-
 <p>To create an initial config in Archlinux copy the standard one into <code>~/.config/termite</code></p>
-
 <pre><code>mkdir ~/.config/termite
 cp /etc/xdg/termite/config ~/.config/termite/config
-</code></pre>
-
-<h2 id="fonts">Fonts</h2>
-
+</code></pre><h2 id="fonts">Fonts</h2>
 <p>Install Iosevka for terminal</p>
-
 <pre><code>trizen -S ttf-iosevka-term-ss04
-</code></pre>
-
-<p>The font name can then be found by listing all fonts <code>fc-list</code> and searching for elements of the name with <code>grep</code>. e.g.</p>
-
+</code></pre><p>The font name can then be found by listing all fonts <code>fc-list</code> and searching for elements of the name with <code>grep</code>. e.g.</p>
 <pre><code>fc-list | grep iosevka
-</code></pre>
-
-<h2 id="pacman">Pacman</h2>
-
-<p>To use the most responsive archlinux mirror in your area update the archlinux mirror list
-- first fetchmirrors needs to be installed</p>
-
+</code></pre><h2 id="pacman">Pacman</h2>
+<p>To use the most responsive archlinux mirror in your area update the archlinux mirror list</p>
+<ul>
+<li>first fetchmirrors needs to be installed</li>
+</ul>
 <pre><code> trizen -S fetchmirrors
-</code></pre>
-
-<ul>
-<li><p>Then run as root, in this case for UK</p>
-
+</code></pre><ul>
+<li>Then run as root, in this case for UK</li>
+</ul>
 <pre><code>sudo fetchmirrors -c GB
-</code></pre>
-
-<p>Allow to update your mirror list</p></li>
-</ul>
-
+</code></pre><p>Allow to update your mirror list</p>
 <h3 id="useful-commands-for-pacman">Useful commands for pacman</h3>
-
 <p>These commands usually also work with a pacman helper like trizen.</p>
-
 <ul>
-<li><p>List explicitly installed packages</p>
-
-<pre><code>sudo pacman -Qqe
-</code></pre></li>
-
-<li><p>that are not also a dependency for other packages.</p>
-
-<pre><code>sudo pacman -Qent
-</code></pre></li>
-
-<li><p>List all <em>foreign</em> packages. That means from AUR or manually installed.</p>
-
-<pre><code>pacman -Qn
-</code></pre></li>
-
-<li><p>List all installed files for a package</p>
-
-<pre><code>sudo pacman -Ql package_name
-</code></pre></li>
-
-<li><p>List all packages that have been installed as dependency to another package</p>
-
-<pre><code>sudo pacman -Qd
-</code></pre></li>
-
-<li><p>List all packages no longer required as dependencies (orphans):</p>
-
-<pre><code>sudo pacman -Qdt
-</code></pre></li>
+<li>List explicitly installed packages</li>
 </ul>
-
-<h2 id="i3">i3</h2>
-
+<pre><code>sudo pacman -Qqe
+</code></pre><ul>
+<li>that are not also a dependency for other packages.</li>
+</ul>
+<pre><code>sudo pacman -Qent
+</code></pre><ul>
+<li>List all <em>foreign</em> packages. That means from AUR or manually installed.</li>
+</ul>
+<pre><code>pacman -Qn
+</code></pre><ul>
+<li>List all installed files for a package</li>
+</ul>
+<pre><code>sudo pacman -Ql package_name
+</code></pre><ul>
+<li>List all packages that have been installed as dependency to another package</li>
+</ul>
+<pre><code>sudo pacman -Qd
+</code></pre><ul>
+<li>List all packages no longer required as dependencies (orphans):</li>
+</ul>
+<pre><code>sudo pacman -Qdt
+</code></pre><h2 id="i3">i3</h2>
 <p>To get rid of the title bar on top of every window add this (at the end) of the <code>.~/.config/i3/config</code> file</p>
-
 <pre><code>new_window pixel 1
-</code></pre>
-
-<p>This leafes you with a small (blue) frame around the active window. If you want it to be more visible change the number to 2 or 3.
+</code></pre><p>This leafes you with a small (blue) frame around the active window. If you want it to be more visible change the number to 2 or 3.
 TO make the frame go away entirely use 0 or <code>new window none</code></p>
-
 <p>To switch from one workspace to the next with the <code>Win</code> plus <code>PageUp</code> / <code>PageDown</code> keys add this in the config file.</p>
-
 <pre><code>bindsym $mod+Next workspace next
 bindsym $mod+Prior workspace prev
-</code></pre>
-
-<h2 id="nodejs-and-npm">nodejs and npm</h2>
-
+</code></pre><h2 id="nodejs-and-npm">nodejs and npm</h2>
 <p>Install npm and nodejs with</p>
-
 <pre><code>trizen -S nodejs
-</code></pre>
-
-<p>In most of my attempts npm did not work well. Installing locally gave no result and installing globally failed with an error:
-&gt; npm ERR! Error: EACCES: permission denied, access &lsquo;/usr/lib/node_modules</p>
-
-<p>So this is the <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions">suggestion</a> you can find in the npm manual.</p>
-
+</code></pre><p>In most of my attempts npm did not work well. Installing locally gave no result and installing globally failed with an error:</p>
+<blockquote>
+<p>npm ERR! Error: EACCES: permission denied, access &lsquo;/usr/lib/node_modules</p>
+</blockquote>
+<p>So this is the <a href="https://docs.npmjs.com/getting-started/fixing-npm-permissions"target="_blank">suggestion</a> you can find in the npm manual.</p>
 <ol>
-<li><p>Make a directory for global installations:</p>
-
-<pre><code>mkdir ~/.npm-global
-</code></pre></li>
-
-<li><p>Configure npm to use the new directory path:</p>
-
-<pre><code>npm config set prefix '~/.npm-global'
-</code></pre></li>
-
-<li><p>Open or create a ~/.profile (or .bash_profile, or whatever it is on your system) file and add this line:</p>
-
-<pre><code>export PATH=~/.npm-global/bin:$PATH
-</code></pre></li>
-
-<li><p>Back on the command line, update your system variables:</p>
-
-<pre><code>6.  source ~/.profile
-</code></pre></li>
+<li>Make a directory for global installations:</li>
 </ol>
-
-<h1 id="system-setup">System setup</h1>
-
+<pre><code> mkdir ~/.npm-global
+</code></pre><ol start="2">
+<li>Configure npm to use the new directory path:</li>
+</ol>
+<pre><code> npm config set prefix '~/.npm-global'
+</code></pre><ol start="3">
+<li>Open or create a ~/.profile (or .bash_profile, or whatever it is on your system) file and add this line:</li>
+</ol>
+<pre><code> export PATH=~/.npm-global/bin:$PATH
+</code></pre><ol start="5">
+<li>Back on the command line, update your system variables:</li>
+</ol>
+<pre><code>6.  source ~/.profile
+</code></pre><h1 id="system-setup">System setup</h1>
 <p>Install AUR helper <code>trizen</code></p>
-
 <p>Chose a directory to install trizen [this can be removed after the installation? ]</p>
-
 <pre><code>git clone https://aur.archlinux.org/trizen.git
 cd trizen
 makepkg -si
-</code></pre>
-
-<h2 id="add-user-to-group">Add user to group</h2>
-
+</code></pre><h2 id="add-user-to-group">Add user to group</h2>
 <p>Check the assigned groups for a user with <code>groups</code></p>
-
 <p>To add a user to a group use this pattern</p>
-
 <pre><code>usermod -a -G group username
-</code></pre>
-
-<p><em>Note:</em> The change is only effective after the next login.</p>
-
+</code></pre><p><em>Note:</em> The change is only effective after the next login.</p>
 <p><em>Give user access to Virtualbox shared folder</em></p>
-
 <pre><code>sudo usermod -a -G vboxsf mmw
-</code></pre>
-
-<p>?? seems not to work &hellip;</p>
-
+</code></pre><p>?? seems not to work &hellip;</p>
 <p>back to the lovely script then.</p>
-
 <p><code>sudo mount -t vboxsf VM_Share /home/mmw/VM</code></p>
-
 <h2 id="change-bash-shell-to-fish">Change (bash) shell to fish.</h2>
-
 <p>This describes how to make fish your default shell.
 Fist install the fish shell.</p>
-
 <pre><code>trizen -S fish
-</code></pre>
-
-<p>Find the documentation <a href="https://fishshell.com/docs/current/tutorial.html#tut_learning_Fish">here</a></p>
-
-<p>To make fish your default shell you need to find out it&rsquo;s path with <code>whereis fish</code>. Most likely it&rsquo;s <code>/usr/bin/fish</code>.</p>
-
+</code></pre><p>Find the documentation <a href="https://fishshell.com/docs/current/tutorial.html#tut_learning_Fish"target="_blank">here</a></p>
+<p>To make fish your default shell you need to find out it's path with <code>whereis fish</code>. Most likely it's <code>/usr/bin/fish</code>.</p>
 <p>Once you have the path to fish use the command <code>chsh</code> (change shell) to make fish the default shell.</p>
-
 <pre><code>chsh -s /usr/bin/fish
-</code></pre>
-
-<p>Instead of  setting variables (and this includes the $PATH) in .bashrc or .profile or so in fish you use the <code>set</code> command.
+</code></pre><p>Instead of  setting variables (and this includes the $PATH) in .bashrc or .profile or so in fish you use the <code>set</code> command.
 So with <code>set TERM xterm-256color</code> you add a variable.</p>
-
 <ul>
 <li>To export the variable you add  <code>-x</code></li>
 <li>To set a variable globally add <code>-g</code>. This will save it permanently.</li>
 </ul>
-
 <h3 id="aliases-and-functions-in-fish">Aliases and functions in fish</h3>
-
 <p>To see all defined functions you can use the <code>functions</code> command. Note the plural.</p>
-
 <p>To see the definition of a specific function add the name after the command e.g. <code>functions ll</code></p>
-
 <p>Aliases are nothing else but functions in fish. Functions are described in the tutorial. however, there is a convenient shortcut to define a function in the form of the alias command. Not un-similar to bash.</p>
-
 <p>With <code>alias la &quot;ls -a&quot;</code> you can define a alias/function for la.</p>
-
 <p>With <code>functions la</code> you can see how the functions definition you just created looks like.</p>
-
 <p>If you want to save the functions to make it permanent use &ldquo;funcsave la&rdquo;</p>
-
 <h3 id="bash-scripts-in-fish">bash scripts in fish</h3>
-
-<p>You can execute bash scripts from fish normally if a so called shebang is mentioned in the bash script. Means in the first line of the script you have this line &lsquo;#!/bin/bash&rsquo; . Basically the path to the bash command.
-- If the shell script is in a different folder adapt the path in the shebang
-- If you use a different shell than bash then add the path to that shell</p>
-
+<p>You can execute bash scripts from fish normally if a so called shebang is mentioned in the bash script. Means in the first line of the script you have this line &lsquo;#!/bin/bash&rsquo; . Basically the path to the bash command.</p>
+<ul>
+<li>If the shell script is in a different folder adapt the path in the shebang</li>
+<li>If you use a different shell than bash then add the path to that shell</li>
+</ul>
 <h2 id="spectrwm-tiling-window-manager">spectrwm tiling window manager</h2>
-
 <p>Install with</p>
-
 <pre><code>trizen -S spectrwm
-</code></pre>
-
-<p>For a first overview the man pages are usefull: <code>man spectrwm</code></p>
-
-<p>For more <a href="https://www.freedesktop.org/wiki/Software/xdg-utils/">XDG</a> integration you could install <code>xdg-utils</code>.</p>
-
+</code></pre><p>For a first overview the man pages are usefull: <code>man spectrwm</code></p>
+<p>For more <a href="https://www.freedesktop.org/wiki/Software/xdg-utils/"target="_blank">XDG</a> integration you could install <code>xdg-utils</code>.</p>
 <h3 id="first-configuration">First Configuration</h3>
-
 <p>spectrwm looks in ~/.spectrwm first and then for /etc/spectrwm.conf
 So if you do not have config file in your home folder yet, copy it from /etc</p>
-
 <pre><code>cp /etc/spectrwm.conf ~/.spectrwm.conf
-</code></pre>
-
-<p>For Archlinux the standard <code>bar_font</code> paramenter needs to be updated as described in the <a href="...">Wiki</a></p>
-
+</code></pre><p>For Archlinux the standard <code>bar_font</code> paramenter needs to be updated as described in the <a href="...">Wiki</a></p>
 <p>To change keybindings you can copy one of the predefined keyboard mappings in folder <code>/etc/spectrwm</code></p>
-
 <p>To copy e.g. the us keyboard layout into your .config forlder type:</p>
-
 <pre><code>mkdir ~/.config/spectrwm
 cp cp /etc/spectrwm/spectrwm_us.conf ~/.config/spectrwm/spectrwm_us.conf
-</code></pre>
-
-<p>To point spectrwm to your new keymapping file you need to update the .spectrwm.conf file.</p>
-
+</code></pre><p>To point spectrwm to your new keymapping file you need to update the .spectrwm.conf file.</p>
 <p>Update keyboard_mapping like this:</p>
-
 <pre><code># This allows you to include pre-defined key bindings for your keyboard layout.
 keyboard_mapping = ~/.config/spectrwm/.spectrwm_us.conf
-</code></pre>
-
-<p>Last but not least, change your .xinitrc</p>
-
+</code></pre><p>Last but not least, change your .xinitrc</p>
 <pre><code>exec spectrwm
-</code></pre>
-
-<h3 id="spectrwm-keymap-configuration">Spectrwm keymap configuration</h3>
-
+</code></pre><h3 id="spectrwm-keymap-configuration">Spectrwm keymap configuration</h3>
 <p>I have found the following keybindings helpful:</p>
-
 <pre><code>bind[focus_next]	= MOD+Right      # Move to next programme on the same workspace
 bind[focus_prev]	= MOD+Left
 bind[term]		    = MOD+Return     # Start a terminal
 bind[ws_next]	    = MOD+Next
 bind[ws_prev]	    = MOD+Prior
-</code></pre>
-
-<p>If you use Linux in a Virtual machine on Windows like me then you will find that Win+l is permanently used by Windows to lock the screen. Even if you use VirtualBox. That means MOD+l to grow the master window will also trigger the screen lock. I just use the  key next to <code>l</code> to grow the master window. In my case ;</p>
-
+</code></pre><p>If you use Linux in a Virtual machine on Windows like me then you will find that Win+l is permanently used by Windows to lock the screen. Even if you use VirtualBox. That means MOD+l to grow the master window will also trigger the screen lock. I just use the  key next to <code>l</code> to grow the master window. In my case ;</p>
 <p>For Spectrwm you have to use xkb xharacter names. You can find the name of a character with the tool <code>xev</code>. The output is a bit messy and for ; looks like this:</p>
-
 <blockquote>
 <p>KeyPress event, serial 37, synthetic NO, window 0x1600001,</p>
-
 <p>root 0x2bd, subw 0x0, time 64418407, (590,691), root:(1265,692),</p>
-
 <p>state 0x0, keycode 47 (keysym 0x3b, <strong>semicolon</strong>), same_screen YES,</p>
-
 <p>XLookupString gives 1 bytes: (3b) &ldquo;;&rdquo;</p>
-
 <p>XmbLookupString gives 1 bytes: (3b) &ldquo;;&rdquo;</p>
-
 <p>XFilterEvent returns: False</p>
 </blockquote>
-
 <p>So the xkb keycode for ; is - tada <strong>semicolon</strong></p>
-
 <p>So to bind the master_grow command to MOD+; you have to add this line to the keymap file.</p>
-
 <pre><code>bind[master_grow]	= MOD+semicolon  # Make current window smaller.
-</code></pre>
+</code></pre><h3 id="setup-for-screenshots">Setup for screenshots</h3>
+<p>To make the screenshot function work you have to</p>
+<ul>
+<li>copy screenshot.sh from /usr/share/spectrwm to ~/local/bin (or any other place that is in your local PATH)</li>
+<li>make sure the screenshot tool <code>scrot</code> is installed</li>
+<li>change the config and if you want keymapping</li>
+</ul></article><section class="article labels"><a class="article category" href=/categories/system/><span class="hashtag">#</span>System</a><a class="article tag" href=/tags/archlinux/><span class="hashtag">#</span>Archlinux</a><a class="article tag" href=/tags/spectrwm/><span class="hashtag">#</span>Spectrwm</a><a class="article tag" href=/tags/micro-editor/><span class="hashtag">#</span>Micro editor</a><a class="article tag" href=/tags/trizen/><span class="hashtag">#</span>trizen</a><a class="article tag" href=/tags/fish-shell/><span class="hashtag">#</span>Fish shell</a><a class="article tag" href=/tags/atom/><span class="hashtag">#</span>Atom</a></section><section class="article navigation"><p><a class="link" href="/post/spacemacs/"><span class="li"></span>Spacemacs for beginner</a></p><p><a class="link" href="/post/micro-syntax1/"><span class="li"></span>Simple syntax highlighting for the Micro editor</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section></div>
+</body>
 
-<h3 id="setup-for-screenshots">Setup for screenshots</h3>
-
-<p>To make the screenshot function work you have to
-- copy screenshot.sh from /usr/share/spectrwm to ~/local/bin (or any other place that is in your local PATH)
-- make sure the screenshot tool <code>scrot</code> is installed
-- change the config and if you want keymapping</p>
-      </article>
-      
-    </main>
-    <nav class="end-nav side-padding">
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/post/micro-syntax1/" class="card blog-card" rel="bookmark" >
-  
-  <article class="card-body">
-    <h2 class="card-title">Simple syntax highlighting for the Micro editor</h2>
-    <p class="card-text"><p>How to write a simple file for syntax highlighting for any language for the Micro editor</p></p>
-    <div class="card-subtext muted-text">
-      <p>Posted <time datetime="2018-04-11 411:00">Apr 11, 2018</time></p>
-      <p>#Editor </p>
-    </div>
-  </article>
-</a>
-      
-      <a ontouchstart="cardPressed.call(this)" ontouchend="cardReleased.call(this)" ontouchmove="cardReleased.call(this)" 
-  href="https://absolute-beginner.netlify.com/" class="card home-card" style="background-image: url( https://absolute-beginner.netlify.com/sky.jpg )" rel="bookmark" >
-  Home
-</a>
-    </nav>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.0/dist/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"
-    onload="renderMathInElement(document.body);"></script>
-  
-  <script src="https://absolute-beginner.netlify.com/js/core.min.js"></script>
-<script>
-  hljs.initHighlightingOnLoad();
-</script>
-
-  </body>
 </html>

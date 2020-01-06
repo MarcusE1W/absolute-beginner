@@ -1,12 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spectrwm - Absolute beginner</title>
+    <title>Spectrwm on Absolute Beginner</title>
     <link>https://absolute-beginner.netlify.com/tags/spectrwm/</link>
-    <description>Recent content in Spectrwm on Absolute beginner</description>
+    <description>Recent content in Spectrwm on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
     <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     
-        <atom:link href="https://absolute-beginner.netlify.com/tags/spectrwm/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://absolute-beginner.netlify.com/tags/spectrwm/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>My system setup</title>
@@ -16,5 +19,6 @@
       <guid>https://absolute-beginner.netlify.com/post/sys-setup/</guid>
       <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;</description>
     </item>
+    
   </channel>
 </rss>

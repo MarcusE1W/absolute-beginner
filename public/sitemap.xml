@@ -1,205 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/linux/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/vmware-archlinux/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/vm/</loc>
-    <lastmod>2018-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/bluetooth/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/ios-keyboard/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/ios/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/keyboard/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/lofree/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/system/</loc>
-    <lastmod>2018-06-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/editor/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/spacemacs/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/spacemacs/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/vim/</loc>
-    <lastmod>2018-05-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/archlinux/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/atom/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/fish-shell/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/micro-editor/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/sys-setup/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/spectrwm/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/trizen/</loc>
-    <lastmod>2018-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/micro/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/micro-syntax1/</loc>
-    <lastmod>2018-04-11T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/qemu-start/</loc>
-    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/qemu/</loc>
-    <lastmod>2018-03-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/man-markdown/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/development/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/man-pages/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/markdown/</loc>
-    <lastmod>2018-02-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/ocaml/</loc>
-    <lastmod>2017-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/ocaml-start/</loc>
-    <lastmod>2017-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/programming-languages/</loc>
-    <lastmod>2017-12-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/categories/desktop-environments/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/kwin/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/linux/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://absolute-beginner.netlify.com/tags/lxqt/</loc>
-    <lastmod>2017-12-03T00:00:00+00:00</lastmod>
-  </url>
-  
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"><url>
+    <loc>/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/categories/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/mermaid/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/mermaid/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/categories/static-site-generation/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/</loc><lastmod>2020-01-06T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/vmware-archlinux/</loc><lastmod>2018-12-07T00:00:00+00:00</lastmod></url><url>
+    <loc>/categories/system/</loc><lastmod>2018-12-07T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/vm/</loc><lastmod>2018-12-07T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/bluetooth/</loc><lastmod>2018-06-30T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/ios-keyboard/</loc><lastmod>2018-06-30T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/ios/</loc><lastmod>2018-06-30T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/keyboard/</loc><lastmod>2018-06-30T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/lofree/</loc><lastmod>2018-06-30T00:00:00+00:00</lastmod></url><url>
+    <loc>/categories/editor/</loc><lastmod>2018-05-14T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/spacemacs/</loc><lastmod>2018-05-14T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/spacemacs/</loc><lastmod>2018-05-14T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/vim/</loc><lastmod>2018-05-14T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/archlinux/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/atom/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/fish-shell/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/micro-editor/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/sys-setup/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/spectrwm/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/trizen/</loc><lastmod>2018-04-28T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/micro/</loc><lastmod>2018-04-11T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/micro-syntax1/</loc><lastmod>2018-04-11T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/qemu-start/</loc><lastmod>2018-03-29T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/qemu/</loc><lastmod>2018-03-29T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/man-markdown/</loc><lastmod>2018-02-19T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/man-pages/</loc><lastmod>2018-02-19T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/markdown/</loc><lastmod>2018-02-19T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/ocaml/</loc><lastmod>2017-12-07T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/ocaml-start/</loc><lastmod>2017-12-07T00:00:00+00:00</lastmod></url><url>
+    <loc>/categories/programming-languages/</loc><lastmod>2017-12-07T00:00:00+00:00</lastmod></url><url>
+    <loc>/post/lxqt-kwin-virtualbox/</loc><lastmod>2017-12-03T00:00:00+00:00</lastmod></url><url>
+    <loc>/categories/desktop-environments/</loc><lastmod>2017-12-03T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/kwin/</loc><lastmod>2017-12-03T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/linux/</loc><lastmod>2017-12-03T00:00:00+00:00</lastmod></url><url>
+    <loc>/tags/lxqt/</loc><lastmod>2017-12-03T00:00:00+00:00</lastmod></url></urlset>
