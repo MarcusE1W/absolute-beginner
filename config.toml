@@ -30,6 +30,7 @@ slogan = "Now with live Mermaid"
 
 [params.assets]
 css = ["css/fonts.css"]
+js = ["js/rough.js", "mermaid-min.js"]
 
 [params.comments]
 enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.

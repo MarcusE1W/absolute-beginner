@@ -58,6 +58,3 @@
 [submodule "themes/zzo-theme"]
 	path = themes/zzo-theme
 	url = https://github.com/zzossig/hugo-theme-zzo.git
-[submodule "themes/notepadium"]
-	path = themes/notepadium
-	url = https://github.com/cntrump/hugo-notepadium.git

@@ -1,7 +1,6 @@
 +++
 title = "Spacemacs for beginner"
-date = "2018-05-14"
-hide_authorbox = false
+date = "2020-01-15"
 disable_comments = false
 categories = ["Editor"]
 tags = ["Spacemacs", "Vim"]
@@ -24,25 +23,28 @@ Vim has some very powerful and sometimes very cryptic commands, only some of the
 Also the tables you see in the text only give you a selection of commands. 
 The good news is that with Spacemacs you don't have to remember all commands but you can also use the Spacemacs menu (SPC).
 
-[Also read the latest official Spacemacs beginner guid (Develop Version)](http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html)
+[Also read the latest official Spacemacs beginner guide (Develop Version)](http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html)
 
 ## Executing commands in Spacemacs
-The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once `SPC` has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.
+The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once `SPC` has been pressed a menu opens that shows the possible keys. 
+E.g. `SPC f s` saves the current buffer. 
+It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.
 
 Double letters in the SPC menu usually are used for particular useful commands like SPC b b for the list of buffers or SPC f f to open a file . 
 
 ## Opening files
-There are several ways to open a file, but a good start is the file selector neotree, activated with `SPC f t`.
-Move to the neotree window with SPC 0 and back to the other previous buffer with it's number `SPC <window number>`.
+There are several ways to open a file, but a good start is the file selector Treemacs, activated with `SPC f t`.
+Move to the Treemacs window with SPC 0 and back to the previous buffer with it's number `SPC <window number>`.
 
-While using neotree
+While using Treemacs:
 
-| Function                                           | key              |
-| ---                                                | ---              |
-| Show content of a sub-folder                       | RET or l (list?) |
-| Rename a file.                                     | r (rename)       |
-| Create a new file                                  | c (create)       |
-| To toggle between hiding and showing hidden (.) files. | s                |
+| Function                                               | key               |
+| ---                                                    | ---               |
+| Show content of a sub-folder                           | RET (Return)      |
+| Open file                                              | RET               |
+| Rename a file.                                         | R (rename)        |
+| Create a new file                                      | c f (create file) |
+| To toggle between hiding and showing hidden (.) files. | t s               |
 
 
 ## Basic Spacemacs Evil (Vim) commands

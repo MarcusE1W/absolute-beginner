@@ -1,0 +1,14 @@
+{{- if or .Params.categories .Params.tags -}}
+<section class="article labels">
+    {{- range $i, $e := .Params.categories -}}
+        {{- if $i -}}<span>, </span>{{- end -}}
+        {{- $url := print "/categories/" ($e | urlize) "/" -}}
+        <a href={{- $url | relLangURL -}}>{{- $e -}}</a>
+    {{- end -}}
+    {{- range $i, $e := .Params.tags -}}
+        {{- if $i -}}<span>, </span>{{- end -}}
+        {{- $url := print "/tags/" ( . | urlize) "/" -}}
+        <a href={{- $url | relLangURL -}}>{{- . -}}</a>
+    {{- end -}}
+</section>
+{{- end -}}
