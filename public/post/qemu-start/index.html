@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.63.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>A QEMU Virtual machine with a Windows host and a Linux guest&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
-    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+<meta name="supported-color-schemes" content="light dark"><title>A QEMU Virtual machine with a Windows host and a Linux guest&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.61f7d103e0f681ef0874ae0c3816407cec85b93b3d1d77befa2083a5bb68fdc7462e4d8ace0e36e1223494aeef86bd24.css" integrity="sha384-YffRA&#43;D2ge8IdK4MOBZAfOyFuTs9HXe&#43;&#43;iCDpbto/cdGLk2Kzg424SI0lK7vhr0k"><body>
+    <div class="base-body"><section id="header" class="site header max-body-width">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
-    <h1 class="article title">A QEMU Virtual machine with a Windows host and a Linux guest</h1><p class="article date">Mar 29 2018</p></section>
-<article class="article markdown-body"><p>Run a (Arch)Linux system in a QEMU virtual machine on your Windows.</p>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">A QEMU Virtual machine with a Windows host and a Linux guest</h1><p class="article date">Mar 29 2018</p></section><article class="article markdown-body"><p>Run a (Arch)Linux system in a QEMU virtual machine on your Windows.</p>
 <h1 id="intro">Intro</h1>
 <p>This is my first try to use QEMU to run Archlinux in a virtual machine.</p>
 <p>To use a virtual machine like QEMU can be quite useful for various reasons.</p>
@@ -20,7 +19,7 @@
 <li>The <strong>host</strong> is the system that provides the virtual machine. In our case that is the Windows system.</li>
 <li>The <strong>guest</strong> is the operating system that runs in the virtual machine. In our case Archlinux.</li>
 </ul>
-<p>Also to use QEMU you need to use the Windows command prompt. I haven't used it for 15 years, but what you need is really basic so you should be all right.</p>
+<p>Also to use QEMU you need to use the Windows command prompt. I haven&rsquo;t used it for 15 years, but what you need is really basic so you should be all right.</p>
 <p>In this article I wan to set up a QEMU virtual machine with a Windows host and a Archlinux guest.</p>
 <p>When the virtual machine is used I am looking for this kind of configuration:</p>
 <ul>
@@ -52,7 +51,7 @@ The installation is quite straight forward.</p>
 <pre><code>./qemu-img create -f qcow2 harddrive\archlinux.hd 8G
 </code></pre><h2 id="download-a-linux-distribution-to-install">Download a linux distribution to install</h2>
 <p>First you need to download a linux ISO file somewhere. If you are not sure which one you want the <a href="distrowatch.com">distrowatch</a> lists a lot of choices and ranks them by usage. Also some description is given and for some linux distros you can also find some reviews.</p>
-<p>As the title said, for this article I will use Anarchy Linux. That is basically an installer helper to set up an Archlinux system without the hassle to do it all by hand. It's all driven by menus. Previously Anarchy Linux was also called ArchAnywhere. It is probably helpful if you have set up Archlinux by hand once, but not mandatory. Also some knowledge about using the shell is helpful for Archlinux. It is not difficult though and comes quite natural.</p>
+<p>As the title said, for this article I will use Anarchy Linux. That is basically an installer helper to set up an Archlinux system without the hassle to do it all by hand. It&rsquo;s all driven by menus. Previously Anarchy Linux was also called ArchAnywhere. It is probably helpful if you have set up Archlinux by hand once, but not mandatory. Also some knowledge about using the shell is helpful for Archlinux. It is not difficult though and comes quite natural.</p>
 <p>If in doubt maybe start with <a href="https://manjaro.org/"target="_blank">Manjaro</a>. That is a Archlinux based distro that is tailored for ease of use. It is quite popular, has decent documentation and you find a lot of help and forums in in the web.</p>
 <p>Anarchy Linux can be found <a href="https://anarchy-linux.org/"target="_blank">here</a></p>
 <h2 id="run-the-virtual-machine">Run the virtual machine</h2>
@@ -77,13 +76,13 @@ The installation is quite straight forward.</p>
 Instructions <a href="https://www.qemu.org/2017/11/22/haxm-usage-windows/"target="_blank">here</a></p>
 <p>The <em>-accel hax</em> switch does seem to speed up things. Only problem so far is that my Linux installation crashes.
 Well.</p>
-<p><em>to be continued, hopefully</em></p></article><section class="article labels"><a class="article category" href=/categories/system/><span class="hashtag">#</span>System</a><a class="article tag" href=/tags/archlinux/><span class="hashtag">#</span>Archlinux</a><a class="article tag" href=/tags/qemu/><span class="hashtag">#</span>QEMU</a></section><section class="article navigation"><p><a class="link" href="/post/micro-syntax1/"><span class="li"></span>Simple syntax highlighting for the Micro editor</a></p><p><a class="link" href="/post/man-markdown/"><span class="li"></span>Creating a man page from markdown with pandoc</a class="link">
+<p><em>to be continued, hopefully</em></p></article><section class="article labels"><a class="category" href=/categories/system/>System</a><a class="tag" href=/tags/archlinux/>Archlinux</a><a class="tag" href=/tags/qemu/>QEMU</a></section><section class="article navigation"><p><a class="link" href="/post/micro-syntax1/"><span class="li">&larr;</span>Simple syntax highlighting for the Micro editor</a></p><p><a class="link" href="/post/man-markdown/"><span class="li">&rarr;</span>Creating a man page from markdown with pandoc</a class="link">
     </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
     <p class="copyright">Absolute Beginner</p>
     <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
         target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
         target="_blank">Notepadium</a></p>
-</div></section></div>
+</div></section><script src="/js/core.min.bad0d749c4a4a806173ff4c0f5fb59abc028b6b2e2d1cb98085c432c60e0bc1d3e9050c162c3c3904e160a2bd9f98db8.js" integrity="sha384-utDXScSkqAYXP/TA9ftZq8AotrLi0cuYCFxDLGDgvB0&#43;kFDBYsPDkE4WCivZ&#43;Y24"></script></div>
 </body>
 
 </html>

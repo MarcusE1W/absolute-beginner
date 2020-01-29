@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html><meta charset="utf-8"><meta name="generator" content="Hugo 0.62.0" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.63.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
-<meta name="supported-color-schemes" content="light dark"><title>Spacemacs for beginner&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.b7dee1d249b40ec70d0ade00ca503b5e4e9ebc566c765ecbd86d76aee4ab30567c1f06946db80e46e062b23ee2e165d0.css" integrity="sha384-t97h0km0DscNCt4AylA7Xk6evFZsdl7L2G12ruSrMFZ8HwaUbbgORuBisj7i4WXQ"><body>
-    <div class="base-body max-width"><section id="header" class="site header max-body-width">
+<meta name="supported-color-schemes" content="light dark"><title>Spacemacs for beginner&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.61f7d103e0f681ef0874ae0c3816407cec85b93b3d1d77befa2083a5bb68fdc7462e4d8ace0e36e1223494aeef86bd24.css" integrity="sha384-YffRA&#43;D2ge8IdK4MOBZAfOyFuTs9HXe&#43;&#43;iCDpbto/cdGLk2Kzg424SI0lK7vhr0k"><body>
+    <div class="base-body"><section id="header" class="site header max-body-width">
     <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
-        <span class="header right-side"><div class="nav wrap"><div class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></div></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
-    <h1 class="article title">Spacemacs for beginner</h1><p class="article date">May 14 2018</p></section>
-<article class="article markdown-body"><p>An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.</p>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">Spacemacs for beginner</h1><p class="article date">Jan 15 2020</p></section><article class="article markdown-body"><p>An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.</p>
 <h1 id="spacemacs-for-beginner">Spacemacs for Beginner</h1>
 <p>Spacemacs is a beginner friendly extension of the very capable editor Emacs. One potential down-side for the beginner is that there is a lot of functionality available and you have to find out what is the most useful first. To help with this Spacemacs has a clever menu system that shows you the available functions and the necessary key strokes.</p>
 <p>This text tries to give an introduction into spacemacs for someone who is not familiar with Vim or Emacs.
@@ -14,15 +13,17 @@ After reading this you should be able to do some productive work with it.
 The assumption is that you have installed Spacemacs with Evil (Vim) support.
 Vim has some very powerful and sometimes very cryptic commands, only some of them will be covered in this text.
 Also the tables you see in the text only give you a selection of commands.
-The good news is that with Spacemacs you don't have to remember all commands but you can also use the Spacemacs menu (SPC).</p>
-<p><a href="http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html"target="_blank">Also read the latest official Spacemacs beginner guid (Develop Version)</a></p>
+The good news is that with Spacemacs you don&rsquo;t have to remember all commands but you can also use the Spacemacs menu (SPC).</p>
+<p><a href="http://develop.spacemacs.org/doc/BEGINNERS_TUTORIAL.html"target="_blank">Also read the latest official Spacemacs beginner guide (Develop Version)</a></p>
 <h2 id="executing-commands-in-spacemacs">Executing commands in Spacemacs</h2>
-<p>The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once <code>SPC</code> has been pressed a menu opens that shows the possible keys. E.g. SPC f s saves the current buffer. It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.</p>
+<p>The main way to execute commands is to press SPC (the space key) and then a combination of keys for the specific command. Once <code>SPC</code> has been pressed a menu opens that shows the possible keys.
+E.g. <code>SPC f s</code> saves the current buffer.
+It is probably worth just to try a few commands that look interesting to you. For your experiments maybe have a file available that you can load just for testing.</p>
 <p>Double letters in the SPC menu usually are used for particular useful commands like SPC b b for the list of buffers or SPC f f to open a file .</p>
 <h2 id="opening-files">Opening files</h2>
-<p>There are several ways to open a file, but a good start is the file selector neotree, activated with <code>SPC f t</code>.
-Move to the neotree window with SPC 0 and back to the other previous buffer with it's number <code>SPC &lt;window number&gt;</code>.</p>
-<p>While using neotree</p>
+<p>There are several ways to open a file, but a good start is the file selector Treemacs, activated with <code>SPC f t</code>.
+Move to the Treemacs window with SPC 0 and back to the previous buffer with it&rsquo;s number <code>SPC &lt;window number&gt;</code>.</p>
+<p>While using Treemacs:</p>
 <table>
 <thead>
 <tr>
@@ -33,24 +34,28 @@ Move to the neotree window with SPC 0 and back to the other previous buffer with
 <tbody>
 <tr>
 <td>Show content of a sub-folder</td>
-<td>RET or l (list?)</td>
+<td>RET (Return)</td>
+</tr>
+<tr>
+<td>Open file</td>
+<td>RET</td>
 </tr>
 <tr>
 <td>Rename a file.</td>
-<td>r (rename)</td>
+<td>R (rename)</td>
 </tr>
 <tr>
 <td>Create a new file</td>
-<td>c (create)</td>
+<td>c f (create file)</td>
 </tr>
 <tr>
 <td>To toggle between hiding and showing hidden (.) files.</td>
-<td>s</td>
+<td>t s</td>
 </tr>
 </tbody>
 </table>
 <h2 id="basic-spacemacs-evil-vim-commands">Basic Spacemacs Evil (Vim) commands</h2>
-<p>There are (I am sure but have not made it that far yet) many useful vim commands to edit your text and work with the editor. I think as a beginner you don't need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
+<p>There are (I am sure but have not made it that far yet) many useful vim commands to edit your text and work with the editor. I think as a beginner you don&rsquo;t need all of them. So here are some vim commands that are useful to have a good start and which are, I think also quite easy to remember.
 The vim mode is a so called modal model. This means it has several different modes that are specialized in doing one thing especially good. The Spacemacs documentation describes this very <a href="http://spacemacs.org/doc/DOCUMENTATION.html#states"target="_blank">well</a>.</p>
 <p>Spacemacs also shows a different colour for the window number depending on your mode.</p>
 <ul>
@@ -154,8 +159,8 @@ E.g. if you want tom copy the char under the cursor, you press <code>y</code> in
 <ul>
 <li>In insert mode the arrow keys, page-up, page-down, Home and End keys can be used.</li>
 </ul>
-<h3 id="the-clever-editing-bits">The clever editing bits</h3>
-<p>So what's all the hype about. so far the vim editor functions have made you switch between insert mode to enter text and normal mode to do some very basic editing.
+<h3 id="the-clever-editing-bits-">The clever editing bits</h3>
+<p>So what&rsquo;s all the hype about. so far the vim editor functions have made you switch between insert mode to enter text and normal mode to do some very basic editing.
 Here now some more clever bits, and they benefit very much form the fact that you can use normal keys as commands in normal mode as opposed to Ctrl-this and Ctrl-that in other editors.</p>
 <p>In Vim and spacemacs you can combine commands. E.g.</p>
 <p><strong>Text selection</strong></p>
@@ -204,7 +209,7 @@ Here now some more clever bits, and they benefit very much form the fact that yo
 </table>
 <p><code>diw</code> works similar to yiw. It deletes the word under the cursor.
 <code>df.</code> is a clever bit. It deletes everything until it finds the next <code>.</code> You can search for other letters as well.</p>
-<p>Mind you that all operations with <code>d</code> cut the text and don't just delete it. The current content of your standard clipboard will be overwritten.</p>
+<p>Mind you that all operations with <code>d</code> cut the text and don&rsquo;t just delete it. The current content of your standard clipboard will be overwritten.</p>
 <p><strong>Add more space</strong>
 Often you want to add more text in your existing document and for that you need space. So here are some useful normal mode commands to add more space.</p>
 <table>
@@ -250,7 +255,7 @@ Often you want to add more text in your existing document and for that you need 
 <p><strong>Super bonus function to move in text</strong>
 A very nifty function to jump quickly to text currently displayed in the window is <code>SPC j j</code>.</p>
 <ol>
-<li>After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it's first letter.</li>
+<li>After the second j of the SPC command select the first letter of the text where you want to jump to. So basically look at the word you want to jump to and select it&rsquo;s first letter.</li>
 <li>All the corresponding letters in the visible text of the window will be marked with a two letter combination.</li>
 <li>Key in the two colourful letters of the position at the beginning of the word where you want to jump and there you are.</li>
 <li>It is much more straight forward than it sounds. Try it.</li>
@@ -292,7 +297,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <h3 id="close-a-window-or-buffer">Close a window or buffer</h3>
 <ul>
 <li><code>SPC w d</code> (window delete). This will close the currently active window. The buffer is still open but not visible and you can continue writing at a later time.</li>
-<li><code>SPC b d</code> (buffer delete). This will close the buffer (file). That means either you have saved the text or you will be asked to save it and then it is closed. the window however will stay open and a different buffer will be shown in this window. Confusingly it can happen that the same buffer (file) is shown in two windows. In that case you probably don't need all the windows and you can close one with <code>SPC w d</code> or open another file in the second window.</li>
+<li><code>SPC b d</code> (buffer delete). This will close the buffer (file). That means either you have saved the text or you will be asked to save it and then it is closed. the window however will stay open and a different buffer will be shown in this window. Confusingly it can happen that the same buffer (file) is shown in two windows. In that case you probably don&rsquo;t need all the windows and you can close one with <code>SPC w d</code> or open another file in the second window.</li>
 <li>To close window and buffer at the same time you can use <code>SPC w x</code> or <code>SPC b x</code></li>
 </ul>
 <h3 id="show-a-different-buffer-file-in-your-current-window">Show a different buffer (file) in your current window.</h3>
@@ -320,7 +325,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <p><code>(defun dotspacemacs/user-config ()</code> &ndash; personal user configuration</p>
 </li>
 <li>
-<p><code>(defun dotspacemacs/emacs-custom-settings ()</code> &ndash; don't make changes</p>
+<p><code>(defun dotspacemacs/emacs-custom-settings ()</code> &ndash; don&rsquo;t make changes</p>
 </li>
 </ol>
 <p>&hellip;&hellip; some stuff at the bottom</p>
@@ -330,7 +335,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <li>Here are all sorts of parameter and switches for Spacemacs. You find a small description of what they do in the comments above.</li>
 <li>Here you can put settings for the start of Spacemacs. If in doubt use section 5 though.</li>
 <li>User settings. Small pieces of code similar to the standards settings in sections 3 to set parameter for Spacemacs.</li>
-<li>Don't use</li>
+<li>Don&rsquo;t use</li>
 </ol>
 <h3 id="add-and-remove-layers-packages">Add and remove layers (packages)</h3>
 <p>Hit <code>SPC f e d</code> (file emacs dotfile) to open the .spacemacs file. This is where you can customize everything.</p>
@@ -346,7 +351,7 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <p>If you make changes, save with <code>SPC f s</code> and restart with <code>SPC q R</code>.</p>
 <p><a href="https://medium.com/@jaysoifer/customizing-spacemacs-e9013bb18933"target="_blank">Good docu how to customise Spacemacs</a></p>
 <h1 id="beginner-friendly-key-bindings">Beginner friendly key-bindings</h1>
-<p>Vim's normal mode has some very powerful editing tool, but if you are used to the key-bindings that are very common on most GUI's and you only use Spacemacs occasionally then you might wish to use the common key-bindings in Spacemacs as well.</p>
+<p>Vim&rsquo;s normal mode has some very powerful editing tool, but if you are used to the key-bindings that are very common on most GUI&rsquo;s and you only use Spacemacs occasionally then you might wish to use the common key-bindings in Spacemacs as well.</p>
 <p>One nice solution could be to use GUI (common) keybindings in insert-mode and vim commands in normal mode.</p>
 <p>There is one solution for this.</p>
 <p>PhilipDaniels created <a href="https://github.com/PhilipDaniels/windows-defaults"target="_blank">windows_default - mode</a></p>
@@ -355,13 +360,13 @@ A very nifty function to jump quickly to text currently displayed in the window 
 <ul>
 <li>An absolute beginners guide to Spacemacs for academic <a href="https://ontologicalblog.com/2016/10/14/an-absolute-beginners-guide-to-spacemacs-for-academic-writing/"target="_blank">writing</a></li>
 <li>Great <a href="https://practicalli.github.io/spacemacs/documentation/"target="_blank">introduction</a> into Spacemacs with additional info about Clojure and Cider.</li>
-</ul></article><section class="article labels"><a class="article category" href=/categories/editor/><span class="hashtag">#</span>Editor</a><a class="article tag" href=/tags/spacemacs/><span class="hashtag">#</span>Spacemacs</a><a class="article tag" href=/tags/vim/><span class="hashtag">#</span>Vim</a></section><section class="article navigation"><p><a class="link" href="/post/ios-keyboard/"><span class="li"></span>How to use iOS with a keyboard</a></p><p><a class="link" href="/post/sys-setup/"><span class="li"></span>My system setup</a class="link">
+</ul></article><section class="article labels"><a class="category" href=/categories/editor/>Editor</a><a class="tag" href=/tags/spacemacs/>Spacemacs</a><a class="tag" href=/tags/vim/>Vim</a></section><section class="article navigation"><p><a class="link" href="/post/start-pinetime/"><span class="li">&larr;</span>Getting started with Pinetime DevKit</a></p><p><a class="link" href="/post/mermaid/"><span class="li">&rarr;</span>Mermaid in Markdown</a class="link">
     </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
     <p class="copyright">Absolute Beginner</p>
     <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
         target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
         target="_blank">Notepadium</a></p>
-</div></section></div>
+</div></section><script src="/js/core.min.bad0d749c4a4a806173ff4c0f5fb59abc028b6b2e2d1cb98085c432c60e0bc1d3e9050c162c3c3904e160a2bd9f98db8.js" integrity="sha384-utDXScSkqAYXP/TA9ftZq8AotrLi0cuYCFxDLGDgvB0&#43;kFDBYsPDkE4WCivZ&#43;Y24"></script></div>
 </body>
 
 </html>

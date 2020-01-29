@@ -8,7 +8,7 @@
     {{- range $i, $e := .Params.tags -}}
         {{- if $i -}}<span>, </span>{{- end -}}
         {{- $url := print "/tags/" ( . | urlize) "/" -}}
-        <a href={{- $url | relLangURL -}}>{{- . -}}</a>
+        <a href={{- $url | relLangURL -}}>{{ . }}</a>
     {{- end -}}
 </section>
 {{- end -}}

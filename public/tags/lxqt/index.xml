@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>LXQt on Absolute Beginner</title>
-    <link>https://absolute-beginner.netlify.com/tags/lxqt/</link>
+    <link>/tags/lxqt/</link>
     <description>Recent content in LXQt on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 03 Dec 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://absolute-beginner.netlify.com/tags/lxqt/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/lxqt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>An Archlinux Desktop with LXQt and KWin</title>
-      <link>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</link>
+      <link>/post/lxqt-kwin-virtualbox/</link>
       <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</guid>
+      <guid>/post/lxqt-kwin-virtualbox/</guid>
       <description>&lt;p&gt;Setting up LXQt with KWin in Virtualbox using Anarchy Linux&lt;/p&gt;</description>
     </item>
     

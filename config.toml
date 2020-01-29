@@ -1,6 +1,6 @@
 baseURL = "https://absolute-beginner.netlify.com"
 title = "Absolute Beginner"
-theme = "notepadium"
+theme = "hugo-notepadium"
 # copyright = "©2019 Notepadium."
 
 languageCode = "en-gb"

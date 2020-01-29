@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.63.2" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Getting started with Pinetime DevKit&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.61f7d103e0f681ef0874ae0c3816407cec85b93b3d1d77befa2083a5bb68fdc7462e4d8ace0e36e1223494aeef86bd24.css" integrity="sha384-YffRA&#43;D2ge8IdK4MOBZAfOyFuTs9HXe&#43;&#43;iCDpbto/cdGLk2Kzg424SI0lK7vhr0k"><body>
+    <div class="base-body"><section id="header" class="site header max-body-width">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content" class="max-body-width"><section class="article header">
+    <h1 class="article title">Getting started with Pinetime DevKit</h1><p class="article date">Jan 29 2020</p></section><article class="article markdown-body"><p>Beginner guide to the PineTime DevKit</p>
+<h1 id="getting-started-with-the-pinetime-devkit">Getting started with the PineTime DevKit</h1>
+<p><a target="_blank" rel="noopener noreferrer" 
+  href="https://store.pine64.org/wp-content/uploads/2019/12/PineTive-DevKit-2-300x300.jpg"><img  src="https://store.pine64.org/wp-content/uploads/2019/12/PineTive-DevKit-2-300x300.jpg"
+        alt="PineTime"/></a></p>
+<p>This is an introduction how to start embedded development with the PineTime DevKit for beginner.</p>
+<h1 id="intro">Intro</h1>
+<p>To get started with the Pinetime you need next to the Pinetime first and foremost</p>
+<ul>
+<li>a computer to develop (Linux, MacOS, Windows)</li>
+<li>a device to connect your computer to the Pinetime,</li>
+<li>software to connect</li>
+<li>some firmware g to flash to the PineTime</li>
+<li>sticky tape to connect the back to the watch (no, this is not water tight)</li>
+<li>adventuritis</li>
+</ul>
+<p>This is a development Kit and not a functioning watch. One consequence is that the back of the watch can only be loosely put to the watch and then fixed with some tape or so. If you want to glue the back of the watch to the kit you need some way to access the internal SWD ports e.g. drill a hole into the back. So please mind that whatever you do this is not a normal digital watch.</p>
+<p>It is important to note that the original PineTime software is read-write protected, to prevent people from nicking the original software. So before you can write any new firmware to the PineTime you have to remove the write protection.
+<strong>Note:</strong> This will remove the original PineTime software and can not be reversed. But the idea after all is to develop super cool new software for the PineTime anyway.</p>
+<h1 id="connecting-to-the-pinetime">Connecting to the PineTime</h1>
+<p>The PineTime comes with a cable that fits the small SWD (serial wire debug) connectors on the board.
+<a target="_blank" rel="noopener noreferrer" 
+  href="https://wiki.pine64.org/images/2/29/PineTime_SWD_location.jpg"><img  src="https://wiki.pine64.org/images/2/29/PineTime_SWD_location.jpg"
+        alt="PineTime SWD connection"/></a></p>
+<p>There are several different ways to connect to the PineTime.</p>
+<h2 id="blackmagic-bluepill">Blackmagic-bluepill</h2>
+<p>There is a device called <a href="https://1bitsquared.com/products/black-magic-probe"target="_blank">Blackmagic Probe (BMP)</a> that does include additional functionality so that you can connect to it directly using the debugger gdb, without the need of using openocd or something else to connect to the device.</p>
+<p>You can buy the device <a href="https://1bitsquared.com/products/black-magic-probe"target="_blank">here</a>.</p>
+<p>The firmware is generously open source so it is possible to install blackmagic to other devices. One device is the <a href="https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill.html"target="_blank">STM32 Bluepill</a> and very popular as it is often very cheap and also comes with 4 pins on the board which allow to connect to the SWD PineTime interface without soldering.</p>
+<p><a target="_blank" rel="noopener noreferrer" 
+  href="https://stm32-base.org/assets/img/boards/STM32F103C8T6_Blue_Pill-2.jpg"><img  src="https://stm32-base.org/assets/img/boards/STM32F103C8T6_Blue_Pill-2.jpg"
+        alt="Bluepill"/></a></p>
+<p>To set up the Blackmagic-bluepill see <a href="https://forum.pine64.org/showthread.php?tid=8816&amp;pid=57095#pid57095"target="_blank">this Pine64 forum entry</a> and <a href="https://gist.github.com/darnel/dac1370d057e176386ca4026418abc2b"target="_blank">this description</a>.</p>
+<p>To connect with the blackmagic-bluepill you can use the software <a href="https://github.com/blacksphere/blackmagic/wiki/Useful-GDB-commands"target="_blank">gdb</a>.</p>
+<h2 id="raspbery-pi">Raspbery Pi</h2>
+<p>Thanks to some excellent research from Lupyuen it is possible and in fact quite convenient to use a Raspberry Pi to connect to the PineTime.</p>
+<p>This should work with all models. Please note that older models had a different GPIO layout and you would have to use different pins.</p>
+<p><a target="_blank" rel="noopener noreferrer" 
+  href="https://www.raspberrypi.org/homepage-9df4b/static/55e8aa88fb242fd2f341b5aeb2870f96/a0db7/4825246be3d2abe20cb181129a209d8caddb4e91_raspberry-pi-zero-overhead-1-1748x1080.jpg"><img  src="https://www.raspberrypi.org/homepage-9df4b/static/55e8aa88fb242fd2f341b5aeb2870f96/a0db7/4825246be3d2abe20cb181129a209d8caddb4e91_raspberry-pi-zero-overhead-1-1748x1080.jpg"
+        alt="Raspberry Zero"/></a></p>
+<ul>
+<li>Guide to set up a Rpi to connect to the PineTime is <a href="https://medium.com/@ly.lee/openocd-on-raspberry-pi-better-with-swd-on-spi-7dea9caeb590"target="_blank">here</a></li>
+</ul>
+<p>To connect with the Raspberry Pi you can use <a href="http://openocd.org/"target="_blank">OpenOCD</a></p>
+<h2 id="cmsis-dap-compatible-device">CMSIS-DAP compatible device</h2>
+<p>TBD</p>
+<p>Link:
+<a href="https://github.com/myelin/arduino-cmsis-dap"target="_blank">github page</a></p>
+<h2 id="st-link">ST-Link</h2>
+<p>A ST-Link is a convenient way to connect to the PineTime. It&rsquo;s a quite common device so that there is a lot of documentation and also cheap clones can be found. One thing to note is that a ST-Link as it is cannot remove the write protection of the original PineTime software, so one of the other devices is needed for that.</p>
+<p><a target="_blank" rel="noopener noreferrer" 
+  href="https://cdn-shop.adafruit.com/145x109/2548-01.jpg"><img  src="https://cdn-shop.adafruit.com/145x109/2548-01.jpg"
+        alt="ST-Link V2"/></a></p>
+<p>To connect with  the ST-Link you can use <a href="http://openocd.org/"target="_blank">OpenOCD</a>.</p>
+<h2 id="j-link">J-Link</h2>
+<p>There are a number of Segger J-Link devices to connect to the PineTime.</p>
+<p><a target="_blank" rel="noopener noreferrer" 
+  href="https://www.segger.com/fileadmin/images/products/J-Link/J-Link-Edu-Mini/J-Link_EDU_Mini_500x307.png"><img  src="https://www.segger.com/fileadmin/images/products/J-Link/J-Link-Edu-Mini/J-Link_EDU_Mini_500x307.png"
+        alt="J-Link EDU mini"/></a></p>
+<p>The cheapest is the <a href="https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/"target="_blank">J-Link EDU Mini</a>. If you use a J-Link you need some sort of breakout board to connect from the J-Link cable to the PineTime connection cable like:</p>
+<ul>
+<li>
+<p><a href="https://www.adafruit.com/product/2743"target="_blank">this</a> <a target="_blank" rel="noopener noreferrer" 
+  href="https://cdn-shop.adafruit.com/145x109/2743-00.jpg"><img  src="https://cdn-shop.adafruit.com/145x109/2743-00.jpg"
+        alt="SWD breakout board"/></a></p>
+</li>
+<li>
+<p><a href="https://www.adafruit.com/product/2094"target="_blank">or this</a> <a target="_blank" rel="noopener noreferrer" 
+  href="https://cdn-shop.adafruit.com/145x109/2094-00.jpg"><img  src="https://cdn-shop.adafruit.com/145x109/2094-00.jpg"
+        alt="JTAG to SWD adapter"/></a></p>
+</li>
+</ul>
+<p>To use a J-Link you can use:</p>
+<ul>
+<li>The software from <a href="https://www.segger.com/downloads/jlink/UM08001"target="_blank">Segger</a></li>
+<li><a href="http://openocd.org/"target="_blank">OpenOCD</a></li>
+</ul>
+<h1 id="flashing-the-first-example-wip">Flashing the first example (WIP)</h1>
+<p>Some PineTime developer kindly have provided pre-compiled binaries of PineTime firmware, so those can be used to flash a first example without the need to set up a complete development tool chain.</p>
+<p>Links:</p>
+<ul>
+<li><a href="https://github.com/JF002/Pinetime/releases"target="_blank">JF</a> (download the full app)</li>
+<li><a href="https://github.com/bosmoment/PineTime-apps"target="_blank">Koen</a></li>
+</ul>
+<h2 id="blackmagic-bluepill-1">Blackmagic-bluepill</h2>
+<p>Check which port is used by BMP: <code>ls /dev/ttyA*</code>
+Standard is <code>/dev/ACM0</code>. Interestingly if you unplug the bluepill from USB and plug in again you might get a different number. However you always get two devices and you need to take the lover number.</p>
+<h3 id="1-start-gdb">1. Start gdb</h3>
+<p>In my case I have to start it with sudo to access /dev/ACM0 <code>sudo gdb</code></p>
+<h3 id="2-connect-to-the-bmp">2. Connect to the BMP</h3>
+<pre><code>target extended-remote /dev/ACM0
+</code></pre><h3 id="3-search-for-the-pinetimee">3. Search for the PineTimee</h3>
+<pre><code>monitor swdp_scan
+</code></pre><p>When you scan for the first time only on e device is shown, after the original firmware is erased two devices will be shown</p>
+<h3 id="4-connect">4. Connect</h3>
+<p>In both cases connect to the first device</p>
+<pre><code>attach 1
+</code></pre><h3 id="5-erase-original-firmware-once">5. Erase original firmware (once)</h3>
+<p><strong>Note</strong> When connecting for the first time the original firmware needs to be removed.</p>
+<pre><code>monitor mass_erase
+</code></pre><p>(This command is not required after the original firmware has been successfully removed.)</p>
+<h3 id="6-define-new-firmware">6. Define new firmware</h3>
+<p>Choose a firmware e.g. Pinetime.elf. The format can also be <code>.hex</code> or <code>.bin</code></p>
+<pre><code>file ~/Downloads/PineTime.elf
+</code></pre><h3 id="7-upload">7. Upload</h3>
+<p>Upload the firmware</p>
+<pre><code>load
+</code></pre><h3 id="8-run">8. Run</h3>
+<p>Start the new firmware</p>
+<pre><code>run
+</code></pre><h3 id="9-disconnect">9. Disconnect</h3>
+<p>Disconnect form the PineTime</p>
+<pre><code>detach
+</code></pre><p>The new firmware should now be running on the PineTime.</p>
+<p>These are a lot of commands. You can add e.g. the commands before <code>file</code> to a file <code>~/.gdbinit</code></p>
+<h2 id="raspbery-pi-1">Raspbery Pi</h2>
+<p>TBD</p>
+<h2 id="cmsis-dap">CMSIS-DAP</h2>
+<p>TBD</p>
+<h2 id="st-link-1">ST-Link</h2>
+<p>As the ST-Link cannot remove the write protection on the original PineTime software itself this first has to be removed with one of the other mentioned solutions.</p>
+<h2 id="j-link-1">J-Link</h2>
+<p>TBD</p></article><section class="article labels"><a class="category" href=/categories/embedded/>Embedded</a><a class="tag" href=/tags/pinetime/>PineTime</a></section><section class="article navigation"><p><a class="link" href="/post/spacemacs/"><span class="li">&rarr;</span>Spacemacs for beginner</a class="link">
+    </p></section></div><section id="footer" class="footer max-body-width"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/core.min.bad0d749c4a4a806173ff4c0f5fb59abc028b6b2e2d1cb98085c432c60e0bc1d3e9050c162c3c3904e160a2bd9f98db8.js" integrity="sha384-utDXScSkqAYXP/TA9ftZq8AotrLi0cuYCFxDLGDgvB0&#43;kFDBYsPDkE4WCivZ&#43;Y24"></script></div>
+</body>
+
+</html>

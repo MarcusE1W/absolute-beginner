@@ -1,58 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>System on Absolute Beginner</title>
-    <link>https://absolute-beginner.netlify.com/categories/system/</link>
+    <link>/categories/system/</link>
     <description>Recent content in System on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://absolute-beginner.netlify.com/categories/system/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/categories/system/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Set up VM Ware for Archlinux</title>
-      <link>https://absolute-beginner.netlify.com/post/vmware-archlinux/</link>
+      <link>/post/vmware-archlinux/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/vmware-archlinux/</guid>
+      <guid>/post/vmware-archlinux/</guid>
       <description>&lt;p&gt;VM Ware archlinux setup&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>How to use iOS with a keyboard</title>
-      <link>https://absolute-beginner.netlify.com/post/ios-keyboard/</link>
+      <link>/post/ios-keyboard/</link>
       <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/ios-keyboard/</guid>
+      <guid>/post/ios-keyboard/</guid>
       <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>My system setup</title>
-      <link>https://absolute-beginner.netlify.com/post/sys-setup/</link>
+      <link>/post/sys-setup/</link>
       <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/sys-setup/</guid>
+      <guid>/post/sys-setup/</guid>
       <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A QEMU Virtual machine with a Windows host and a Linux guest</title>
-      <link>https://absolute-beginner.netlify.com/post/qemu-start/</link>
+      <link>/post/qemu-start/</link>
       <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/qemu-start/</guid>
+      <guid>/post/qemu-start/</guid>
       <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Creating a man page from markdown with pandoc</title>
-      <link>https://absolute-beginner.netlify.com/post/man-markdown/</link>
+      <link>/post/man-markdown/</link>
       <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/man-markdown/</guid>
+      <guid>/post/man-markdown/</guid>
       <description>&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;</description>
     </item>
     

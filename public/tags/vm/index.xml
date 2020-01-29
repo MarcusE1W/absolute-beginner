@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>VM on Absolute Beginner</title>
-    <link>https://absolute-beginner.netlify.com/tags/vm/</link>
+    <link>/tags/vm/</link>
     <description>Recent content in VM on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 07 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://absolute-beginner.netlify.com/tags/vm/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/tags/vm/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Set up VM Ware for Archlinux</title>
-      <link>https://absolute-beginner.netlify.com/post/vmware-archlinux/</link>
+      <link>/post/vmware-archlinux/</link>
       <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/vmware-archlinux/</guid>
+      <guid>/post/vmware-archlinux/</guid>
       <description>&lt;p&gt;VM Ware archlinux setup&lt;/p&gt;</description>
     </item>
     

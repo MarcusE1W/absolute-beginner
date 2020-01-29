@@ -1,104 +1,23 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Absolute Beginner</title>
-    <link>https://absolute-beginner.netlify.com/</link>
+    <link>/</link>
     <description>Recent content on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 06 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://absolute-beginner.netlify.com/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Mermaid in Markdown</title>
-      <link>https://absolute-beginner.netlify.com/post/mermaid/</link>
-      <pubDate>Mon, 06 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/mermaid/</guid>
-      <description>&lt;p&gt;How to use Mermaid for flowcharts in blogs and with Hugo in Markdown documents.&lt;/p&gt;</description>
-    </item>
     
     <item>
-      <title>Set up VM Ware for Archlinux</title>
-      <link>https://absolute-beginner.netlify.com/post/vmware-archlinux/</link>
-      <pubDate>Fri, 07 Dec 2018 00:00:00 +0000</pubDate>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://absolute-beginner.netlify.com/post/vmware-archlinux/</guid>
-      <description>&lt;p&gt;VM Ware archlinux setup&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How to use iOS with a keyboard</title>
-      <link>https://absolute-beginner.netlify.com/post/ios-keyboard/</link>
-      <pubDate>Sat, 30 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/ios-keyboard/</guid>
-      <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Spacemacs for beginner</title>
-      <link>https://absolute-beginner.netlify.com/post/spacemacs/</link>
-      <pubDate>Mon, 14 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/spacemacs/</guid>
-      <description>&lt;p&gt;An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>My system setup</title>
-      <link>https://absolute-beginner.netlify.com/post/sys-setup/</link>
-      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/sys-setup/</guid>
-      <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Simple syntax highlighting for the Micro editor</title>
-      <link>https://absolute-beginner.netlify.com/post/micro-syntax1/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/micro-syntax1/</guid>
-      <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>A QEMU Virtual machine with a Windows host and a Linux guest</title>
-      <link>https://absolute-beginner.netlify.com/post/qemu-start/</link>
-      <pubDate>Thu, 29 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/qemu-start/</guid>
-      <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Creating a man page from markdown with pandoc</title>
-      <link>https://absolute-beginner.netlify.com/post/man-markdown/</link>
-      <pubDate>Mon, 19 Feb 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/man-markdown/</guid>
-      <description>&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Ocaml for beginner</title>
-      <link>https://absolute-beginner.netlify.com/post/ocaml-start/</link>
-      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/ocaml-start/</guid>
-      <description>&lt;p&gt;Explore Ocaml, an functional programming language that is mayby not as strict as some others.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>An Archlinux Desktop with LXQt and KWin</title>
-      <link>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</link>
-      <pubDate>Sun, 03 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://absolute-beginner.netlify.com/post/lxqt-kwin-virtualbox/</guid>
-      <description>&lt;p&gt;Setting up LXQt with KWin in Virtualbox using Anarchy Linux&lt;/p&gt;</description>
+      <guid>/post/</guid>
+      <description></description>
     </item>
     
   </channel>
