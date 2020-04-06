@@ -21,7 +21,7 @@ To get started with the Pinetime you need next to the Pinetime first and foremos
 - a computer to develop (Linux, MacOS, Windows)
 - a device to connect your computer to the Pinetime,
 - software to connect
-- some firmware g to flash to the PineTime
+- some firmware to flash to the PineTime
 - sticky tape to connect the back to the watch (no, this is not water tight)
 - adventuritis
 
