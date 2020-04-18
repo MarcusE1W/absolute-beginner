@@ -24,22 +24,22 @@ A first look at org-mode in Spacemacs
 
 ** Org-mode and markdown compared side by side
 
- | Markdown-mode | Org-mode  | Description       | Example                      |
- |---------------+-----------+-------------------+------------------------------|
- | #             | ~*~         | Header level 1    | ~* Header 1~                |
- | ##            | ~**~        | Header level 2    | ~** Header 2~              |
- | ###           | ~***~       | Header level 3    | ~*** Header 3~             |
- | =_text_=      | ~/text/~    | Italics           | /Hurray/                     |
- | =*text*=      | ~*text*~    | Bold              | *Hurray*                     |
- | N/A           | ~_text_~    | Underline         | _Hurray_                     |
- | ``` txt ```   | ~~text~~    | Code element      | ~Hurray~                             |
- |               | ~=text=~    | Literal           | =Hurray=                             |
- | >             | :         | Single line example | see below |
- | -             | -         | Bullet point list       |                             |
- | 1.            | 1.        | Numbered Lists    |                              |
- | N/A           | -  ::     | Definition list   | - Definition :: rest of line |
- | ~~text~~      | +text+    | Strike through    | +this and that+              |
- | [text](link)  | [[link][description]] |       | [[heise.de][Heise]]                             |
+ | Markdown-mode | Org-mode    | Description         | Example                      |
+ |---------------+-------------+---------------------+------------------------------|
+ | #             | ~*~         | Header level 1      | ~* Header 1~                 |
+ | ##            | ~**~        | Header level 2      | ~** Header 2~                |
+ | ###           | ~***~       | Header level 3      | ~*** Header 3~               |
+ | =_text_=      | ~/text/~    | Italics             | /Hurray/                     |
+ | =*text*=      | ~*text*~    | Bold                | *Hurray*                     |
+ | N/A           | ~_text_~    | Underline           | _Hurray_                     |
+ | ``` txt ```   | ~~text~~    | Code element        | ~Hurray~                     |
+ |               | ~=text=~    | Literal             | =Hurray=                     |
+ | >             | :           | Single line example | see below                    |
+ | -             | -           | Bullet point list   |                              |
+ | 1.            | 1.          | Numbered Lists      |                              |
+ | N/A           | -  ::       | Definition list     | - Definition :: rest of line |
+ | ~~text~~      | +text+      | Strike through      | +this and that+              |
+ | [text](link)  | [[link][description]] |                     | [[heise.de][Heise]]                        |
 
 Tests:
 
@@ -138,7 +138,7 @@ Here is a source code example:
 | Promote task | Alt-left   | This only works for lines that are already tasks                       |
 | Demote task  | Alt-right  | This only works for lines that are already tasks                       |
 |              |            |                                                                        |
-|              |            |                                                                        |
+|              |            |                                                                        | 
 |              |            |                                                                        |
 |              |            |                                                                        |
 

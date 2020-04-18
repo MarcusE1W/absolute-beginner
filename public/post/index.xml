@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Absolute Beginner</title>
     <link>/post/</link>
@@ -18,6 +18,7 @@
       
       <guid>/post/start-pinetime/</guid>
       <description>&lt;p&gt;Beginner guide to the PineTime DevKit&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -27,6 +28,7 @@
       
       <guid>/post/spacemacs/</guid>
       <description>&lt;p&gt;An introduction into the Spacemacs editor for a user with little Vim/Emacs experience.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -36,6 +38,7 @@
       
       <guid>/post/mermaid/</guid>
       <description>&lt;p&gt;How to use Mermaid for flowcharts in blogs and with Hugo in Markdown documents.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -45,6 +48,7 @@
       
       <guid>/post/vmware-archlinux/</guid>
       <description>&lt;p&gt;VM Ware archlinux setup&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -54,6 +58,7 @@
       
       <guid>/post/ios-keyboard/</guid>
       <description>&lt;p&gt;How do you use iOS with an Bluetooth keyboard.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -63,6 +68,7 @@
       
       <guid>/post/sys-setup/</guid>
       <description>&lt;p&gt;These are my notes to remember how to set up my system.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -72,6 +78,7 @@
       
       <guid>/post/micro-syntax1/</guid>
       <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -81,6 +88,7 @@
       
       <guid>/post/qemu-start/</guid>
       <description>&lt;p&gt;Run a (Arch)Linux system in a QEMU virtual machine on your Windows.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -90,6 +98,19 @@
       
       <guid>/post/man-markdown/</guid>
       <description>&lt;p&gt;How to create a man page from a README.md file&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Org-mode in Spacemacs</title>
+      <link>/post/orgmode/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/orgmode/</guid>
+      <description>&lt;p&gt;
+A first look at org-mode in Spacemacs
+&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -99,6 +120,17 @@
       
       <guid>/post/ocaml-start/</guid>
       <description>&lt;p&gt;Explore Ocaml, an functional programming language that is mayby not as strict as some others.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Useful and amusing unix commands</title>
+      <link>/post/useful-unix-cmds/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/post/useful-unix-cmds/</guid>
+      <description>&lt;p&gt;Some helpful or interesting unix commands&lt;/p&gt;</description>
+      
     </item>
     
     <item>
@@ -108,6 +140,7 @@
       
       <guid>/post/lxqt-kwin-virtualbox/</guid>
       <description>&lt;p&gt;Setting up LXQt with KWin in Virtualbox using Anarchy Linux&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

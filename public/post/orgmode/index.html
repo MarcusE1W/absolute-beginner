@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en"><meta charset="utf-8"><meta name="generator" content="Hugo 0.68.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark"><title>Org-mode in Spacemacs&nbsp;&ndash;&nbsp;Absolute Beginner</title><link rel="stylesheet" href="/css/core.min.cf6f288f0f2646548448f7ce8d5dc34da579b4038301a676594779234e16f7fc48f11543aaf46825dc116fa99509e1ae.css" integrity="sha384-z28ojw8mRlSESPfOjV3DTaV5tAODAaZ2WUd5I04W9/xI8RVDqvRoJdwRb6mVCeGu"><body>
+    <div class="base-body"><section id="header" class="site header">
+    <div class="header wrap"><span class="header left-side"><a class="site home" href="/"><img class="site logo" src="/flower-bg.jpg" alt /><span class="site name">Absolute Beginner</span></a></span>
+        <span class="header right-side"><div class="nav wrap"><nav class="nav"><a class="nav item" href="/categories/">Categories</a><a class="nav item" href="/tags/">Tags</a></nav></div></span></div><div class="site slogan"><span class="title">Now with live Mermaid</span></div></section><div id="content"><div class="article-container"><section class="article header">
+    <h1 class="article title">Org-mode in Spacemacs</h1><p class="article date">Jan 19 2018</p></section><article class="article markdown-body"><p>
+A first look at org-mode in Spacemacs
+</p>
+<h2 id="headline-1">
+Using org-mode like markdown
+</h2>
+<h3 id="headline-2">
+Structure documents
+</h3>
+<p>
+ In org mode you structure your document like in markdown with headers.
+ Instead of #, ##, ### in markdown you use `*`, `**`, and `***`.
+</p>
+<h3 id="headline-3">
+Org-mode and markdown compared side by side
+</h3>
+<table>
+<thead>
+<tr>
+<th>Markdown-mode</th>
+<th>Org-mode</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>#</td>
+<td><code>*</code></td>
+<td>Header level 1</td>
+<td><code>* Header 1</code></td>
+</tr>
+<tr>
+<td>##</td>
+<td><code>**</code></td>
+<td>Header level 2</td>
+<td><code>** Header 2</code></td>
+</tr>
+<tr>
+<td>###</td>
+<td><code>***</code></td>
+<td>Header level 3</td>
+<td><code>*** Header 3</code></td>
+</tr>
+<tr>
+<td><code class="verbatim">_text_</code></td>
+<td><code>/text/</code></td>
+<td>Italics</td>
+<td><em>Hurray</em></td>
+</tr>
+<tr>
+<td><code class="verbatim">*text*</code></td>
+<td><code>*text*</code></td>
+<td>Bold</td>
+<td><strong>Hurray</strong></td>
+</tr>
+<tr>
+<td>N/A</td>
+<td><code>_text_</code></td>
+<td>Underline</td>
+<td><span style="text-decoration: underline;">Hurray</span></td>
+</tr>
+<tr>
+<td>``` txt ```</td>
+<td><code>~text~</code></td>
+<td>Code element</td>
+<td><code>Hurray</code></td>
+</tr>
+<tr>
+<td></td>
+<td><code>=text=</code></td>
+<td>Literal</td>
+<td><code class="verbatim">Hurray</code></td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>:</td>
+<td>Single line example</td>
+<td>see below</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+<td>Bullet point list</td>
+<td></td>
+</tr>
+<tr>
+<td>1.</td>
+<td>1.</td>
+<td>Numbered Lists</td>
+<td></td>
+</tr>
+<tr>
+<td>N/A</td>
+<td>-  ::</td>
+<td>Definition list</td>
+<td>- Definition :: rest of line</td>
+</tr>
+<tr>
+<td><code>~text~</code></td>
+<td><del>text</del></td>
+<td>Strike through</td>
+<td><del>this and that</del></td>
+</tr>
+<tr>
+<td>[text](link)</td>
+<td><a href="link">description</a></td>
+<td></td>
+<td><a href="heise.de">Heise</a></td>
+</tr>
+</tbody>
+</table>
+<p>
+Tests:
+</p>
+<h2 id="headline-4">
+Header 1
+</h2>
+<h3 id="headline-5">
+Header 2
+</h3>
+<h4 id="headline-6">
+Header 3
+</h4>
+<p>
+ <em>italics</em>
+</p>
+<p>
+ <strong>bold</strong>
+</p>
+<p>
+ <span style="text-decoration: underline;">underline</span>
+</p>
+<p>
+ <code>source</code>
+</p>
+<p>
+ <code class="verbatim">literal</code>
+</p>
+<ul>
+<li>
+<p>
+Bullet list
+</p>
+</li>
+</ul>
+<ol>
+<li>
+<p>
+numbered list
+</p>
+</li>
+</ol>
+<dl>
+<dt>
+definition
+</dt>
+<dd>
+<p>
+list 1
+</p>
+</dd>
+<dt>
+definition
+</dt>
+<dd>
+<p>
+list 2
+</p>
+</dd>
+</dl>
+<p>
+<del>strike through</del>
+</p>
+<p>
+<code>Source code on one line</code>
+</p>
+<p>
+ ~source block, of some sort
+ seems not to work ?
+ Hm, seems to work a bit different~
+</p>
+<p>
+Markdown style tasks: (seems not ot work)
+</p>
+<ul>
+<li class="unchecked">
+<p>
+hallo
+</p>
+</li>
+<li>
+<p>
+[x] hallo
+</p>
+</li>
+</ul>
+<p>
+Symbols:
+here an arrow →, a large gamma Γ and a π.
+</p>
+<h4 id="headline-7">
+TASK A Task here, this does not look like the right format, should not be a header format for a task ?
+</h4>
+<div class="verse-block">
+<p>
+Some verse here 
+new line
+and more, (does not work, this should be seperated lines?)
+</p>
+</div>
+<blockquote>
+<p>
+Some quote here 
+new line
+and more
+</p>
+</blockquote>
+<div class="center-block" style="text-align: center; margin-left: auto; margin-right: auto;">
+<p>
+Some centered text here 
+new line
+and more
+</p>
+</div>
+<pre class="example">
+Here is an example line for a single line, start with :
+</pre>
+<p>
+usw
+</p>
+<pre class="example">
+Here is an example block
+Some example from a text file.
+New line.
+So here new line works now, fine.
+</pre>
+<p>
+Here is a source code example:
+</p>
+<div class="src src-emacs-lisp">
+<div class="highlight"><pre class="chroma"><code class="language-emacs-lisp" data-lang="emacs-lisp">  <span class="p">(</span><span class="nb">defun</span> <span class="nv">org-xor</span> <span class="p">(</span><span class="nv">a</span> <span class="nv">b</span><span class="p">)</span>
+    <span class="s">&#34;Exclusive or.&#34;</span>
+    <span class="p">(</span><span class="nb">if</span> <span class="nv">a</span> <span class="p">(</span><span class="nv">not</span> <span class="nv">b</span><span class="p">)</span> <span class="nv">b</span><span class="p">))</span></code></pre></div>
+</div>
+<h2 id="headline-8">
+Organise tasks
+</h2>
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>key</th>
+<th>comments</th>
+<th class="align-right"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Create task</td>
+<td>Ctrl-C RET</td>
+<td>This always marks text behind the cursor as a task, not the whole line</td>
+<td class="align-right"></td>
+</tr>
+<tr>
+<td></td>
+<td>, RET</td>
+<td>This uses the SPC m .. shortcut ,</td>
+<td class="align-right"></td>
+</tr>
+<tr>
+<td>Promote task</td>
+<td>Alt-left</td>
+<td>This only works for lines that are already tasks</td>
+<td class="align-right"></td>
+</tr>
+<tr>
+<td>Demote task</td>
+<td>Alt-right</td>
+<td>This only works for lines that are already tasks</td>
+<td class="align-right"></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>key</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>demote header</td>
+<td>M-arrow-right</td>
+</tr>
+<tr>
+<td>promote header</td>
+<td>M-arrow-left</td>
+</tr>
+<tr>
+<td>new header line</td>
+<td>Ctrl-RET</td>
+</tr>
+</tbody>
+</table>
+<h2 id="headline-9">
+create list
+</h2>
+<h2 id="headline-10">
+Useful links
+</h2>
+<ul>
+<li>
+<p>
+<a href="http://pragmaticemacs.com/org-mode-tutorials/">beginner tutorial</a>
+</p>
+</li>
+</ul></article><section class="article labels"><a class="category" href=/categories/editor/>Editor</a><a class="tag" href=/tags/spacemacs/>Spacemacs</a><a class="tag" href=/tags/org-mode/>Org-Mode</a></section></div><section class="article navigation"><p><a class="link" href="/post/man-markdown/"><span class="li">&larr;</span>Creating a man page from markdown with pandoc</a></p><p><a class="link" href="/post/ocaml-start/"><span class="li">&rarr;</span>Ocaml for beginner</a></p></section></div><section id="footer" class="footer"><div class="footer-wrap">
+    <p class="copyright">Absolute Beginner</p>
+    <p class="powerby"><span>Powered by </span><a href="https://gohugo.io" 
+        target="_blank">Hugo</a><span> and the </span><a href="https://themes.gohugo.io/hugo-notepadium/" 
+        target="_blank">Notepadium</a></p>
+</div></section><script src="/js/core.min.bad0d749c4a4a806173ff4c0f5fb59abc028b6b2e2d1cb98085c432c60e0bc1d3e9050c162c3c3904e160a2bd9f98db8.js" integrity="sha384-utDXScSkqAYXP/TA9ftZq8AotrLi0cuYCFxDLGDgvB0&#43;kFDBYsPDkE4WCivZ&#43;Y24"></script></div>
+</body>
+
+</html>

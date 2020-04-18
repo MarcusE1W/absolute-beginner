@@ -120,9 +120,9 @@ Everyone has their own important applications so here is a suggestion to focus o
 
 This is all very driven by your personal preference, but I feel it's a good basis. You might want to add other applications.
 
-| Description | Key |
-| --- | --- |
-| start the terminal |
+| Description        | Key |
+| ---                | --- |
+| start the terminal |     |
 
 
 ## It's all coming together

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Micro on Absolute Beginner</title>
     <link>/tags/micro/</link>
     <description>Recent content in Micro on Absolute Beginner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 11 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Apr 2018 00:00:00 +0000</lastBuildDate>
     
         <atom:link href="/tags/micro/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,7 @@
       
       <guid>/post/micro-syntax1/</guid>
       <description>&lt;p&gt;How to write a simple file for syntax highlighting for any language for the Micro editor&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

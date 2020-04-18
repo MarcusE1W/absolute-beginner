@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on Absolute Beginner</title>
     <link>/tags/</link>
@@ -18,6 +18,7 @@
       
       <guid>/tags/pinetime/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -27,6 +28,7 @@
       
       <guid>/tags/spacemacs/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -36,6 +38,7 @@
       
       <guid>/tags/vim/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -45,6 +48,7 @@
       
       <guid>/tags/mermaid/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -54,6 +58,7 @@
       
       <guid>/tags/vm/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -63,6 +68,7 @@
       
       <guid>/tags/bluetooth/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -72,6 +78,7 @@
       
       <guid>/tags/ios/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -81,6 +88,7 @@
       
       <guid>/tags/keyboard/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -90,6 +98,7 @@
       
       <guid>/tags/lofree/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -99,6 +108,7 @@
       
       <guid>/tags/archlinux/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -108,6 +118,7 @@
       
       <guid>/tags/atom/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -117,6 +128,17 @@
       
       <guid>/tags/fish-shell/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Micro</title>
+      <link>/tags/micro/</link>
+      <pubDate>Sat, 28 Apr 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/micro/</guid>
+      <description></description>
+      
     </item>
     
     <item>
@@ -126,6 +148,7 @@
       
       <guid>/tags/micro-editor/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -135,6 +158,7 @@
       
       <guid>/tags/spectrwm/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -144,15 +168,7 @@
       
       <guid>/tags/trizen/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Micro</title>
-      <link>/tags/micro/</link>
-      <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/micro/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -162,6 +178,7 @@
       
       <guid>/tags/qemu/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -171,6 +188,7 @@
       
       <guid>/tags/man-pages/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -180,6 +198,17 @@
       
       <guid>/tags/markdown/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Org-Mode</title>
+      <link>/tags/org-mode/</link>
+      <pubDate>Fri, 19 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/org-mode/</guid>
+      <description></description>
+      
     </item>
     
     <item>
@@ -189,6 +218,17 @@
       
       <guid>/tags/ocaml/</guid>
       <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>/tags/shell/</link>
+      <pubDate>Thu, 07 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/shell/</guid>
+      <description></description>
+      
     </item>
     
     <item>
@@ -198,6 +238,7 @@
       
       <guid>/tags/kwin/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -207,6 +248,7 @@
       
       <guid>/tags/linux/</guid>
       <description></description>
+      
     </item>
     
     <item>
@@ -216,6 +258,7 @@
       
       <guid>/tags/lxqt/</guid>
       <description></description>
+      
     </item>
     
   </channel>
