@@ -61,3 +61,6 @@
 [submodule "themes/hugo-notepadium"]
 	path = themes/hugo-notepadium
 	url = https://github.com/cntrump/hugo-notepadium.git
+[submodule "themes/materialize-bp"]
+	path = themes/materialize-bp
+	url = https://github.com/spech66/materialize-bp-hugo-theme.git

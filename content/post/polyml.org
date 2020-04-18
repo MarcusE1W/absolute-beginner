@@ -1,5 +1,6 @@
 +++
 title = "Poly ML"
+cover = "programming.jpg"
 date = "2018-05-21"
 hide_authorbox = false
 disable_comments = false

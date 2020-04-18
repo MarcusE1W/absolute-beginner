@@ -6,7 +6,7 @@ disable_comments = false
 categories = ["Editor"]
 tags = ["Spacemacs", "Org-Mode"]
 markup = "org"
-draft = true
+draft = false
 +++
 
 A first look at org-mode in Spacemacs
@@ -26,40 +26,108 @@ A first look at org-mode in Spacemacs
 
  | Markdown-mode | Org-mode  | Description       | Example                      |
  |---------------+-----------+-------------------+------------------------------|
- | #             | *         | Header level 1    |                              |
- | ##            | **        | Header level 2    |                              |
- | ###           | ***       | Header level 3    |                              |
- | =_text_=      | /text/    | Italics           | /Hurray/                     |
- | =*text*=      | *text*    | Bold              | *Hurray*                     |
- | N/A           | _text_    | Underline         | _Hurray_                     |
- | ``` txt ```   | ~text~    | Source-Code       |                              |
- |               | =text=    | Literal           |                              |
- | N/A           | see below | Other text blocks |                              |
- | -             | -         | Bullet List       |                              |
+ | #             | ~*~         | Header level 1    | ~* Header 1~                |
+ | ##            | ~**~        | Header level 2    | ~** Header 2~              |
+ | ###           | ~***~       | Header level 3    | ~*** Header 3~             |
+ | =_text_=      | ~/text/~    | Italics           | /Hurray/                     |
+ | =*text*=      | ~*text*~    | Bold              | *Hurray*                     |
+ | N/A           | ~_text_~    | Underline         | _Hurray_                     |
+ | ``` txt ```   | ~~text~~    | Code element      | ~Hurray~                             |
+ |               | ~=text=~    | Literal           | =Hurray=                             |
+ | >             | :         | Single line example | see below |
+ | -             | -         | Bullet point list       |                             |
  | 1.            | 1.        | Numbered Lists    |                              |
  | N/A           | -  ::     | Definition list   | - Definition :: rest of line |
- | N/A           | +text+    | Strike through    | +this and that+              |
+ | ~~text~~      | +text+    | Strike through    | +this and that+              |
  | [text](link)  | [[link][description]] |       | [[heise.de][Heise]]                             |
 
- Test:
+Tests:
+
+* Header 1
+** Header 2
+*** Header 3
+ 
  /italics/
+
  *bold*
+
  _underline_
+
  ~source~
+
  =literal=
+
  - Bullet list
+
  1. numbered list
- - dies :: das
+
+ - definition :: list 1
+ - definition :: list 2
+
  +strike through+
 
- ~
- source block, of some sort
- seems not to work ?
- Ah, dies functioniert etwas anders~
- ~
+~Source code on one line~
 
- - [] hallo
+ ~source block, of some sort
+ seems not to work ?
+ Hm, seems to work a bit different~
+
+
+Markdown style tasks: (seems not ot work)
+ - [ ] hallo
  - [x] hallo
+
+
+
+Symbols:
+here an arrow \to, a large gamma \Gamma and a \pi.
+
+
+*** TASK A Task here, this does not look like the right format, should not be a header format for a task ?
+
+
+#+BEGIN_VERSE
+Some verse here 
+new line
+and more, (does not work, this should be seperated lines?)
+#+END_VERSE
+
+
+#+BEGIN_QUOTE
+Some quote here 
+new line
+and more
+#+END_QUOTE
+
+#+BEGIN_CENTER
+Some centered text here 
+new line
+and more
+#+END_CENTER
+
+: Here is an example line for a single line, start with :
+usw
+
+
+#+BEGIN_EXAMPLE
+Here is an example block
+Some example from a text file.
+New line.
+So here new line works now, fine.
+#+END_EXAMPLE
+
+Here is a source code example:
+
+#+BEGIN_SRC emacs-lisp
+  (defun org-xor (a b)
+    "Exclusive or."
+    (if a (not b) b))
+#+END_SRC
+
+
+
+
+
 
 * Organise tasks
 
@@ -77,14 +145,15 @@ A first look at org-mode in Spacemacs
 
 | Function        | key             |
 |-----------------+-----------------|
-| demote header   | M-arrow_right   |
-| promote header  | M-arrow_left    |
+| demote header   | M-arrow-right   |
+| promote header  | M-arrow-left    |
 | new header line | Ctrl-RET        |
 |                 |                 |
+
 * create list
 
-
 * Useful links
+
 - [[http://pragmaticemacs.com/org-mode-tutorials/][beginner tutorial]]
 
 
