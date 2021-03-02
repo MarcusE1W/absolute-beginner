@@ -17,6 +17,8 @@ How to write a simple file for syntax highlighting for any language for the Micr
 
 For a quick overview about syntax highlighting read this documentation for micro  [colors](https://github.com/zyedidia/micro/blob/master/runtime/help/colors.md)
 
+The micro help on syntax files can also be found with the command 'help colors', a bit hidden at the end of the text.
+
 This text gives a simple introduction how to build a syntax highlighting file for micro.
 
 The examples of this text cut together gives a template for your own definitions.
@@ -68,6 +70,9 @@ e.g.
 
     - special: "\\b(let|rec|function|in)\\b"
 ```
+
+Note: The type example is indifferent to upper/lower case. The statement example expectes upper/lower case to be exact. in this case lower case.
+
 ## Operators, symbols, strings, comments
 
 

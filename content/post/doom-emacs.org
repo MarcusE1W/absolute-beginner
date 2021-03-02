@@ -1,0 +1,21 @@
+#+TITLE: Doom Emacs
+
+
++++
+date= 2018-05-09
+title= "emacs doom edition"
+categories = ["Editor"]
+tags = ["", "Emacs"]
+markup = "org"
+draft = true
++++
+
+* Intro to Doom Emacs
+
+* Install
+
+* Starter guide
+
+
+
+* Configuration

@@ -7,7 +7,7 @@ disable_comments = false
 categories = ["Programming languages"]
 tags = ["Functional Programming", "SML"]
 markup = "org"
-draft = true
+draft = false
 +++
 
 PolyML is a SML functional programming language with parallel programming support.
@@ -26,14 +26,14 @@ This gives you:
 - *polyimport* :  import a ml programme and run it, no idea
 
 NOTE: All three commands have /man pages/
-     
-* First Impression
-- Installation is super straight forward compared to Alice ML  
-- Compiled to native code
-- Documentation only foe polyml special features like the thread library
-- On first glance the tread library looks a bit old fashioned, it seems like a wrapper for system functions 
 
-* Usage     
+* First Impression
+- Installation is super straight forward compared to Alice ML
+- Compiles to native code
+- Documentation only for polyml special features like the thread library
+- On first glance the thread library looks a bit old fashioned, it seems like a wrapper for system functions
+
+* Usage
 
 ** Tutorials
 - Documentation is very limited and restricted to PolyML specific subjects like threads, debugging, etc

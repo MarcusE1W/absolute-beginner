@@ -12,11 +12,16 @@ How to set up Wayfire for the Pinebook Pro
 
 # Install
 
-wayfire-git
-wf-shell-git
-xwayland
+wayfire
+wf-shell
+xorg-server-xwayland
 
-(optioinal) wcm-git
+## optional
+wlogout
+wcm-git
+wofi
+
+
 
 # Config
 
