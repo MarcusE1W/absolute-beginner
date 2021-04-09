@@ -1,11 +1,16 @@
 +++
-title = "Alice"
+title = "Alice ML"
 date = "2018-05-21"
 hide_authorbox = false
 disable_comments = false
 categories = ["Programming languages"]
+<<<<<<< HEAD
 tags = ["Functional Programming"]
 draft = false
+=======
+tags = ["Functional Programming", "SML"]
+draft = true
+>>>>>>> cb2d905c451f436d7c32652ba4a01f03d8bc4225
 +++
 
 Alice is a modern SML functional programming language with parallel programming support.
